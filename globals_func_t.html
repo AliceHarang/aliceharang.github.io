@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -105,6 +97,10 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 <li>targetlevelcriteria&lt; float &gt;()
 : <a class="el" href="AdaptCriteria_8cu.html#a5d48af529f1baf2b7582b048382cd322">AdaptCriteria.cu</a>
 </li>
+<li>TEST_CASE()
+: <a class="el" href="catalyst__adaptor__UnitTest_8cpp.html#a0e9b387a8277d25c879e93998754a8f1">catalyst_adaptor_UnitTest.cpp</a>
+, <a class="el" href="vtkCPVTKOutputPipeline__UnitTest_8cpp.html#a196d2be1beca6bea6928ce6d3141c82a">vtkCPVTKOutputPipeline_UnitTest.cpp</a>
+</li>
 <li>test_intersectpoly()
 : <a class="el" href="Poly_8cu.html#a3bfe65ae13eadc49bd2efead046f9cb0">Poly.cu</a>
 </li>
@@ -114,6 +110,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 <li>test_wninpoly()
 : <a class="el" href="Poly_8cu.html#acac184ce907723e79cdd14569fb8f78d">Poly.cu</a>
 </li>
+<li>TestAIObnd()
+: <a class="el" href="Testing_8cu.html#ad1b8eecc043010440cced2f0eede0587">Testing.cu</a>
+</li>
 <li>testboundaries()
 : <a class="el" href="Testing_8cu.html#a1f58fd96fa0d9473ed0c863d5b789485">Testing.cu</a>
 , <a class="el" href="Testing_8h.html#a1f58fd96fa0d9473ed0c863d5b789485">Testing.h</a>
@@ -122,13 +121,21 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 : <a class="el" href="Testing_8cu.html#a984ce53c1331a99e98ad625f552f02d8">Testing.cu</a>
 </li>
 <li>TestFirsthalfstep()
-: <a class="el" href="Testing_8cu.html#ae435322535a91559637e33e6f95c8d33">Testing.cu</a>
+: <a class="el" href="Testing_8cu.html#a7db6b6038875f9863ec74a2a56f8bc74">Testing.cu</a>
 </li>
 <li>TestGradientSpeed()
 : <a class="el" href="Testing_8cu.html#ac00b715422e6178892c08f88324a3310">Testing.cu</a>
 </li>
 <li>TestHaloSpeed()
 : <a class="el" href="Testing_8cu.html#a6ce4c15e1755fc3b537e6dc7ef7401c2">Testing.cu</a>
+</li>
+<li>testime1()
+: <a class="el" href="utctime_8cu.html#afd41627872b2b532a3b6fd44eeffeffa">utctime.cu</a>
+, <a class="el" href="utctime_8h.html#afd41627872b2b532a3b6fd44eeffeffa">utctime.h</a>
+</li>
+<li>testime2()
+: <a class="el" href="utctime_8cu.html#ab56faa576f8839224ec998518baaf6dc">utctime.cu</a>
+, <a class="el" href="utctime_8h.html#ab56faa576f8839224ec998518baaf6dc">utctime.h</a>
 </li>
 <li>Testing()
 : <a class="el" href="Testing_8cu.html#a1803abe24ad2daba8d11e5e46c783762">Testing.cu</a>
@@ -156,8 +163,12 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 <li>testkurganovX()
 : <a class="el" href="Testing_8cu.html#a5f1ffa1a9b2e46bf2f4babc5c4f9c4fe">Testing.cu</a>
 </li>
+<li>TestMultiBathyRough()
+: <a class="el" href="Testing_8cu.html#a7880b9adda370fd426fd81e6738ce3db">Testing.cu</a>
+, <a class="el" href="Testing_8h.html#aee83c778b6d86fde8c183b3a896cdc71">Testing.h</a>
+</li>
 <li>Testzbinit()
-: <a class="el" href="Testing_8cu.html#a175c84b2bc51deb4d9e1c24f1dfd3bf5">Testing.cu</a>
+: <a class="el" href="Testing_8cu.html#a0daf4e3de07a3e351dc2ffe82f59fbe4">Testing.cu</a>
 </li>
 <li>ThackerBathy()
 : <a class="el" href="Testing_8cu.html#a104edf84a62f0b9fe895a48abbc1d3bc">Testing.cu</a>
@@ -205,12 +216,34 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 : <a class="el" href="Friction_8cu.html#a11aeccfdeb5fc5bc0fec239a5ff01afa">Friction.cu</a>
 , <a class="el" href="Friction_8h.html#ae6381b38ea567a629b1428f4bfe253a8">Friction.h</a>
 </li>
+<li>timegm()
+: <a class="el" href="utctime_8cu.html#aea46066db9ed2948c3461b4fa2cd750e">utctime.cu</a>
+</li>
 <li>timestepreductionCPU()
 : <a class="el" href="Advection_8cu.html#a094a2783163d213283e849a5eb7c0b2a">Advection.cu</a>
 , <a class="el" href="Advection_8h.html#a094a2783163d213283e849a5eb7c0b2a">Advection.h</a>
 </li>
+<li>TopAda()
+: <a class="el" href="Adapt__Flow__kernel_8cu.html#a90956769fc0b0479d78292ca70b1e230">Adapt_Flow_kernel.cu</a>
+</li>
+<li>topdirichlet()
+: <a class="el" href="Flow__kernel_8cu.html#a8d1a0a5ad7bbffa73650d06d2a5a19cf">Flow_kernel.cu</a>
+</li>
+<li>topdirichletCPU()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a1727709eba2cc73bcf0834448b36e80a">Bas_Cart_CPU.cpp</a>
+</li>
+<li>topdirichletCPUD()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a7580ced022daff2a06b5729e016bb36a">Bas_Cart_CPU.cpp</a>
+</li>
+<li>topdirichletD()
+: <a class="el" href="Flow__kernel_8cu.html#aa5db0c260d5cb987a92765d58e63c175">Flow_kernel.cu</a>
+</li>
+<li>TopFlowBnd()
+: <a class="el" href="Init__gpu_8cu.html#a038c6b8d0718d770b131b21c6a428c12">Init_gpu.cu</a>
+</li>
 <li>trim()
-: <a class="el" href="ReadInput_8cu.html#a61bb9a4530ff40c81495172a56719e36">ReadInput.cu</a>
+: <a class="el" href="read__input_8cpp.html#a61bb9a4530ff40c81495172a56719e36">read_input.cpp</a>
+, <a class="el" href="ReadInput_8cu.html#a61bb9a4530ff40c81495172a56719e36">ReadInput.cu</a>
 , <a class="el" href="ReadInput_8h.html#a61bb9a4530ff40c81495172a56719e36">ReadInput.h</a>
 </li>
 </ul>
@@ -219,7 +252,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -97,11 +89,22 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>BarycentricInterpolation()
-: <a class="el" href="Util__CPU_8cu.html#a5c8ec250aa6d79d7850c0ab1604b613d">Util_CPU.cu</a>
+: <a class="el" href="read__input_8cpp.html#a7779edc131d0530530e2ad2bb2c887c2">read_input.cpp</a>
+, <a class="el" href="Util__CPU_8cu.html#a5c8ec250aa6d79d7850c0ab1604b613d">Util_CPU.cu</a>
 , <a class="el" href="Util__CPU_8h.html#afd69e3546d13d3fcbb53dbea6714b007">Util_CPU.h</a>
 </li>
+<li>bathydata
+: <a class="el" href="BasCart__gpu_8cu.html#a64d75ac4c7ea1ec24f00bced48f9ef47">BasCart_gpu.cu</a>
+</li>
+<li>BENCHMARK
+: <a class="el" href="catch_8hpp.html#aaba0eec6ef0736ca2b022a98a7c855e4">catch.hpp</a>
+</li>
+<li>BiInterp()
+: <a class="el" href="Tutorial__Cart_8c.html#abc3843fdd462ba9e6330a58f4daede43">Tutorial_Cart.c</a>
+</li>
 <li>BilinearInterpolation()
-: <a class="el" href="Util__CPU_8cu.html#aee8df9b24b1f0dfa189aff7fa01c40d8">Util_CPU.cu</a>
+: <a class="el" href="read__input_8cpp.html#af2d89b9aee4e33133856dd0f737a27f4">read_input.cpp</a>
+, <a class="el" href="Util__CPU_8cu.html#aee8df9b24b1f0dfa189aff7fa01c40d8">Util_CPU.cu</a>
 , <a class="el" href="Util__CPU_8h.html#aee8df9b24b1f0dfa189aff7fa01c40d8">Util_CPU.h</a>
 </li>
 <li>BilinearInterpolation&lt; double &gt;()
@@ -123,27 +126,121 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 <li>blockmean()
 : <a class="el" href="GridManip_8cu.html#aac3c88d5ba2164dbfcd61e5693840ee4">GridManip.cu</a>
 </li>
+<li>blockxo
+: <a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">BasCart_gpu.cu</a>
+</li>
+<li>blockxo_d
+: <a class="el" href="BasCart__gpu_8cu.html#a1940701207a41742f98e6b33f0aba738">BasCart_gpu.cu</a>
+</li>
+<li>blockxo_g
+: <a class="el" href="BasCart__gpu_8cu.html#add0309de6697d380cac3f337ef70f53a">BasCart_gpu.cu</a>
+</li>
+<li>blockxo_gd
+: <a class="el" href="BasCart__gpu_8cu.html#a27206c51fb40b06f003755aa3feec182">BasCart_gpu.cu</a>
+</li>
+<li>blockyo
+: <a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">BasCart_gpu.cu</a>
+</li>
+<li>blockyo_d
+: <a class="el" href="BasCart__gpu_8cu.html#a2f2f44970bd9ea6b5ba2d523946e9fd2">BasCart_gpu.cu</a>
+</li>
+<li>blockyo_g
+: <a class="el" href="BasCart__gpu_8cu.html#a08dd2dc1cf7716ea335f4d94f2bdfd70">BasCart_gpu.cu</a>
+</li>
+<li>blockyo_gd
+: <a class="el" href="BasCart__gpu_8cu.html#ace04bd5b2bf38c8e19b6dfd542b36d3a">BasCart_gpu.cu</a>
+</li>
+<li>bndbotblk
+: <a class="el" href="BasCart__gpu_8cu.html#ad51017c6bbc873d3156e69c5cdcb9c1d">BasCart_gpu.cu</a>
+</li>
+<li>bndbotblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#afffb2116b92f8e0bd349af7bfbae9263">BasCart_gpu.cu</a>
+</li>
 <li>bndCPU()
-: <a class="el" href="Boundary_8cu.html#ab18fb86bb3b4b271d182b885ed13638c">Boundary.cu</a>
+: <a class="el" href="Boundary_8cu.html#a31da8c718f61d1febaf765248e0c73a5">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#a31da8c718f61d1febaf765248e0c73a5">Boundary.h</a>
 </li>
 <li>bndCPU&lt; double &gt;()
-: <a class="el" href="Boundary_8cu.html#ac652cda7328105bf260dc5fed3027c41">Boundary.cu</a>
+: <a class="el" href="Boundary_8cu.html#a53826614c94ad3ab18e20d3ab09826f3">Boundary.cu</a>
 </li>
 <li>bndCPU&lt; float &gt;()
-: <a class="el" href="Boundary_8cu.html#a725156f0102037f89f0287a800770126">Boundary.cu</a>
+: <a class="el" href="Boundary_8cu.html#a1cefa5da87750ab0c151f50536135f6a">Boundary.cu</a>
+</li>
+<li>bndFluxGPUSide()
+: <a class="el" href="Boundary_8cu.html#ad24f377cb23e38ac40ffce632d0971d8">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#ad24f377cb23e38ac40ffce632d0971d8">Boundary.h</a>
+</li>
+<li>bndFluxGPUSideCPU()
+: <a class="el" href="Boundary_8cu.html#aedc3560eb11b9c8d2ca9aadcb29e6f00">Boundary.cu</a>
 </li>
 <li>bndGPU()
-: <a class="el" href="Boundary_8cu.html#a5da9c2cb6774461d8f6de7cafd105ed6">Boundary.cu</a>
-, <a class="el" href="Boundary_8h.html#a5da9c2cb6774461d8f6de7cafd105ed6">Boundary.h</a>
+: <a class="el" href="Boundary_8cu.html#a994c0a68a28b55ac136fa3fd105c5db8">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#a994c0a68a28b55ac136fa3fd105c5db8">Boundary.h</a>
 </li>
 <li>bndGPU&lt; double &gt;()
-: <a class="el" href="Boundary_8cu.html#a97bf4070551ab7a48aab3f3b033b3eea">Boundary.cu</a>
+: <a class="el" href="Boundary_8cu.html#a3e97e34703bb8a9b1b1ab62a46a8e92a">Boundary.cu</a>
 </li>
 <li>bndGPU&lt; float &gt;()
-: <a class="el" href="Boundary_8cu.html#a28dc24b709f2fb444929ace2c55d7c9d">Boundary.cu</a>
+: <a class="el" href="Boundary_8cu.html#ad6853f2419748f3213081096cab6379e">Boundary.cu</a>
+</li>
+<li>bndleftblk
+: <a class="el" href="BasCart__gpu_8cu.html#af50a006999974ebfd90a2eb535ab7ad7">BasCart_gpu.cu</a>
+</li>
+<li>bndleftblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#abc835328d5f20841fc39f362652ad002">BasCart_gpu.cu</a>
+</li>
+<li>bndmaskGPU()
+: <a class="el" href="Halo_8cu.html#ad8656ca08616abdeb043f622de7243fd">Halo.cu</a>
+, <a class="el" href="Halo_8h.html#ad8656ca08616abdeb043f622de7243fd">Halo.h</a>
+</li>
+<li>bndmaskGPU&lt; double &gt;()
+: <a class="el" href="Halo_8cu.html#a8effb78a3ef81c8e53f925af0e1beeec">Halo.cu</a>
+</li>
+<li>bndmaskGPU&lt; float &gt;()
+: <a class="el" href="Halo_8cu.html#a1a2c2fe28c070ea593b6f0fb06cda5eb">Halo.cu</a>
+</li>
+<li>bndrightblk
+: <a class="el" href="BasCart__gpu_8cu.html#a6c2d06858c4fa441e6d0e6fa1d846a0e">BasCart_gpu.cu</a>
+</li>
+<li>bndrightblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#a97d5e359105e56411c51e5795d059de0">BasCart_gpu.cu</a>
+</li>
+<li>bndtopblk
+: <a class="el" href="BasCart__gpu_8cu.html#aaeb5206be56279b619ea18aedacf59d3">BasCart_gpu.cu</a>
+</li>
+<li>bndtopblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#a01539152b171990adc3a21072fbd2e75">BasCart_gpu.cu</a>
+</li>
+<li>BotAda()
+: <a class="el" href="Adapt__Flow__kernel_8cu.html#acaa0cea503f0af25ef5ecf301b97b116">Adapt_Flow_kernel.cu</a>
+</li>
+<li>botblk
+: <a class="el" href="BasCart__gpu_8cu.html#a235605a71e99863c2bc2cfe6c599eca3">BasCart_gpu.cu</a>
+</li>
+<li>botblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#a60274c9d29ee5787c8c20762c1eddacc">BasCart_gpu.cu</a>
+</li>
+<li>botdirichlet()
+: <a class="el" href="Flow__kernel_8cu.html#a1846a09385b8001185cd0403624b5653">Flow_kernel.cu</a>
+</li>
+<li>botdirichletCPU()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#aeebc728e3b8a80a210ddc67298ff68cf">Bas_Cart_CPU.cpp</a>
+</li>
+<li>botdirichletCPUD()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a52722d6b5c6771643c0520490e07d42a">Bas_Cart_CPU.cpp</a>
+</li>
+<li>botdirichletD()
+: <a class="el" href="Flow__kernel_8cu.html#a94faf3ce6570c5f85a2249210af13deb">Flow_kernel.cu</a>
+</li>
+<li>BotFlowBnd()
+: <a class="el" href="Init__gpu_8cu.html#aed77b1089686eda16d9daa33e23004c8">Init_gpu.cu</a>
+</li>
+<li>bottomfriction()
+: <a class="el" href="Flow__kernel_8cu.html#a7af654776c5227590a7f638459fbb980">Flow_kernel.cu</a>
 </li>
 <li>bottomfrictionCPU()
-: <a class="el" href="Friction_8cu.html#af0b8d53f38f5bf256107707a315653f5">Friction.cu</a>
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#acca782b77531bd84de45c1264aacbcef">Bas_Cart_CPU.cpp</a>
+, <a class="el" href="Friction_8cu.html#af0b8d53f38f5bf256107707a315653f5">Friction.cu</a>
 , <a class="el" href="Friction_8h.html#af0b8d53f38f5bf256107707a315653f5">Friction.h</a>
 </li>
 <li>bottomfrictionCPU&lt; double &gt;()
@@ -162,13 +259,22 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 <li>bottomfrictionGPU&lt; float &gt;()
 : <a class="el" href="Friction_8cu.html#a70610d60fa29a5c40b79c139ed5cb06a">Friction.cu</a>
 </li>
+<li>botUvel_gp
+: <a class="el" href="BasCart__gpu_8cu.html#a2743aa88bc027f63e6751e3be8657308">BasCart_gpu.cu</a>
+</li>
+<li>botVvel_gp
+: <a class="el" href="BasCart__gpu_8cu.html#a5aae45770ac5d2e4232f8666bace273e">BasCart_gpu.cu</a>
+</li>
+<li>botWLS_gp
+: <a class="el" href="BasCart__gpu_8cu.html#a53b4c0dd8aac4a535c9f2a40985294c3">BasCart_gpu.cu</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

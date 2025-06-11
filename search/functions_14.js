@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['xiafrictioncpu_2274',['XiafrictionCPU',['../Friction_8cu.html#a6e344a350de00e300fb7a8979cb3cbf4',1,'XiafrictionCPU(Param XParam, BlockP&lt; T &gt; XBlock, T dt, T *cf, EvolvingP&lt; T &gt; XEvolv, EvolvingP&lt; T &gt; XEvolv_o):&#160;Friction.cu'],['../Friction_8h.html#a6e344a350de00e300fb7a8979cb3cbf4',1,'XiafrictionCPU(Param XParam, BlockP&lt; T &gt; XBlock, T dt, T *cf, EvolvingP&lt; T &gt; XEvolv, EvolvingP&lt; T &gt; XEvolv_o):&#160;Friction.cu']]],
-  ['xiafrictioncpu_3c_20double_20_3e_2275',['XiafrictionCPU&lt; double &gt;',['../Friction_8cu.html#ac283e37b288fe24c4bf78bacdbb667aa',1,'Friction.cu']]],
-  ['xiafrictioncpu_3c_20float_20_3e_2276',['XiafrictionCPU&lt; float &gt;',['../Friction_8cu.html#a812b9c3a70b20b582642a760f9d171cb',1,'Friction.cu']]],
-  ['xiafrictiongpu_2277',['XiafrictionGPU',['../Friction_8cu.html#a237e9ffcd102e8c5b14f5799455c2f10',1,'XiafrictionGPU(Param XParam, BlockP&lt; T &gt; XBlock, T dt, T *cf, EvolvingP&lt; T &gt; XEvolv, EvolvingP&lt; T &gt; XEvolv_o):&#160;Friction.cu'],['../Friction_8h.html#a237e9ffcd102e8c5b14f5799455c2f10',1,'XiafrictionGPU(Param XParam, BlockP&lt; T &gt; XBlock, T dt, T *cf, EvolvingP&lt; T &gt; XEvolv, EvolvingP&lt; T &gt; XEvolv_o):&#160;Friction.cu']]],
-  ['xiafrictiongpu_3c_20double_20_3e_2278',['XiafrictionGPU&lt; double &gt;',['../Friction_8cu.html#a072ad3e97b28e3f3b606c75eaf2b0ebe',1,'Friction.cu']]],
-  ['xiafrictiongpu_3c_20float_20_3e_2279',['XiafrictionGPU&lt; float &gt;',['../Friction_8cu.html#a18363d1c4b582fce5fb9aadc2dd1c943',1,'Friction.cu']]],
-  ['xprod_2280',['xprod',['../Poly_8cu.html#ae420a7753f03de4f5d9e926bd531e88a',1,'Poly.cu']]]
+  ['valleybathy_4872',['ValleyBathy',['../Testing_8cu.html#a8a8622ffcab39fee02cae7640afdb939',1,'Testing.cu']]],
+  ['vectorcontains_4873',['VectorContains',['../namespaceCatch_1_1Matchers.html#ae8db5846328116fb36386893deaec944',1,'Catch::Matchers']]],
+  ['vertadd_4874',['VertAdd',['../Poly_8cu.html#a5a924cd959c0fd5aa4a7fb41a3b4854a',1,'Poly.cu']]],
+  ['vertsub_4875',['VertSub',['../Poly_8cu.html#a8c09c4426eace301b7cafe4e29c9aa80',1,'Poly.cu']]],
+  ['vtkcpvtkoutputpipeline_4876',['vtkCPVTKOutputPipeline',['../classvtkCPVTKOutputPipeline.html#a65b2fa990888dd6ca27a29f8091adb41',1,'vtkCPVTKOutputPipeline::vtkCPVTKOutputPipeline(const vtkCPVTKOutputPipeline &amp;)=delete'],['../classvtkCPVTKOutputPipeline.html#ac5ce3833cc0719319f78a71f9c2be045',1,'vtkCPVTKOutputPipeline::vtkCPVTKOutputPipeline()']]],
+  ['vtkgetmacro_4877',['vtkGetMacro',['../classvtkCPVTKOutputPipeline.html#a22904010d4ff6606cd10f786c4f83bf5',1,'vtkCPVTKOutputPipeline::vtkGetMacro(OutputFrequency, int)'],['../classvtkCPVTKOutputPipeline.html#ac1b9a0d79d5b60f45c8ff2893676398b',1,'vtkCPVTKOutputPipeline::vtkGetMacro(OutputTimeInterval, double)'],['../classvtkCPVTKOutputPipeline.html#ad9039546e106635cc044fe51c0bb4437',1,'vtkCPVTKOutputPipeline::vtkGetMacro(FileName, std::string)']]],
+  ['vtksetmacro_4878',['vtkSetMacro',['../classvtkCPVTKOutputPipeline.html#a3ba89258ff87db61f0e75bc677ba55f8',1,'vtkCPVTKOutputPipeline::vtkSetMacro(OutputFrequency, int)'],['../classvtkCPVTKOutputPipeline.html#a766370fd4a9d96e080c278a32baed8c4',1,'vtkCPVTKOutputPipeline::vtkSetMacro(OutputTimeInterval, double)'],['../classvtkCPVTKOutputPipeline.html#a36f290b4393c2d9e6299d3d53b8af56a',1,'vtkCPVTKOutputPipeline::vtkSetMacro(FileName, std::string)']]],
+  ['vtkstandardnewmacro_4879',['vtkStandardNewMacro',['../vtkCPVTKOutputPipeline_8cpp.html#ad72b30e02c19b137f2fc20a142357cd7',1,'vtkCPVTKOutputPipeline.cpp']]],
+  ['vtktypemacro_4880',['vtkTypeMacro',['../classvtkCPVTKOutputPipeline.html#a7de5c4b2c5cd11d8a9189b3bc8ba5b3a',1,'vtkCPVTKOutputPipeline']]]
 ];

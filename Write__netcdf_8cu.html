@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -112,18 +104,18 @@ Include dependency graph for Write_netcdf.cu:</div>
 Functions</h2></td></tr>
 <tr class="memitem:acd23cfd734db5604e86925f669812e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#acd23cfd734db5604e86925f669812e28">handle_ncerror</a> (int status)</td></tr>
 <tr class="separator:acd23cfd734db5604e86925f669812e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5666e1c5adffc97737e2d5f328d72972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a5666e1c5adffc97737e2d5f328d72972">Calcnxny</a> (<a class="el" href="classParam.html">Param</a> XParam, int level, int &amp;nx, int &amp;ny)</td></tr>
+<tr class="memitem:a5666e1c5adffc97737e2d5f328d72972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a5666e1c5adffc97737e2d5f328d72972">Calcnxny</a> (<a class="el" href="classParam.html">Param</a> XParam, int <a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int &amp;<a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int &amp;ny)</td></tr>
 <tr class="separator:a5666e1c5adffc97737e2d5f328d72972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed751836e9ad26405798e1c7ce7aabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aeed751836e9ad26405798e1c7ce7aabf">Calcnxnyzone</a> (<a class="el" href="classParam.html">Param</a> XParam, int level, int &amp;nx, int &amp;ny, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:aeed751836e9ad26405798e1c7ce7aabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aeed751836e9ad26405798e1c7ce7aabf">Calcnxnyzone</a> (<a class="el" href="classParam.html">Param</a> XParam, int <a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int &amp;<a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int &amp;ny, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:aeed751836e9ad26405798e1c7ce7aabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8e8f5634a6db7ce2b80076c8cb10f8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aec8e8f5634a6db7ce2b80076c8cb10f8">Calcactiveblockzone</a> (<a class="el" href="classParam.html">Param</a> XParam, int *activeblk, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:aec8e8f5634a6db7ce2b80076c8cb10f8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aec8e8f5634a6db7ce2b80076c8cb10f8">Calcactiveblockzone</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:aec8e8f5634a6db7ce2b80076c8cb10f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#abca0f32949c20adb437f5ea902a054d2">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *activeblk, int *level, T *blockxo, T *blockyo, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
+<tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#abca0f32949c20adb437f5ea902a054d2">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
 <tr class="separator:abca0f32949c20adb437f5ea902a054d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aaa1a294b152d3b7e0a4de9b7891b2f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a4aaa1a294b152d3b7e0a4de9b7891b2f">creatncfileBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *activeblk, int *level, float *blockxo, float *blockyo, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
+<tr class="memitem:a4aaa1a294b152d3b7e0a4de9b7891b2f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a4aaa1a294b152d3b7e0a4de9b7891b2f">creatncfileBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
 <tr class="separator:a4aaa1a294b152d3b7e0a4de9b7891b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f70a1712e949e9b1719e6853176685"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a44f70a1712e949e9b1719e6853176685">creatncfileBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *activeblk, int *level, double *blockxo, double *blockyo, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
+<tr class="memitem:a44f70a1712e949e9b1719e6853176685"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a44f70a1712e949e9b1719e6853176685">creatncfileBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
 <tr class="separator:a44f70a1712e949e9b1719e6853176685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60de80f688bea9725528d5a62b9bae73"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a60de80f688bea9725528d5a62b9bae73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; &amp;XBlock)</td></tr>
@@ -133,21 +125,34 @@ Functions</h2></td></tr>
 <tr class="memitem:aacd4c5f98d2927f2ab87557b16fb9111"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aacd4c5f98d2927f2ab87557b16fb9111">creatncfileBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; &amp;XBlock)</td></tr>
 <tr class="separator:aacd4c5f98d2927f2ab87557b16fb9111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int *activeblk, int *level, T *blockxo, T *blockyo, std::string varst, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:a8dd381d7653068671c8411aa43e0d17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced8cfa4b8ee71be182959123fd47664"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aced8cfa4b8ee71be182959123fd47664">defncvarBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int *activeblk, int *level, float *blockxo, float *blockyo, std::string varst, int vdim, float *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:aa420122017ecc7bed646516cddf153b3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa420122017ecc7bed646516cddf153b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa420122017ecc7bed646516cddf153b3">defncvarBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, std::string longname, std::string stdname, std::string unit, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="separator:aa420122017ecc7bed646516cddf153b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced8cfa4b8ee71be182959123fd47664"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aced8cfa4b8ee71be182959123fd47664">defncvarBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, int vdim, float *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:aced8cfa4b8ee71be182959123fd47664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc56ada52ea91ecd21cf9b3d7752d9e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a1fc56ada52ea91ecd21cf9b3d7752d9e">defncvarBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int *activeblk, int *level, double *blockxo, double *blockyo, std::string varst, int vdim, double *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:a1fc56ada52ea91ecd21cf9b3d7752d9e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a1fc56ada52ea91ecd21cf9b3d7752d9e">defncvarBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, int vdim, double *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:a1fc56ada52ea91ecd21cf9b3d7752d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0c9281429ac6377708253ca8bedc66"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7e0c9281429ac6377708253ca8bedc66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a7e0c9281429ac6377708253ca8bedc66">defncvarBUQlev</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, std::string longname, std::string stdname, std::string unit, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="separator:a7e0c9281429ac6377708253ca8bedc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *activeblk, int *level, T *blockxo, T *blockyo, std::string varst, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:afcf742190cac3a9c04d966ad71c515ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86b264630059dfcb379c5a1ad7aa0dc3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a86b264630059dfcb379c5a1ad7aa0dc3">writencvarstepBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *activeblk, int *level, float *blockxo, float *blockyo, std::string varst, float *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:a86b264630059dfcb379c5a1ad7aa0dc3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a86b264630059dfcb379c5a1ad7aa0dc3">writencvarstepBUQ&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, float *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:a86b264630059dfcb379c5a1ad7aa0dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded28dfbc4eefb50b70a55158c5edb60"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aded28dfbc4eefb50b70a55158c5edb60">writencvarstepBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *activeblk, int *level, double *blockxo, double *blockyo, std::string varst, double *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:aded28dfbc4eefb50b70a55158c5edb60"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aded28dfbc4eefb50b70a55158c5edb60">writencvarstepBUQ&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, double *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:aded28dfbc4eefb50b70a55158c5edb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7baa2f1395758b42afb5ce020605abd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a7baa2f1395758b42afb5ce020605abd0">writenctimestep</a> (std::string outfile, double totaltime)</td></tr>
 <tr class="separator:a7baa2f1395758b42afb5ce020605abd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae033c4f8292065e848c5b16c46229596"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae033c4f8292065e848c5b16c46229596"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#ae033c4f8292065e848c5b16c46229596">writencvarstepBUQlev</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="separator:ae033c4f8292065e848c5b16c46229596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad7eeef41bae971145a3cace4d9e8b3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a5ad7eeef41bae971145a3cace4d9e8b3">writencvarstepBUQlev&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, float *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, float *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="separator:a5ad7eeef41bae971145a3cace4d9e8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa855390045fa6b057668256d9eca209f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa855390045fa6b057668256d9eca209f">writencvarstepBUQlev&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, double *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, double *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="separator:aa855390045fa6b057668256d9eca209f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4c8f75da0210b6762b38e005c2942"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a30a4c8f75da0210b6762b38e005c2942"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a30a4c8f75da0210b6762b38e005c2942">InitSave2Netcdf</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;XModel)</td></tr>
 <tr class="separator:a30a4c8f75da0210b6762b38e005c2942"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,13 +167,13 @@ Functions</h2></td></tr>
 <tr class="separator:a99774919b04e1b854a4a5b59b179274e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3f78cb2800953e5c6b120473c2a816"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#a8f3f78cb2800953e5c6b120473c2a816">Save2Netcdf&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; double &gt; XLoop, <a class="el" href="structModel.html">Model</a>&lt; double &gt; XModel)</td></tr>
 <tr class="separator:a8f3f78cb2800953e5c6b120473c2a816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aeed9da1a9c25e765c9c2588e44efcadd">create2dnc</a> (char *filename, int nx, int ny, double *xx, double *yy, double *var, char *varname)</td></tr>
+<tr class="memitem:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aeed9da1a9c25e765c9c2588e44efcadd">create2dnc</a> (char *filename, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *xx, double *yy, double *var, char *varname)</td></tr>
 <tr class="separator:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa7b7f1fe1864e3ad6d4bac1982e3a561">create3dnc</a> (char *name, int nx, int ny, int nt, double *xx, double *yy, double *theta, double *var, char *varname)</td></tr>
+<tr class="memitem:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa7b7f1fe1864e3ad6d4bac1982e3a561">create3dnc</a> (char *name, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int nt, double *xx, double *yy, double *theta, double *var, char *varname)</td></tr>
 <tr class="separator:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73c1b56cf74fcfb460986caca0df756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa73c1b56cf74fcfb460986caca0df756">write3dvarnc</a> (int nx, int ny, int nt, double totaltime, double *var)</td></tr>
+<tr class="memitem:aa73c1b56cf74fcfb460986caca0df756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#aa73c1b56cf74fcfb460986caca0df756">write3dvarnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int nt, double totaltime, double *var)</td></tr>
 <tr class="separator:aa73c1b56cf74fcfb460986caca0df756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#ae6f75b11a4428da84c143c0d1cad9f07">write2dvarnc</a> (int nx, int ny, double totaltime, double *var)</td></tr>
+<tr class="memitem:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8cu.html#ae6f75b11a4428da84c143c0d1cad9f07">write2dvarnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double totaltime, double *var)</td></tr>
 <tr class="separator:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -511,7 +516,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#af20d3d4ad30f91e9f2dc300e21ffbaef">creatncfileBUQ</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a> &amp;&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -539,7 +544,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#af20d3d4ad30f91e9f2dc300e21ffbaef">creatncfileBUQ</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a> &amp;&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -591,7 +596,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a>&lt; float &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#af20d3d4ad30f91e9f2dc300e21ffbaef">creatncfileBUQ</a>&lt; float &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a> &amp;&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -619,7 +624,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a>&lt; float &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#af20d3d4ad30f91e9f2dc300e21ffbaef">creatncfileBUQ</a>&lt; float &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a> &amp;&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -665,7 +670,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a8dd381d7653068671c8411aa43e0d17e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd381d7653068671c8411aa43e0d17e">&#9670;&nbsp;</a></span>defncvarBUQ()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd381d7653068671c8411aa43e0d17e">&#9670;&nbsp;</a></span>defncvarBUQ() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -736,6 +741,96 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="aa420122017ecc7bed646516cddf153b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa420122017ecc7bed646516cddf153b3">&#9670;&nbsp;</a></span>defncvarBUQ() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void defncvarBUQ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>activeblk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockxo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockyo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>longname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>stdname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vdim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoutzoneB.html">outzoneB</a>&#160;</td>
+          <td class="paramname"><em>Xzone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1fc56ada52ea91ecd21cf9b3d7752d9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fc56ada52ea91ecd21cf9b3d7752d9e">&#9670;&nbsp;</a></span>defncvarBUQ&lt; double &gt;()</h2>
 
@@ -743,7 +838,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#ab9aad2f31240074a31a73bcaceb7cb6d">defncvarBUQ</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -813,7 +908,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a>&lt; float &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#ab9aad2f31240074a31a73bcaceb7cb6d">defncvarBUQ</a>&lt; float &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -858,6 +953,96 @@ template&lt;class T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoutzoneB.html">outzoneB</a>&#160;</td>
+          <td class="paramname"><em>Xzone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e0c9281429ac6377708253ca8bedc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0c9281429ac6377708253ca8bedc66">&#9670;&nbsp;</a></span>defncvarBUQlev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void defncvarBUQlev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>activeblk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockxo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockyo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>longname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>stdname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vdim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>var</em>, </td>
         </tr>
         <tr>
@@ -1277,7 +1462,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a>&lt; double &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#a1ea3c3adf854e11d5d0e2bd4516dbc8a">writencvarstepBUQ</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -1347,7 +1532,219 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="Write__netcdf_8h.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a>&lt; float &gt; </td>
+          <td class="memname">template void <a class="el" href="write__output_8cu.html#a1ea3c3adf854e11d5d0e2bd4516dbc8a">writencvarstepBUQ</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vdim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>activeblk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>blockxo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>blockyo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoutzoneB.html">outzoneB</a>&#160;</td>
+          <td class="paramname"><em>Xzone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae033c4f8292065e848c5b16c46229596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae033c4f8292065e848c5b16c46229596">&#9670;&nbsp;</a></span>writencvarstepBUQlev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void writencvarstepBUQlev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vdim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>activeblk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockxo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>blockyo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoutzoneB.html">outzoneB</a>&#160;</td>
+          <td class="paramname"><em>Xzone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa855390045fa6b057668256d9eca209f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa855390045fa6b057668256d9eca209f">&#9670;&nbsp;</a></span>writencvarstepBUQlev&lt; double &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="Write__netcdf_8cu.html#ae033c4f8292065e848c5b16c46229596">writencvarstepBUQlev</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vdim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>activeblk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>blockxo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>blockyo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoutzoneB.html">outzoneB</a>&#160;</td>
+          <td class="paramname"><em>Xzone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ad7eeef41bae971145a3cace4d9e8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad7eeef41bae971145a3cace4d9e8b3">&#9670;&nbsp;</a></span>writencvarstepBUQlev&lt; float &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="Write__netcdf_8cu.html#ae033c4f8292065e848c5b16c46229596">writencvarstepBUQlev</a>&lt; float &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -1416,7 +1813,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Write__netcdf_8cu.html">Write_netcdf.cu</a></li>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:16 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -120,6 +112,14 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="InitialConditions_8cu.html#a263be1815f9718565688c7df2e501586">InitialConditions.cu</a>
 , <a class="el" href="InitialConditions_8h.html#a263be1815f9718565688c7df2e501586">InitialConditions.h</a>
 </li>
+<li>calcCM()
+: <a class="el" href="Spherical_8cu.html#aa51d79491639eba3f8f5a31f8eeb7727">Spherical.cu</a>
+, <a class="el" href="Spherical_8h.html#ad0868522ecbe833e500779344c891b2a">Spherical.h</a>
+</li>
+<li>calcFM()
+: <a class="el" href="Spherical_8cu.html#a666d2d611d7884e7376e09b68e7f62ee">Spherical.cu</a>
+, <a class="el" href="Spherical_8h.html#a666d2d611d7884e7376e09b68e7f62ee">Spherical.h</a>
+</li>
 <li>CalcInitdtCPU()
 : <a class="el" href="Mainloop_8cu.html#a611007c28bcf818496049abd9d27cda8">Mainloop.cu</a>
 </li>
@@ -140,6 +140,9 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>CalcMaskblk&lt; float &gt;()
 : <a class="el" href="Mesh_8cu.html#aebed890c30a76b55094294783f3e5c3f">Mesh.cu</a>
 </li>
+<li>Calcmaxdt()
+: <a class="el" href="Init__gpu_8cu.html#a869495c03e9e369abc11611ebcd4f519">Init_gpu.cu</a>
+</li>
 <li>Calcmeanmax()
 : <a class="el" href="Meanmax_8cu.html#aeeb03efb686aa02b2b59670dca759abe">Meanmax.cu</a>
 , <a class="el" href="Meanmax_8h.html#aeeb03efb686aa02b2b59670dca759abe">Meanmax.h</a>
@@ -157,7 +160,8 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="Write__netcdf_8cu.html#aeed751836e9ad26405798e1c7ce7aabf">Write_netcdf.cu</a>
 </li>
 <li>calcres()
-: <a class="el" href="Util__CPU_8cu.html#a362bab91663dd793a0dc1fed7bf7ac27">Util_CPU.cu</a>
+: <a class="el" href="Adapt__gpu_8cu.html#a4ee4c272583d418989a8eadf455321e7">Adapt_gpu.cu</a>
+, <a class="el" href="Util__CPU_8cu.html#a362bab91663dd793a0dc1fed7bf7ac27">Util_CPU.cu</a>
 , <a class="el" href="Util__CPU_8h.html#a362bab91663dd793a0dc1fed7bf7ac27">Util_CPU.h</a>
 </li>
 <li>calcres&lt; double &gt;()
@@ -186,12 +190,175 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>CalctimestepGPU&lt; float &gt;()
 : <a class="el" href="Advection_8cu.html#ac4caf95bcf0421f51e3a02c281743730">Advection.cu</a>
 </li>
+<li>CalcVort()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a0f14b51e20a76d272f239cf1b753084a">Bas_Cart_CPU.cpp</a>
+</li>
+<li>CalcVortD()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a489112ce9e8bdbbbd0faa2a52b346f6a">Bas_Cart_CPU.cpp</a>
+</li>
+<li>CalcVorticity()
+: <a class="el" href="Flow__kernel_8cu.html#aeca5d0489610d7fbbc47a6a83193d397">Flow_kernel.cu</a>
+</li>
+<li>CAPTURE
+: <a class="el" href="catch_8hpp.html#a88df55a964a20b22fec4d74235ed7651">catch.hpp</a>
+</li>
+<li>carttoBUQ()
+: <a class="el" href="Init_8cpp.html#aa25ce26cc662d987cf86fe54e0fd4820">Init.cpp</a>
+</li>
 <li>case_insensitive_compare()
 : <a class="el" href="ReadInput_8cu.html#aa1d5d87b815650c5b765af942c77f93e">ReadInput.cu</a>
 , <a class="el" href="ReadInput_8h.html#aa1d5d87b815650c5b765af942c77f93e">ReadInput.h</a>
 </li>
+<li>CATCH_CONFIG_COUNTER
+: <a class="el" href="catch_8hpp.html#aa70cff16ca513ff81704961bed5e01b0">catch.hpp</a>
+</li>
+<li>CATCH_CONFIG_CPP11_TO_STRING
+: <a class="el" href="catch_8hpp.html#a5e8669f07e3db1e9e1604508689bc28a">catch.hpp</a>
+</li>
+<li>CATCH_CONFIG_POSIX_SIGNALS
+: <a class="el" href="catch_8hpp.html#ac5eee4f90512985d2043f971c6f08707">catch.hpp</a>
+</li>
+<li>CATCH_CONFIG_RUNNER
+: <a class="el" href="catch__main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902">catch_main.cpp</a>
+</li>
+<li>CATCH_CONFIG_WCHAR
+: <a class="el" href="catch_8hpp.html#ac6675f48ca221c1b9124ea02fe88324b">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_CONFIG_COUNTER
+: <a class="el" href="catch_8hpp.html#a18b42ab8d6d1efdf417f97e5474dc450">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_CONFIG_POSIX_SIGNALS
+: <a class="el" href="catch_8hpp.html#a3c8d4b828da004fc3ad2511c1900ec19">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_LINEINFO
+: <a class="el" href="catch_8hpp.html#abc0b2405454c51748a31e0393d9ad5d1">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_STRINGIFY
+: <a class="el" href="catch_8hpp.html#ab6dc42a98c8854e2e1d91874b1fe406c">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS
+: <a class="el" href="catch_8hpp.html#aa0200c23b35ba2bd8ebed69a8f3c1c66">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS
+: <a class="el" href="catch_8hpp.html#a89c1608a68775aca1bb7c265f7ba923a">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS
+: <a class="el" href="catch_8hpp.html#a828d81ce73c46941460c92ecbd7b8fc2">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS
+: <a class="el" href="catch_8hpp.html#a957c9af2b374bd675e191cf3fd114f3f">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS
+: <a class="el" href="catch_8hpp.html#aec1f55c22f26366aaad1467206352792">catch.hpp</a>
+</li>
+<li>CATCH_INTERNAL_UNSUPPRESS_UNUSED_WARNINGS
+: <a class="el" href="catch_8hpp.html#aaeeb989308b3a06e021d98af54f669c1">catch.hpp</a>
+</li>
+<li>CATCH_REGISTER_TAG_ALIAS
+: <a class="el" href="catch_8hpp.html#af7f9d4a12274e1ccf4b1021e5d35e0c5">catch.hpp</a>
+</li>
+<li>CATCH_TRANSLATE_EXCEPTION
+: <a class="el" href="catch_8hpp.html#a094602ff56422c96e501eaaef1ef8c12">catch.hpp</a>
+</li>
+<li>CATCH_VERSION_MAJOR
+: <a class="el" href="catch_8hpp.html#aed4b3022e5b389a59ee3e1633c0a70a8">catch.hpp</a>
+</li>
+<li>CATCH_VERSION_MINOR
+: <a class="el" href="catch_8hpp.html#a7c36daa8f2e725fe5e1ff2a9c2559d4f">catch.hpp</a>
+</li>
+<li>CATCH_VERSION_PATCH
+: <a class="el" href="catch_8hpp.html#ab6adfb1d16a244d790dc1fe385831a52">catch.hpp</a>
+</li>
+<li>cf
+: <a class="el" href="BasCart__gpu_8cu.html#a4cf8b9e9f171cb1f81a0ad939e07e8b1">BasCart_gpu.cu</a>
+</li>
+<li>cf_d
+: <a class="el" href="BasCart__gpu_8cu.html#ad6988a12ee30a04ece357b1b260338be">BasCart_gpu.cu</a>
+</li>
+<li>cf_g
+: <a class="el" href="BasCart__gpu_8cu.html#adb6c80dec2f86a74b0fe083585a27d03">BasCart_gpu.cu</a>
+</li>
+<li>cf_gd
+: <a class="el" href="BasCart__gpu_8cu.html#a8f49b23a4bc427ce1299bad95efe64e6">BasCart_gpu.cu</a>
+</li>
+<li>channelDescbotbnduu
+: <a class="el" href="BasCart__gpu_8cu.html#a2fd01d00f2ac9856dedc48ebaaec60e4">BasCart_gpu.cu</a>
+</li>
+<li>channelDescbotbndvv
+: <a class="el" href="BasCart__gpu_8cu.html#ae0da4f708391a524bb12be4af4b7e367">BasCart_gpu.cu</a>
+</li>
+<li>channelDescbotbndzs
+: <a class="el" href="BasCart__gpu_8cu.html#a46e1b8b989a81817a84c3e984c490ffa">BasCart_gpu.cu</a>
+</li>
+<li>channelDescleftbnduu
+: <a class="el" href="BasCart__gpu_8cu.html#a73f9ed05d3d648310625b0f9c3d4f8ad">BasCart_gpu.cu</a>
+</li>
+<li>channelDescleftbndvv
+: <a class="el" href="BasCart__gpu_8cu.html#aaff5b2787448819b216e7e3340ef5a0a">BasCart_gpu.cu</a>
+</li>
+<li>channelDescleftbndzs
+: <a class="el" href="BasCart__gpu_8cu.html#a80c70ca8a4ca774a4d5cc70932ad4681">BasCart_gpu.cu</a>
+</li>
+<li>channelDescPatm
+: <a class="el" href="BasCart__gpu_8cu.html#a34fc087368bf4198214c01bee48688db">BasCart_gpu.cu</a>
+</li>
+<li>channelDescRain
+: <a class="el" href="BasCart__gpu_8cu.html#a72d66193f276e3b5ea1bf4577280d56a">BasCart_gpu.cu</a>
+</li>
+<li>channelDescrightbnduu
+: <a class="el" href="BasCart__gpu_8cu.html#ae07db18cc41a33592f92e039c1afbadf">BasCart_gpu.cu</a>
+</li>
+<li>channelDescrightbndvv
+: <a class="el" href="BasCart__gpu_8cu.html#a046555d8e390494e9cb2192f0f236213">BasCart_gpu.cu</a>
+</li>
+<li>channelDescrightbndzs
+: <a class="el" href="BasCart__gpu_8cu.html#a64683bb3615cbd3f72969b53c9278e2e">BasCart_gpu.cu</a>
+</li>
+<li>channelDesctopbnduu
+: <a class="el" href="BasCart__gpu_8cu.html#a5854abf96b48f917afa90ed505c3ab2f">BasCart_gpu.cu</a>
+</li>
+<li>channelDesctopbndvv
+: <a class="el" href="BasCart__gpu_8cu.html#ae6019772c6d3bfdd762fb46b29cff2f1">BasCart_gpu.cu</a>
+</li>
+<li>channelDesctopbndzs
+: <a class="el" href="BasCart__gpu_8cu.html#a92bfe92ae38556d36893ec972df3c842">BasCart_gpu.cu</a>
+</li>
+<li>channelDescUwind
+: <a class="el" href="BasCart__gpu_8cu.html#a819f444a75f1d0dff69a42b5ba4412d1">BasCart_gpu.cu</a>
+</li>
+<li>channelDescVwind
+: <a class="el" href="BasCart__gpu_8cu.html#a4b8bc96296844b87c20534df63b85aa1">BasCart_gpu.cu</a>
+</li>
+<li>CHECK
+: <a class="el" href="catch_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">catch.hpp</a>
+</li>
+<li>CHECK_FALSE
+: <a class="el" href="catch_8hpp.html#a7bf095d8512cb180f8ff3a2258a6eaac">catch.hpp</a>
+</li>
+<li>CHECK_NOFAIL
+: <a class="el" href="catch_8hpp.html#a13c6feaf82c3c419104c50dbb8caa3ef">catch.hpp</a>
+</li>
+<li>CHECK_NOTHROW
+: <a class="el" href="catch_8hpp.html#a78e70f011f20c4ade1d1ac2b8fd33626">catch.hpp</a>
+</li>
+<li>CHECK_THAT
+: <a class="el" href="catch_8hpp.html#a5b8c33c63e0804d4458e2c761370b75d">catch.hpp</a>
+</li>
+<li>CHECK_THROWS
+: <a class="el" href="catch_8hpp.html#a5c646dfe831e596b59073014c1c8b9e5">catch.hpp</a>
+</li>
+<li>CHECK_THROWS_AS
+: <a class="el" href="catch_8hpp.html#a1fb6439098d2a12bb69188034e03baf2">catch.hpp</a>
+</li>
+<li>CHECK_THROWS_MATCHES
+: <a class="el" href="catch_8hpp.html#a74fcc14d39e8cc35ff39f69c5b60e375">catch.hpp</a>
+</li>
+<li>CHECK_THROWS_WITH
+: <a class="el" href="catch_8hpp.html#a4903733490f526b58053836575e99066">catch.hpp</a>
+</li>
 <li>checkBUQsanity()
-: <a class="el" href="Adaptation_8cu.html#a9d0e0b083fad78cda118c0b558b37964">Adaptation.cu</a>
+: <a class="el" href="Adapt__gpu_8cu.html#a55ecbd5197b2ed6f6c7e02b6add95ea4">Adapt_gpu.cu</a>
+, <a class="el" href="Adaptation_8cu.html#a9d0e0b083fad78cda118c0b558b37964">Adaptation.cu</a>
 , <a class="el" href="Adaptation_8h.html#a9d0e0b083fad78cda118c0b558b37964">Adaptation.h</a>
 </li>
 <li>checkBUQsanity&lt; double &gt;()
@@ -199,6 +366,15 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 </li>
 <li>checkBUQsanity&lt; float &gt;()
 : <a class="el" href="Adaptation_8cu.html#adc47067fd3ca2e493bce74d07e1d18cb">Adaptation.cu</a>
+</li>
+<li>CHECKED_ELSE
+: <a class="el" href="catch_8hpp.html#a5fa42bb950a65e22eac778c86b27d832">catch.hpp</a>
+</li>
+<li>CHECKED_IF
+: <a class="el" href="catch_8hpp.html#a354466c7b989ec55784c02d74013263c">catch.hpp</a>
+</li>
+<li>checkGradGPU()
+: <a class="el" href="Init__gpu_8cu.html#a6cb00d3c9a40fbb984c596a103314868">Init_gpu.cu</a>
 </li>
 <li>checklevel()
 : <a class="el" href="Adaptation_8cu.html#a0007c0c0d1bb030245da864af4e0efba">Adaptation.cu</a>
@@ -217,12 +393,16 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 , <a class="el" href="Adaptation_8h.html#afc64c434be889b2f7ac88ecc31c36d71">Adaptation.h</a>
 </li>
 <li>checkparamsanity()
-: <a class="el" href="ReadInput_8cu.html#ab913afa4b352bb9875bb4ec72521a193">ReadInput.cu</a>
+: <a class="el" href="read__input_8cpp.html#a12fc420a37ce40c8ffba36c33490acf7">read_input.cpp</a>
+, <a class="el" href="ReadInput_8cu.html#ab913afa4b352bb9875bb4ec72521a193">ReadInput.cu</a>
 , <a class="el" href="ReadInput_8h.html#ab913afa4b352bb9875bb4ec72521a193">ReadInput.h</a>
 </li>
 <li>clampedges()
 : <a class="el" href="ReadForcing_8cu.html#a0339053c220ea024214ab1c9b72cf8ce">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a0339053c220ea024214ab1c9b72cf8ce">ReadForcing.h</a>
+</li>
+<li>cleanup()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#af3061d825e7bcc9e67e1894d445be038">Bas_Cart_CPU.cpp</a>
 </li>
 <li>cleanupCPU()
 : <a class="el" href="Advection_8cu.html#a9be3aa5a2118186d643ef7fb1a5537ef">Advection.cu</a>
@@ -235,7 +415,8 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="Advection_8cu.html#ab52c6ea1f923ca4fad7c954424b40e7f">Advection.cu</a>
 </li>
 <li>cleanupGPU()
-: <a class="el" href="Advection_8cu.html#a941d4899cc65d8391e9f63677594cb17">Advection.cu</a>
+: <a class="el" href="Flow__kernel_8cu.html#ad22880d8e976f3ab5370bacbf25a12ae">Flow_kernel.cu</a>
+, <a class="el" href="Advection_8cu.html#a941d4899cc65d8391e9f63677594cb17">Advection.cu</a>
 , <a class="el" href="Advection_8h.html#a941d4899cc65d8391e9f63677594cb17">Advection.h</a>
 </li>
 <li>cleanupGPU&lt; double &gt;()
@@ -247,8 +428,9 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>cn_PnPoly()
 : <a class="el" href="Poly_8cu.html#ac33dfb106e791cf74e166cde5a52e876">Poly.cu</a>
 </li>
-<li>coarsen()
-: <a class="el" href="Adaptation_8cu.html#a05519ab2f26cb6f0735c4a46949a12c8">Adaptation.cu</a>
+<li>coarsen
+: <a class="el" href="BasCart__gpu_8cu.html#a5ec38f75f3b20ff4fd93ae0a6cffb968">BasCart_gpu.cu</a>
+, <a class="el" href="Adaptation_8cu.html#a05519ab2f26cb6f0735c4a46949a12c8">Adaptation.cu</a>
 , <a class="el" href="Adaptation_8h.html#a05519ab2f26cb6f0735c4a46949a12c8">Adaptation.h</a>
 </li>
 <li>coarsen&lt; double &gt;()
@@ -258,7 +440,8 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="Adaptation_8cu.html#a93f57f713e135bcbed06165cc8676613">Adaptation.cu</a>
 </li>
 <li>coldstart()
-: <a class="el" href="InitEvolv_8cu.html#addab31c7158e0a9a5cef70d38616be3a">InitEvolv.cu</a>
+: <a class="el" href="Init_8cpp.html#a71f7c013c05fe21538ddc37942b03506">Init.cpp</a>
+, <a class="el" href="InitEvolv_8cu.html#addab31c7158e0a9a5cef70d38616be3a">InitEvolv.cu</a>
 , <a class="el" href="InitEvolv_8h.html#addab31c7158e0a9a5cef70d38616be3a">InitEvolv.h</a>
 </li>
 <li>CompareCPUvsGPU()
@@ -365,6 +548,9 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>Copy2CartCPU&lt; int &gt;()
 : <a class="el" href="GridManip_8cu.html#ac999f982b339b3045e912eeac4e287e3">GridManip.cu</a>
 </li>
+<li>CopyArray()
+: <a class="el" href="Init_8cpp.html#a37d46245802f81ab14d3d540d01762aa">Init.cpp</a>
+</li>
 <li>CopyArrayBUQ()
 : <a class="el" href="GridManip_8cu.html#a401030b3e187ee3c25536445ed9274e5">GridManip.cu</a>
 , <a class="el" href="GridManip_8h.html#a401030b3e187ee3c25536445ed9274e5">GridManip.h</a>
@@ -462,7 +648,9 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 : <a class="el" href="Mainloop_8cu.html#aaebf310e4c9ed1bda8f6af3d2b453760">Mainloop.cu</a>
 </li>
 <li>create2dnc()
-: <a class="el" href="Write__netcdf_8cu.html#aeed9da1a9c25e765c9c2588e44efcadd">Write_netcdf.cu</a>
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#ab0fac181996b52ecc349658e21380d6d">Bas_Cart_CPU.cpp</a>
+, <a class="el" href="Tutorial__Cart_8c.html#ad11882f24a203acac059c7f10fe2d8f7">Tutorial_Cart.c</a>
+, <a class="el" href="Write__netcdf_8cu.html#aeed9da1a9c25e765c9c2588e44efcadd">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#aeed9da1a9c25e765c9c2588e44efcadd">Write_netcdf.h</a>
 </li>
 <li>create3dnc()
@@ -476,6 +664,7 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>creatncfileBUQ()
 : <a class="el" href="Write__netcdf_8cu.html#abca0f32949c20adb437f5ea902a054d2">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#abca0f32949c20adb437f5ea902a054d2">Write_netcdf.h</a>
+, <a class="el" href="write__output_8cu.html#af20d3d4ad30f91e9f2dc300e21ffbaef">write_output.cu</a>
 </li>
 <li>creatncfileBUQ&lt; double &gt;()
 : <a class="el" href="Write__netcdf_8cu.html#a44f70a1712e949e9b1719e6853176685">Write_netcdf.cu</a>
@@ -483,8 +672,21 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <li>creatncfileBUQ&lt; float &gt;()
 : <a class="el" href="Write__netcdf_8cu.html#a4aaa1a294b152d3b7e0a4de9b7891b2f">Write_netcdf.cu</a>
 </li>
+<li>creatncfileBUQO()
+: <a class="el" href="write__output_8cu.html#af5aee0f41577c74e3a94b97da419c8f9">write_output.cu</a>
+</li>
+<li>creatncfileUD()
+: <a class="el" href="write__output_8cu.html#a56e2b629b229164629004b0d29526815">write_output.cu</a>
+</li>
+<li>csumblk
+: <a class="el" href="BasCart__gpu_8cu.html#aa82cec810ca524c34d36f9e0d4262912">BasCart_gpu.cu</a>
+</li>
+<li>csumblk_g
+: <a class="el" href="BasCart__gpu_8cu.html#a5f7a0f6a92abcc559b87c8f0360527eb">BasCart_gpu.cu</a>
+</li>
 <li>CUDA_CHECK()
-: <a class="el" href="Setup__GPU_8cu.html#ad5350c1bad78cfddfe406feecf8ba428">Setup_GPU.cu</a>
+: <a class="el" href="Init__gpu_8cu.html#ad5350c1bad78cfddfe406feecf8ba428">Init_gpu.cu</a>
+, <a class="el" href="Setup__GPU_8cu.html#ad5350c1bad78cfddfe406feecf8ba428">Setup_GPU.cu</a>
 , <a class="el" href="Setup__GPU_8h.html#ad5350c1bad78cfddfe406feecf8ba428">Setup_GPU.h</a>
 </li>
 </ul>
@@ -493,7 +695,7 @@ $(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

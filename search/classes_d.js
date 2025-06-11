@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['texsetp_1317',['TexSetP',['../structTexSetP.html',1,'']]],
-  ['timep_1318',['TimeP',['../structTimeP.html',1,'']]],
-  ['tsoutnode_1319',['TSoutnode',['../classTSoutnode.html',1,'']]]
+  ['regexmatcher_3079',['RegexMatcher',['../structCatch_1_1Matchers_1_1StdString_1_1RegexMatcher.html',1,'Catch::Matchers::StdString']]],
+  ['registrarfortagaliases_3080',['RegistrarForTagAliases',['../structCatch_1_1RegistrarForTagAliases.html',1,'Catch']]],
+  ['resultdisposition_3081',['ResultDisposition',['../structCatch_1_1ResultDisposition.html',1,'Catch']]],
+  ['resultwas_3082',['ResultWas',['../structCatch_1_1ResultWas.html',1,'Catch']]],
+  ['reusablestringstream_3083',['ReusableStringStream',['../classCatch_1_1ReusableStringStream.html',1,'Catch']]],
+  ['river_3084',['River',['../classRiver.html',1,'']]]
 ];

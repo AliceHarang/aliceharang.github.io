@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -96,6 +88,15 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 &#160;
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>update()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a1e5e7abaf14e16117488b5fbca2c8e7f">Bas_Cart_CPU.cpp</a>
+</li>
+<li>update_spherical()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#ae26215ea2b4889bbc241728c26c943f4">Bas_Cart_CPU.cpp</a>
+</li>
+<li>updateATM()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a9daeee347337ce9cff417ea48f3ecee6">Bas_Cart_CPU.cpp</a>
+</li>
 <li>updateBnd()
 : <a class="el" href="Mainloop_8cu.html#a5d44ee2fd1fddf77e67cfc581452ea14">Mainloop.cu</a>
 </li>
@@ -115,6 +116,18 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 : <a class="el" href="Reimann_8cu.html#a1d507adfb58f284de7e7e4ad10065d81">Reimann.cu</a>
 , <a class="el" href="Reimann_8h.html#a74d9e88f683b468fd5ddddf12a293621">Reimann.h</a>
 </li>
+<li>updateD()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a97759420c2819ba6b485385e38641277">Bas_Cart_CPU.cpp</a>
+</li>
+<li>updateEV()
+: <a class="el" href="Flow__kernel_8cu.html#ad0c10f876992743da7277eb193b3af20">Flow_kernel.cu</a>
+</li>
+<li>updateEVATM()
+: <a class="el" href="Flow__kernel_8cu.html#a739b06c35da9923d6a63bcb3c59a6c44">Flow_kernel.cu</a>
+</li>
+<li>updateEVATMWUNI()
+: <a class="el" href="Flow__kernel_8cu.html#adbcf338be71f2bc4d156d3594b750984">Flow_kernel.cu</a>
+</li>
 <li>updateEVCPU()
 : <a class="el" href="Advection_8cu.html#af94d0f7643a2981eb091f218a38f9330">Advection.cu</a>
 , <a class="el" href="Advection_8h.html#af94d0f7643a2981eb091f218a38f9330">Advection.h</a>
@@ -124,6 +137,9 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 </li>
 <li>updateEVCPU&lt; float &gt;()
 : <a class="el" href="Advection_8cu.html#a3231349a042559c6a9c931515977f14d">Advection.cu</a>
+</li>
+<li>updateEVD()
+: <a class="el" href="Flow__kernel_8cu.html#a7538e1225faa7eb2d15114ed0852e825">Flow_kernel.cu</a>
 </li>
 <li>updateEVGPU()
 : <a class="el" href="Advection_8cu.html#ab3f5933801a01465b05b309ebf5cce1f">Advection.cu</a>
@@ -135,6 +151,15 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 <li>updateEVGPU&lt; float &gt;()
 : <a class="el" href="Advection_8cu.html#acb17d8f849376d3bf5ba4aec4b26525b">Advection.cu</a>
 </li>
+<li>updateEVSPH()
+: <a class="el" href="Flow__kernel_8cu.html#ae4b82f0de738dfdc8bf4c8cff02aee17">Flow_kernel.cu</a>
+</li>
+<li>updateEVSPHATM()
+: <a class="el" href="Flow__kernel_8cu.html#a5c210590a58a2b4b7e7f97510fe1a049">Flow_kernel.cu</a>
+</li>
+<li>updateEVSPHATMUNI()
+: <a class="el" href="Flow__kernel_8cu.html#ae9d412461356e8959b5c597e82137f75">Flow_kernel.cu</a>
+</li>
 <li>updateforcing()
 : <a class="el" href="Updateforcing_8cu.html#a0705de14eb2d66a5da26fd5894f8985f">Updateforcing.cu</a>
 , <a class="el" href="Updateforcing_8h.html#a0705de14eb2d66a5da26fd5894f8985f">Updateforcing.h</a>
@@ -144,6 +169,12 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 </li>
 <li>updateforcing&lt; float &gt;()
 : <a class="el" href="Updateforcing_8cu.html#aced8d302d8a53a4bd40dbd9131c204aa">Updateforcing.cu</a>
+</li>
+<li>updateKurgX()
+: <a class="el" href="Flow__kernel_8cu.html#a3d577ae35046d0b17505305fea78f9d7">Flow_kernel.cu</a>
+</li>
+<li>updateKurgXATM()
+: <a class="el" href="Flow__kernel_8cu.html#a14c17bc092665c8e1917f9a5afcad1a9">Flow_kernel.cu</a>
 </li>
 <li>updateKurgXATMCPU()
 : <a class="el" href="Kurganov_8cu.html#a0aa834064cd1e976021105883f96eada">Kurganov.cu</a>
@@ -175,6 +206,9 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 <li>updateKurgXCPU&lt; float &gt;()
 : <a class="el" href="Kurganov_8cu.html#af60de0e58d873a13bc608a1a71d3a427">Kurganov.cu</a>
 </li>
+<li>updateKurgXD()
+: <a class="el" href="Flow__kernel_8cu.html#a394ac01a0c28fbb1d0b1cc6e28b03550">Flow_kernel.cu</a>
+</li>
 <li>updateKurgXGPU()
 : <a class="el" href="Kurganov_8cu.html#a20767ce17df3140032c4351bf3a6c70a">Kurganov.cu</a>
 , <a class="el" href="Kurganov_8h.html#a20767ce17df3140032c4351bf3a6c70a">Kurganov.h</a>
@@ -184,6 +218,18 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 </li>
 <li>updateKurgXGPU&lt; float &gt;()
 : <a class="el" href="Kurganov_8cu.html#af71f1ce5de5901ec37da678474408636">Kurganov.cu</a>
+</li>
+<li>updateKurgXSPH()
+: <a class="el" href="Flow__kernel_8cu.html#acdda6c11f1885ad4657b81d12af1ec61">Flow_kernel.cu</a>
+</li>
+<li>updateKurgXSPHATM()
+: <a class="el" href="Flow__kernel_8cu.html#a057dfcbbec869923b18cba36bbee1f61">Flow_kernel.cu</a>
+</li>
+<li>updateKurgY()
+: <a class="el" href="Flow__kernel_8cu.html#af728bb33047ae84c630f592f524c909a">Flow_kernel.cu</a>
+</li>
+<li>updateKurgYATM()
+: <a class="el" href="Flow__kernel_8cu.html#a3e45c5bfb7da47ff740c5af70eaa0be0">Flow_kernel.cu</a>
 </li>
 <li>updateKurgYATMCPU()
 : <a class="el" href="Kurganov_8cu.html#a50bdce3a23fd5e41e66db7e9f3e99273">Kurganov.cu</a>
@@ -215,6 +261,9 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 <li>updateKurgYCPU&lt; float &gt;()
 : <a class="el" href="Kurganov_8cu.html#a2d29dcf666fedfac4457b25ea2475136">Kurganov.cu</a>
 </li>
+<li>updateKurgYD()
+: <a class="el" href="Flow__kernel_8cu.html#a1d828f0834342d44c31e6edce23b1f41">Flow_kernel.cu</a>
+</li>
 <li>updateKurgYGPU()
 : <a class="el" href="Kurganov_8cu.html#af420c712657be784e212c54c1265dcde">Kurganov.cu</a>
 , <a class="el" href="Kurganov_8h.html#af420c712657be784e212c54c1265dcde">Kurganov.h</a>
@@ -225,13 +274,22 @@ $(document).ready(function(){initNavTree('globals_func_u.html',''); initResizabl
 <li>updateKurgYGPU&lt; float &gt;()
 : <a class="el" href="Kurganov_8cu.html#aa88c3515fe09969ef2c2db065d3c3a04">Kurganov.cu</a>
 </li>
+<li>updateKurgYSPH()
+: <a class="el" href="Flow__kernel_8cu.html#a4d1b1f8f11b1973f7d319f053d73729b">Flow_kernel.cu</a>
+</li>
+<li>updateKurgYSPHATM()
+: <a class="el" href="Flow__kernel_8cu.html#af07eadcdaa11ff913c1174fbc1acb314">Flow_kernel.cu</a>
+</li>
+<li>uvcorr()
+: <a class="el" href="Flow__kernel_8cu.html#aa0521865e4623ae46f74dde0b73e8a3b">Flow_kernel.cu</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

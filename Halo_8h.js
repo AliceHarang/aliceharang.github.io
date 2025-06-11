@@ -1,5 +1,6 @@
 var Halo_8h =
 [
+    [ "bndmaskGPU", "Halo_8h.html#ad8656ca08616abdeb043f622de7243fd", null ],
     [ "fillBot", "Halo_8h.html#af9678ea06bf2f69ed3152b64f8deffca", null ],
     [ "fillBot", "Halo_8h.html#a671352fcb2eaaa2d4207ff07c9e8f852", null ],
     [ "fillBotnew", "Halo_8h.html#a2fc4bb8d813f6515dea868a5d2d36f68", null ],
@@ -34,7 +35,9 @@ var Halo_8h =
     [ "fillTopFlux", "Halo_8h.html#a9af9c1a41440ff037441b0cea28bcbaf", null ],
     [ "fillTopnew", "Halo_8h.html#a67e1c95744d12c9baf5767e34767d4d4", null ],
     [ "HaloFluxGPUBT", "Halo_8h.html#a0c0b81d1c956a11c4025491946f90010", null ],
+    [ "HaloFluxGPUBTnew", "Halo_8h.html#a5ddd71e988ae7200bfd409d5d9d81921", null ],
     [ "HaloFluxGPULR", "Halo_8h.html#a82e672706036bc5b4e87cd2b739f9609", null ],
+    [ "HaloFluxGPULRnew", "Halo_8h.html#a9178199ff5e46ef9a5fee4241b8e235e", null ],
     [ "Recalculatehh", "Halo_8h.html#a9fd24940e7422244beb1290eee7e01d2", null ],
     [ "RecalculateZs", "Halo_8h.html#af0f36c2211a044c4891c7fafc9d1b02f", null ],
     [ "RecalculateZsGPU", "Halo_8h.html#a5ffb16dded1af0f0b9243601ee29db92", null ],

@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -147,11 +139,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a4eeb0564db7786844d7a71ca36d463ff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a4eeb0564db7786844d7a71ca36d463ff">CPUGPUtest</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
 <tr class="separator:a4eeb0564db7786844d7a71ca36d463ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8622ffcab39fee02cae7640afdb939"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8a8622ffcab39fee02cae7640afdb939"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a8a8622ffcab39fee02cae7640afdb939">ValleyBathy</a> (T x, T y, T slope, T center)</td></tr>
+<tr class="memitem:a8a8622ffcab39fee02cae7640afdb939"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a8a8622ffcab39fee02cae7640afdb939">ValleyBathy</a> (T <a class="el" href="BasCart__gpu_8cu.html#a711aad4cbe735871dd9e91ab575c878b">x</a>, T <a class="el" href="BasCart__gpu_8cu.html#a1bdc6b1159d4f196943bb647cb631e87">y</a>, T slope, T center)</td></tr>
 <tr class="memdesc:a8a8622ffcab39fee02cae7640afdb939"><td class="mdescLeft">&#160;</td><td class="mdescRight">create V shape Valley basin  <a href="Testing_8cu.html#a8a8622ffcab39fee02cae7640afdb939">More...</a><br /></td></tr>
 <tr class="separator:a8a8622ffcab39fee02cae7640afdb939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104edf84a62f0b9fe895a48abbc1d3bc"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a104edf84a62f0b9fe895a48abbc1d3bc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a104edf84a62f0b9fe895a48abbc1d3bc">ThackerBathy</a> (T x, T y, T L, T D)</td></tr>
+<tr class="memitem:a104edf84a62f0b9fe895a48abbc1d3bc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a104edf84a62f0b9fe895a48abbc1d3bc">ThackerBathy</a> (T <a class="el" href="BasCart__gpu_8cu.html#a711aad4cbe735871dd9e91ab575c878b">x</a>, T <a class="el" href="BasCart__gpu_8cu.html#a1bdc6b1159d4f196943bb647cb631e87">y</a>, T L, T D)</td></tr>
 <tr class="memdesc:a104edf84a62f0b9fe895a48abbc1d3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a parabolic bassin  <a href="Testing_8cu.html#a104edf84a62f0b9fe895a48abbc1d3bc">More...</a><br /></td></tr>
 <tr class="separator:a104edf84a62f0b9fe895a48abbc1d3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f16cda74bcdd1db8fd67423f999572c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -214,12 +206,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a4777c15ad455f8f7360c0bcb6d04fdeb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a4777c15ad455f8f7360c0bcb6d04fdeb"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a4777c15ad455f8f7360c0bcb6d04fdeb">TestInstability</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
 <tr class="separator:a4777c15ad455f8f7360c0bcb6d04fdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae435322535a91559637e33e6f95c8d33"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae435322535a91559637e33e6f95c8d33"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#ae435322535a91559637e33e6f95c8d33">TestFirsthalfstep</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
-<tr class="separator:ae435322535a91559637e33e6f95c8d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175c84b2bc51deb4d9e1c24f1dfd3bf5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a175c84b2bc51deb4d9e1c24f1dfd3bf5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a175c84b2bc51deb4d9e1c24f1dfd3bf5">Testzbinit</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
-<tr class="separator:a175c84b2bc51deb4d9e1c24f1dfd3bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7880b9adda370fd426fd81e6738ce3db"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7880b9adda370fd426fd81e6738ce3db"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a7880b9adda370fd426fd81e6738ce3db">TestMultiBathyRough</a> (int gpu, T ref, int scenario)</td></tr>
+<tr class="separator:a7880b9adda370fd426fd81e6738ce3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db6b6038875f9863ec74a2a56f8bc74"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7db6b6038875f9863ec74a2a56f8bc74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a7db6b6038875f9863ec74a2a56f8bc74">TestFirsthalfstep</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
+<tr class="separator:a7db6b6038875f9863ec74a2a56f8bc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0daf4e3de07a3e351dc2ffe82f59fbe4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0daf4e3de07a3e351dc2ffe82f59fbe4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a0daf4e3de07a3e351dc2ffe82f59fbe4">Testzbinit</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
+<tr class="separator:a0daf4e3de07a3e351dc2ffe82f59fbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b8eecc043010440cced2f0eede0587"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad1b8eecc043010440cced2f0eede0587"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#ad1b8eecc043010440cced2f0eede0587">TestAIObnd</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g, bool bottop, bool flip, bool withaoi)</td></tr>
+<tr class="separator:ad1b8eecc043010440cced2f0eede0587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775e1e1ee71eb299da2ae9689e024d8e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a775e1e1ee71eb299da2ae9689e024d8e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structForcing.html">Forcing</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a775e1e1ee71eb299da2ae9689e024d8e">MakValleyBathy</a> (<a class="el" href="classParam.html">Param</a> XParam, T slope, bool bottop, bool flip)</td></tr>
 <tr class="separator:a775e1e1ee71eb299da2ae9689e024d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,10 +271,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a15a6fa061ccab60ed2d5687e13ea513c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a15a6fa061ccab60ed2d5687e13ea513c">diffdh</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *input, T *output, T *shuffle)</td></tr>
 <tr class="separator:a15a6fa061ccab60ed2d5687e13ea513c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2558c74b47281e7a4e9e2c7be1dbdc15"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2558c74b47281e7a4e9e2c7be1dbdc15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a2558c74b47281e7a4e9e2c7be1dbdc15">diffSource</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *Fqux, T *Su, T *output)</td></tr>
+<tr class="memitem:a2558c74b47281e7a4e9e2c7be1dbdc15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a2558c74b47281e7a4e9e2c7be1dbdc15">diffSource</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *<a class="el" href="BasCart__gpu_8cu.html#a0fe86d97dc464c9d0b35dfd06794eaa7">Fqux</a>, T *<a class="el" href="BasCart__gpu_8cu.html#ae282753e1b766231ae19019b84c39eec">Su</a>, T *output)</td></tr>
 <tr class="separator:a2558c74b47281e7a4e9e2c7be1dbdc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a1f9500eec67a188d5fa533ad1a1463"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a7a1f9500eec67a188d5fa533ad1a1463"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a7a1f9500eec67a188d5fa533ad1a1463">diffArray</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, std::string varname, bool checkhalo, T *cpu, T *gpu, T *dummy, T *out)</td></tr>
+<tr class="memitem:a7a1f9500eec67a188d5fa533ad1a1463"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Testing_8cu.html#a7a1f9500eec67a188d5fa533ad1a1463">diffArray</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, std::string varname, bool checkhalo, T *cpu, T *gpu, T *<a class="el" href="BasCart__gpu_8cu.html#afd9b91edc2de758dda280c6c3cedef24">dummy</a>, T *out)</td></tr>
 <tr class="separator:a7a1f9500eec67a188d5fa533ad1a1463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1938,6 +1936,60 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ad1b8eecc043010440cced2f0eede0587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b8eecc043010440cced2f0eede0587">&#9670;&nbsp;</a></span>TestAIObnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int TestAIObnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>XModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>XModel_g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bottop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withaoi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1f58fd96fa0d9473ed0c863d5b789485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f58fd96fa0d9473ed0c863d5b789485">&#9670;&nbsp;</a></span>testboundaries()</h2>
 
@@ -2018,8 +2070,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ae435322535a91559637e33e6f95c8d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae435322535a91559637e33e6f95c8d33">&#9670;&nbsp;</a></span>TestFirsthalfstep()</h2>
+<a id="a7db6b6038875f9863ec74a2a56f8bc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db6b6038875f9863ec74a2a56f8bc74">&#9670;&nbsp;</a></span>TestFirsthalfstep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2027,7 +2079,7 @@ template&lt;class T &gt; </div>
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int TestFirsthalfstep </td>
+          <td class="memname">void TestFirsthalfstep </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -2428,8 +2480,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a175c84b2bc51deb4d9e1c24f1dfd3bf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175c84b2bc51deb4d9e1c24f1dfd3bf5">&#9670;&nbsp;</a></span>Testzbinit()</h2>
+<a id="a7880b9adda370fd426fd81e6738ce3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7880b9adda370fd426fd81e6738ce3db">&#9670;&nbsp;</a></span>TestMultiBathyRough()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2437,7 +2489,43 @@ template&lt;class T &gt; </div>
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int Testzbinit </td>
+          <td class="memname">bool TestMultiBathyRough </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scenario</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0daf4e3de07a3e351dc2ffe82f59fbe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0daf4e3de07a3e351dc2ffe82f59fbe4">&#9670;&nbsp;</a></span>Testzbinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Testzbinit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -2513,7 +2601,7 @@ template&lt;class T &gt; </div>
 <p>create a parabolic bassin </p>
 <p>This function creates a parabolic bassin. The function returns a single value of the bassin</p>
 <p>Borrowed from Buttinger et al. 2019.</p>
-<h3><a class="anchor" id="autotoc_md177"></a>
+<h3><a class="anchor" id="autotoc_md98"></a>
 Reference</h3>
 <p>Buttinger-Kreuzhuber, A., Horváth, Z., Noelle, S., Blöschl, G., and Waser, J.: A fast second-order shallow water scheme on two-dimensional structured grids over abrupt topography, Advances in water resources, 127, 89–108, 2019. </p>
 
@@ -2744,7 +2832,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Testing_8cu.html">Testing.cu</a></li>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:16 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

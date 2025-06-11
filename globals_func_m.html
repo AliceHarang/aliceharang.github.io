@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -97,7 +89,10 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>main()
-: <a class="el" href="BG__Flood_8cu.html#a0ddf1224851353fc92bfbff6f499fa97">BG_Flood.cu</a>
+: <a class="el" href="BasCart__gpu_8cu.html#a3c04138a5bfe5d72780bb7e82a18e627">BasCart_gpu.cu</a>
+, <a class="el" href="Tutorial__Cart_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Tutorial_Cart.c</a>
+, <a class="el" href="BG__Flood_8cu.html#a0ddf1224851353fc92bfbff6f499fa97">BG_Flood.cu</a>
+, <a class="el" href="catch__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">catch_main.cpp</a>
 </li>
 <li>MainLoop()
 : <a class="el" href="Mainloop_8cu.html#a0ad0bb561885e36751fa9715e6961051">Mainloop.cu</a>
@@ -108,6 +103,33 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 </li>
 <li>MainLoop&lt; float &gt;()
 : <a class="el" href="Mainloop_8cu.html#adff364e1194fc346eac96e01113e124c">Mainloop.cu</a>
+</li>
+<li>mainloopCPU()
+: <a class="el" href="BasCart__gpu_8cu.html#af2f309eb15de20c760b4c35bedb24b78">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPU()
+: <a class="el" href="BasCart__gpu_8cu.html#a559cc03353d6953a62c6aa3a315556f7">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUADA()
+: <a class="el" href="Mainloop__Adapt_8cu.html#a1d921c71b884437c5323fcead4c3d0fa">Mainloop_Adapt.cu</a>
+</li>
+<li>mainloopGPUATM()
+: <a class="el" href="BasCart__gpu_8cu.html#a63821500acd6af6fd0459c0af34671d4">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUDATM()
+: <a class="el" href="BasCart__gpu_8cu.html#aa7e4f737f5db92d1663f5ee508ead344">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUDB()
+: <a class="el" href="BasCart__gpu_8cu.html#ae001c81a5963800ff8af088605529483">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUDSPH()
+: <a class="el" href="BasCart__gpu_8cu.html#a1974fe934e8cbcab2a812d71fac66d0d">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUDSPHATM()
+: <a class="el" href="BasCart__gpu_8cu.html#a0971b2583d8f9cc2039e3c5ca24e92de">BasCart_gpu.cu</a>
+</li>
+<li>mainloopGPUold()
+: <a class="el" href="BasCart__gpu_8cu.html#aa5256569fff1fd6e011c422a17d60386">BasCart_gpu.cu</a>
 </li>
 <li>mainwork()
 : <a class="el" href="BG__Flood_8cu.html#ab43f4a24b0b7513cc58aedf81a08057e">BG_Flood.cu</a>
@@ -142,6 +164,46 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 </li>
 <li>maskbndGPUbot&lt; float &gt;()
 : <a class="el" href="Boundary_8cu.html#a16c7c2620debad38b04bd508a1a2cdb4">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxbot()
+: <a class="el" href="Boundary_8cu.html#ad76dc3a9c37690c1c68e3ed0c8761d80">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#ad76dc3a9c37690c1c68e3ed0c8761d80">Boundary.h</a>
+</li>
+<li>maskbndGPUFluxbot&lt; double &gt;()
+: <a class="el" href="Boundary_8cu.html#aa02d42f32e786dadfe180c1a983ffa6b">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxbot&lt; float &gt;()
+: <a class="el" href="Boundary_8cu.html#ac01b5cb40b16e16fdd66d09f446359a5">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxleft()
+: <a class="el" href="Boundary_8cu.html#a974c3e91252e6886c1577201af2d9136">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#a974c3e91252e6886c1577201af2d9136">Boundary.h</a>
+</li>
+<li>maskbndGPUFluxleft&lt; double &gt;()
+: <a class="el" href="Boundary_8cu.html#a170a91e273566922608bcede6a315cb9">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxleft&lt; float &gt;()
+: <a class="el" href="Boundary_8cu.html#aec573836a5cd110e27870f7096cccca6">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxright()
+: <a class="el" href="Boundary_8cu.html#a1b98408b87883d4ddfbbbd8254ae8d7f">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#a1b98408b87883d4ddfbbbd8254ae8d7f">Boundary.h</a>
+</li>
+<li>maskbndGPUFluxright&lt; double &gt;()
+: <a class="el" href="Boundary_8cu.html#af0ddb38772d134adf732590172f77fbc">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxright&lt; float &gt;()
+: <a class="el" href="Boundary_8cu.html#a136be0025a260ad46637c0d4a5ce32f0">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxtop()
+: <a class="el" href="Boundary_8cu.html#ace0711ff24a69d91c4b3475d956f80b7">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#ace0711ff24a69d91c4b3475d956f80b7">Boundary.h</a>
+</li>
+<li>maskbndGPUFluxtop&lt; double &gt;()
+: <a class="el" href="Boundary_8cu.html#a470de27e34ed5ad566af460cda5f2f16">Boundary.cu</a>
+</li>
+<li>maskbndGPUFluxtop&lt; float &gt;()
+: <a class="el" href="Boundary_8cu.html#a654b67d7cee17bf8d8939865bf03ac6a">Boundary.cu</a>
 </li>
 <li>maskbndGPUleft()
 : <a class="el" href="Boundary_8cu.html#acdef573f7f2d65d3fe3f215342377a8b">Boundary.cu</a>
@@ -183,6 +245,9 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 <li>MassConserveSteepSlope&lt; float &gt;()
 : <a class="el" href="Testing_8cu.html#a4e49cf520a5bb2d07834fcdee685d027">Testing.cu</a>
 </li>
+<li>max()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a7a87439367298507f21f9561b0b21117">Bas_Cart_CPU.cpp</a>
+</li>
 <li>max_hU_CPU()
 : <a class="el" href="Meanmax_8cu.html#a8524dc95b2be281a1d3067f589e286b2">Meanmax.cu</a>
 </li>
@@ -197,6 +262,9 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 : <a class="el" href="Meanmax_8cu.html#a84000c72a4326684436c52a682658990">Meanmax.cu</a>
 , <a class="el" href="Meanmax_8h.html#a84000c72a4326684436c52a682658990">Meanmax.h</a>
 </li>
+<li>max_var()
+: <a class="el" href="Flow__kernel_8cu.html#a50d4760ceebfb30e8d86fba7fab7ed75">Flow_kernel.cu</a>
+</li>
 <li>max_varCPU()
 : <a class="el" href="Meanmax_8cu.html#a960d7eb0a9aceb4d7ff2416c6d495b26">Meanmax.cu</a>
 </li>
@@ -204,13 +272,44 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 : <a class="el" href="Meanmax_8cu.html#af85cfb8b0f7b2ed5bb46814376d689c6">Meanmax.cu</a>
 , <a class="el" href="Meanmax_8h.html#af85cfb8b0f7b2ed5bb46814376d689c6">Meanmax.h</a>
 </li>
+<li>maxallCPU()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a4bc43480d39ced9997163dbceed639a6">Bas_Cart_CPU.cpp</a>
+</li>
+<li>maxallCPUD()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a281279fadf821ed328239ed1e5c7cb59">Bas_Cart_CPU.cpp</a>
+</li>
+<li>maxdiff()
+: <a class="el" href="Init_8cpp.html#a5025f9810bc021c7e612c992d457681f">Init.cpp</a>
+</li>
+<li>maxdiffID()
+: <a class="el" href="Init_8cpp.html#a162649df11a16a0cce1f8178d6b680e4">Init.cpp</a>
+</li>
+<li>meanmaxvarGPU()
+: <a class="el" href="Init__gpu_8cu.html#a96347ca93744117112ef1780b0c8e49a">Init_gpu.cu</a>
+</li>
+<li>meanmaxvarGPUD()
+: <a class="el" href="Init__gpu_8cu.html#ae8261ae56c7c780ce9571d6bd4683a0e">Init_gpu.cu</a>
+</li>
 <li>memloc()
 : <a class="el" href="MemManagement_8cu.html#ad0ad7b983948a031a40f89c1369a91bf">MemManagement.cu</a>
 , <a class="el" href="MemManagement_8h.html#ab8149333b09331fc68caed3784f934a4">MemManagement.h</a>
 </li>
+<li>min()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#a018c893b607a9d48faaad69e52cfe9d2">Bas_Cart_CPU.cpp</a>
+</li>
+<li>minmaxKernel()
+: <a class="el" href="Flow__kernel_8cu.html#ad89fbb8241bb689241a37552670b77ff">Flow_kernel.cu</a>
+</li>
 <li>minmod2()
-: <a class="el" href="Util__CPU_8cu.html#ab50b883225fc186e39bc291fe75e8ce2">Util_CPU.cu</a>
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#aeab85067f6ace8e69e8c2381dc861428">Bas_Cart_CPU.cpp</a>
+, <a class="el" href="Util__CPU_8cu.html#ab50b883225fc186e39bc291fe75e8ce2">Util_CPU.cu</a>
 , <a class="el" href="Util__CPU_8h.html#ab50b883225fc186e39bc291fe75e8ce2">Util_CPU.h</a>
+</li>
+<li>minmod2fGPU()
+: <a class="el" href="Flow__kernel_8cu.html#acf414a3c77e20efe5cd0fe0c22334445">Flow_kernel.cu</a>
+</li>
+<li>minmod2GPU()
+: <a class="el" href="Flow__kernel_8cu.html#a8d62a0c9ec0a1f6a06e940fdff2f3865">Flow_kernel.cu</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -218,7 +317,7 @@ $(document).ready(function(){initNavTree('globals_func_m.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

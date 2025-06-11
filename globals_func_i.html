@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -96,6 +88,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 &#160;
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>init()
+: <a class="el" href="Tutorial__Cart_8c.html#aaba4fdc34ef946dfebfe8cdb737cfe52">Tutorial_Cart.c</a>
+</li>
 <li>init3Darray()
 : <a class="el" href="Testing_8cu.html#a62ff3fe0c904942bbc562e96f549f1f4">Testing.cu</a>
 </li>
@@ -126,6 +121,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 </li>
 <li>InitArrayBUQ&lt; int, float &gt;()
 : <a class="el" href="GridManip_8cu.html#a4583ba08f6606fdc9ad6eba712d80b87">GridManip.cu</a>
+</li>
+<li>InitArraySV()
+: <a class="el" href="Init_8cpp.html#a96a1b68a03c53f83f34b2eecaecfe0ef">Init.cpp</a>
 </li>
 <li>InitBlkBUQ()
 : <a class="el" href="GridManip_8cu.html#ab2b99ebfa98d229b030f7e7e6a5cc48f">GridManip.cu</a>
@@ -189,6 +187,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 <li>InitBlockxoyo&lt; float &gt;()
 : <a class="el" href="Mesh_8cu.html#a42ae6d274997acffe570213f860e8d1f">Mesh.cu</a>
 </li>
+<li>Initbndblks()
+: <a class="el" href="InitialConditions_8cu.html#a85565d26e330010c4abe870524b5fce9">InitialConditions.cu</a>
+</li>
 <li>initdt()
 : <a class="el" href="Mainloop_8cu.html#ac06b5925460adb1f6e1e2f76b5055ef0">Mainloop.cu</a>
 , <a class="el" href="Mainloop_8h.html#ac06b5925460adb1f6e1e2f76b5055ef0">Mainloop.h</a>
@@ -198,6 +199,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 </li>
 <li>initdt&lt; float &gt;()
 : <a class="el" href="Mainloop_8cu.html#ac95b46b80297413bffd13cc76afe37ae">Mainloop.cu</a>
+</li>
+<li>initdtmax()
+: <a class="el" href="Flow__kernel_8cu.html#aae3b24c0b8744fe255a044b8ceabe68e">Flow_kernel.cu</a>
 </li>
 <li>InitDynforcing()
 : <a class="el" href="ReadForcing_8cu.html#a2abd45f07ddf2a1a3d67f9c51fd859a3">ReadForcing.cu</a>
@@ -348,7 +352,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 : <a class="el" href="Updateforcing_8cu.html#a044e409c1b9d0d99611df800cc756389">Updateforcing.cu</a>
 </li>
 <li>inrangecriteria()
-: <a class="el" href="AdaptCriteria_8cu.html#a73a3d6f485ab7ba512ab4308fd9b4281">AdaptCriteria.cu</a>
+: <a class="el" href="Adapt__gpu_8cu.html#aa4965b06fac86ee9aa055da10f85d9b4">Adapt_gpu.cu</a>
+, <a class="el" href="AdaptCriteria_8cu.html#a73a3d6f485ab7ba512ab4308fd9b4281">AdaptCriteria.cu</a>
 , <a class="el" href="AdaptCriteria_8h.html#a73a3d6f485ab7ba512ab4308fd9b4281">AdaptCriteria.h</a>
 </li>
 <li>inrangecriteria&lt; double &gt;()
@@ -361,8 +366,15 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 : <a class="el" href="Boundary_8cu.html#a59cbed77b10dbaf2fa1c4261631b78c5">Boundary.cu</a>
 , <a class="el" href="Boundary_8h.html#a59cbed77b10dbaf2fa1c4261631b78c5">Boundary.h</a>
 </li>
+<li>interp1DMono()
+: <a class="el" href="Tutorial__Cart_8c.html#a42f28bcfb3d60b93a99576876aae0108">Tutorial_Cart.c</a>
+</li>
+<li>interp2ATMP()
+: <a class="el" href="Flow__kernel_8cu.html#a7d404fd25557dfd8c17edc6cd706e3f7">Flow_kernel.cu</a>
+</li>
 <li>interp2BUQ()
-: <a class="el" href="GridManip_8cu.html#a1a76ee388dcb58bf18462c45c9e81dc6">GridManip.cu</a>
+: <a class="el" href="Init_8cpp.html#a118ca8e8d35129003d9c54cb6e3aaa1f">Init.cpp</a>
+, <a class="el" href="GridManip_8cu.html#a1a76ee388dcb58bf18462c45c9e81dc6">GridManip.cu</a>
 , <a class="el" href="GridManip_8h.html#abcded9e02be072d19261d96f9d86e11e">GridManip.h</a>
 , <a class="el" href="Updateforcing_8cu.html#a1b7a4a2942854b28194d0de9e30fbbd4">Updateforcing.cu</a>
 </li>
@@ -398,6 +410,15 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 <li>interp2BUQ&lt; float, StaticForcingP&lt; int &gt; &gt;()
 : <a class="el" href="GridManip_8cu.html#a0a53b08d2c7eeeca73ee61a72cd463ac">GridManip.cu</a>
 </li>
+<li>interp2BUQAda()
+: <a class="el" href="Init_8cpp.html#a1d0f6ede5b1cc6caa1a58b36551758e5">Init.cpp</a>
+</li>
+<li>interp2cf()
+: <a class="el" href="Init_8cpp.html#a1347b8ea2ae27dabf9113700029e4750">Init.cpp</a>
+</li>
+<li>interp2wnd()
+: <a class="el" href="Bas__Cart__CPU_8cpp.html#ad0106c3005bd6ffcc4071f21a5a2d7d1">Bas_Cart_CPU.cpp</a>
+</li>
 <li>interpDyn2BUQ()
 : <a class="el" href="Updateforcing_8cu.html#a599e215dbff69667f7542b4d6489a8ac">Updateforcing.cu</a>
 , <a class="el" href="Updateforcing_8h.html#a599e215dbff69667f7542b4d6489a8ac">Updateforcing.h</a>
@@ -412,6 +433,7 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 : <a class="el" href="GridManip_8cu.html#a242cf7787fb7c176e5a784ddfb3aea7e">GridManip.cu</a>
 , <a class="el" href="GridManip_8h.html#a242cf7787fb7c176e5a784ddfb3aea7e">GridManip.h</a>
 , <a class="el" href="ReadForcing_8h.html#a0d7b8d36675c4fb7f9e8ab773c10b3ec">ReadForcing.h</a>
+, <a class="el" href="writenetcdf_8cpp.html#a8d6c4c44ed105b856b50be4658bb04fc">writenetcdf.cpp</a>
 </li>
 <li>InterpstepCPU&lt; double, double &gt;()
 : <a class="el" href="GridManip_8cu.html#a023f8b0a1c8bfd5949d1383da480b437">GridManip.cu</a>
@@ -442,7 +464,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 : <a class="el" href="GridManip_8cu.html#a779e956073de6ebb5590cca5f3135e79">GridManip.cu</a>
 </li>
 <li>interptime()
-: <a class="el" href="Util__CPU_8cu.html#a24ac58842c87974b54e6c84db08ecc79">Util_CPU.cu</a>
+: <a class="el" href="read__input_8cpp.html#a24ac58842c87974b54e6c84db08ecc79">read_input.cpp</a>
+, <a class="el" href="Util__CPU_8cu.html#a24ac58842c87974b54e6c84db08ecc79">Util_CPU.cu</a>
 , <a class="el" href="Util__CPU_8h.html#a24ac58842c87974b54e6c84db08ecc79">Util_CPU.h</a>
 </li>
 <li>isbnd()
@@ -452,13 +475,16 @@ $(document).ready(function(){initNavTree('globals_func_i.html',''); initResizabl
 <li>isLeft()
 : <a class="el" href="Poly_8cu.html#a01ace063b76167aa01c3bf0db94bbe1d">Poly.cu</a>
 </li>
+<li>isPow2()
+: <a class="el" href="Adapt__gpu_8cu.html#af4e3a859b8504788efb289835427ab18">Adapt_gpu.cu</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:19 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

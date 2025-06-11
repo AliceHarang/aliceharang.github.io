@@ -16,13 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -113,32 +105,41 @@ Functions</h2></td></tr>
 <tr class="memitem:a07fddb78af39693b50b36905f15b18ef"><td class="memItemLeft" align="right" valign="top">__host__ __device__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a07fddb78af39693b50b36905f15b18ef">memloc</a> (int halowidth, int blkmemwidth, int i, int j, int ib)</td></tr>
 <tr class="separator:a07fddb78af39693b50b36905f15b18ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#af5b2613b6a0140cdb9295b7dd5dabc4e">AllocateCPU</a> (int nx, int ny, T *&amp;zb)</td></tr>
+<tr class="memitem:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#af5b2613b6a0140cdb9295b7dd5dabc4e">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
 <tr class="separator:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ae6bcde329ae664862262415cddd1c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a70ae6bcde329ae664862262415cddd1c"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T fillval, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a70ae6bcde329ae664862262415cddd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca49cc69255b1cab045d797e0bf0d2c4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#aca49cc69255b1cab045d797e0bf0d2c4">FillCPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double fillval, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:aca49cc69255b1cab045d797e0bf0d2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97df775c85d85a11bc6dabd406d99697"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a97df775c85d85a11bc6dabd406d99697">FillCPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float fillval, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a97df775c85d85a11bc6dabd406d99697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737618a8c15e9a568b209685c8d07cd0"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a737618a8c15e9a568b209685c8d07cd0">FillCPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int fillval, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a737618a8c15e9a568b209685c8d07cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e88d8dc0428143936352be4b6b4938"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac2e88d8dc0428143936352be4b6b4938"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac2e88d8dc0428143936352be4b6b4938">AllocateCPU</a> (int nx, int ny, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
+<tr class="memitem:ac2e88d8dc0428143936352be4b6b4938"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac2e88d8dc0428143936352be4b6b4938">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
 <tr class="separator:ac2e88d8dc0428143936352be4b6b4938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352e04081955373bd4c3ed601ef79c45"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a352e04081955373bd4c3ed601ef79c45">AllocateCPU&lt; double &gt;</a> (int nx, int ny, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
+<tr class="memitem:a352e04081955373bd4c3ed601ef79c45"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a352e04081955373bd4c3ed601ef79c45">AllocateCPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
 <tr class="separator:a352e04081955373bd4c3ed601ef79c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cb09051107c87e07b275059c228d9e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a69cb09051107c87e07b275059c228d9e">AllocateCPU&lt; float &gt;</a> (int nx, int ny, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
+<tr class="memitem:a69cb09051107c87e07b275059c228d9e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a69cb09051107c87e07b275059c228d9e">AllocateCPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
 <tr class="separator:a69cb09051107c87e07b275059c228d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e9b89d79a6d6bdbba334185c96d502"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a77e9b89d79a6d6bdbba334185c96d502">AllocateCPU&lt; int &gt;</a> (int nx, int ny, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
+<tr class="memitem:a77e9b89d79a6d6bdbba334185c96d502"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a77e9b89d79a6d6bdbba334185c96d502">AllocateCPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
 <tr class="separator:a77e9b89d79a6d6bdbba334185c96d502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf675c8510f56ca0a0ec182d7d8078e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:acaf675c8510f56ca0a0ec182d7d8078e"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#acaf675c8510f56ca0a0ec182d7d8078e">AllocateCPU</a> (int nx, int ny, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
+<tr class="memitem:acaf675c8510f56ca0a0ec182d7d8078e"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#acaf675c8510f56ca0a0ec182d7d8078e">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
 <tr class="separator:acaf675c8510f56ca0a0ec182d7d8078e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfac5f8234d4e1b7d199d94203727201"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#abfac5f8234d4e1b7d199d94203727201">AllocateCPU&lt; double &gt;</a> (int nx, int ny, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
+<tr class="memitem:abfac5f8234d4e1b7d199d94203727201"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#abfac5f8234d4e1b7d199d94203727201">AllocateCPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
 <tr class="separator:abfac5f8234d4e1b7d199d94203727201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733a1ca747a2f4a7228e2b4917c5e9ee"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a733a1ca747a2f4a7228e2b4917c5e9ee">AllocateCPU&lt; float &gt;</a> (int nx, int ny, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
+<tr class="memitem:a733a1ca747a2f4a7228e2b4917c5e9ee"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a733a1ca747a2f4a7228e2b4917c5e9ee">AllocateCPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
 <tr class="separator:a733a1ca747a2f4a7228e2b4917c5e9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02dbbc82f655f221e72475c6cf1e390d"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a02dbbc82f655f221e72475c6cf1e390d">AllocateCPU&lt; int &gt;</a> (int nx, int ny, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
+<tr class="memitem:a02dbbc82f655f221e72475c6cf1e390d"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a02dbbc82f655f221e72475c6cf1e390d">AllocateCPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
 <tr class="separator:a02dbbc82f655f221e72475c6cf1e390d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7010e5aa17261e9870004edb76cfdcbe"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a7010e5aa17261e9870004edb76cfdcbe"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a7010e5aa17261e9870004edb76cfdcbe">AllocateCPU</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; &amp;Grad)</td></tr>
+<tr class="memitem:a7010e5aa17261e9870004edb76cfdcbe"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a7010e5aa17261e9870004edb76cfdcbe">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; &amp;Grad)</td></tr>
 <tr class="separator:a7010e5aa17261e9870004edb76cfdcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401df8b4c66c17d4c8c56f198b19d782"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a401df8b4c66c17d4c8c56f198b19d782">AllocateCPU&lt; float &gt;</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; float &gt; &amp;Grad)</td></tr>
+<tr class="memitem:a401df8b4c66c17d4c8c56f198b19d782"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a401df8b4c66c17d4c8c56f198b19d782">AllocateCPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; float &gt; &amp;Grad)</td></tr>
 <tr class="separator:a401df8b4c66c17d4c8c56f198b19d782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c604e6004eab2becdb17c1ce0bd667"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a63c604e6004eab2becdb17c1ce0bd667">AllocateCPU&lt; double &gt;</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; double &gt; &amp;Grad)</td></tr>
+<tr class="memitem:a63c604e6004eab2becdb17c1ce0bd667"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a63c604e6004eab2becdb17c1ce0bd667">AllocateCPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; double &gt; &amp;Grad)</td></tr>
 <tr class="separator:a63c604e6004eab2becdb17c1ce0bd667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac85c44d5aefda185f362a5f3ec194df6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ac85c44d5aefda185f362a5f3ec194df6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac85c44d5aefda185f362a5f3ec194df6">AllocateCPU</a> (int nblk, int blksize, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;Ev)</td></tr>
@@ -154,25 +155,25 @@ Functions</h2></td></tr>
 <tr class="memitem:add77fedf788a5ba8d5b661153d01ebb6"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#add77fedf788a5ba8d5b661153d01ebb6">AllocateCPU&lt; double &gt;</a> (int nblk, int blksize, <a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structModel.html">Model</a>&lt; double &gt; &amp;XModel)</td></tr>
 <tr class="separator:add77fedf788a5ba8d5b661153d01ebb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42387bf4dc214f200e618abf2542ed90"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a42387bf4dc214f200e618abf2542ed90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a42387bf4dc214f200e618abf2542ed90">ReallocArray</a> (int nblk, int blksize, T *&amp;zb)</td></tr>
+<tr class="memitem:a42387bf4dc214f200e618abf2542ed90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a42387bf4dc214f200e618abf2542ed90">ReallocArray</a> (int nblk, int blksize, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
 <tr class="separator:a42387bf4dc214f200e618abf2542ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02612d8f9186262bde4a69ed1f586963"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a02612d8f9186262bde4a69ed1f586963"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a02612d8f9186262bde4a69ed1f586963">ReallocArray</a> (int nblk, int blksize, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
+<tr class="memitem:a02612d8f9186262bde4a69ed1f586963"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a02612d8f9186262bde4a69ed1f586963">ReallocArray</a> (int nblk, int blksize, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
 <tr class="separator:a02612d8f9186262bde4a69ed1f586963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0881ea86f25dac1fb2fc7d0c8e0be183"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a0881ea86f25dac1fb2fc7d0c8e0be183">ReallocArray&lt; int &gt;</a> (int nblk, int blksize, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
+<tr class="memitem:a0881ea86f25dac1fb2fc7d0c8e0be183"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a0881ea86f25dac1fb2fc7d0c8e0be183">ReallocArray&lt; int &gt;</a> (int nblk, int blksize, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
 <tr class="separator:a0881ea86f25dac1fb2fc7d0c8e0be183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb4665995c045eab40fa9c09864550c"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#acfb4665995c045eab40fa9c09864550c">ReallocArray&lt; float &gt;</a> (int nblk, int blksize, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
+<tr class="memitem:acfb4665995c045eab40fa9c09864550c"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#acfb4665995c045eab40fa9c09864550c">ReallocArray&lt; float &gt;</a> (int nblk, int blksize, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
 <tr class="separator:acfb4665995c045eab40fa9c09864550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda059ee7347595e61259d31544bfe58"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#afda059ee7347595e61259d31544bfe58">ReallocArray&lt; double &gt;</a> (int nblk, int blksize, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
+<tr class="memitem:afda059ee7347595e61259d31544bfe58"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#afda059ee7347595e61259d31544bfe58">ReallocArray&lt; double &gt;</a> (int nblk, int blksize, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
 <tr class="separator:afda059ee7347595e61259d31544bfe58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd52e113bb24418a42ad21549985d63"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5bd52e113bb24418a42ad21549985d63"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a5bd52e113bb24418a42ad21549985d63">ReallocArray</a> (int nblk, int blksize, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
+<tr class="memitem:a5bd52e113bb24418a42ad21549985d63"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a5bd52e113bb24418a42ad21549985d63">ReallocArray</a> (int nblk, int blksize, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
 <tr class="separator:a5bd52e113bb24418a42ad21549985d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c6a633736d1d2ba98385c30d163b47e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a1c6a633736d1d2ba98385c30d163b47e">ReallocArray&lt; int &gt;</a> (int nblk, int blksize, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
+<tr class="memitem:a1c6a633736d1d2ba98385c30d163b47e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a1c6a633736d1d2ba98385c30d163b47e">ReallocArray&lt; int &gt;</a> (int nblk, int blksize, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
 <tr class="separator:a1c6a633736d1d2ba98385c30d163b47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544805f099555a16cf703c2080ebccff"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a544805f099555a16cf703c2080ebccff">ReallocArray&lt; float &gt;</a> (int nblk, int blksize, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
+<tr class="memitem:a544805f099555a16cf703c2080ebccff"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a544805f099555a16cf703c2080ebccff">ReallocArray&lt; float &gt;</a> (int nblk, int blksize, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
 <tr class="separator:a544805f099555a16cf703c2080ebccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71228cdb3d54e8cb29fe50a6096e4fe5"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a71228cdb3d54e8cb29fe50a6096e4fe5">ReallocArray&lt; double &gt;</a> (int nblk, int blksize, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
+<tr class="memitem:a71228cdb3d54e8cb29fe50a6096e4fe5"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a71228cdb3d54e8cb29fe50a6096e4fe5">ReallocArray&lt; double &gt;</a> (int nblk, int blksize, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
 <tr class="separator:a71228cdb3d54e8cb29fe50a6096e4fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a048abacc33fe4e0926f6370233caa"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ac9a048abacc33fe4e0926f6370233caa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac9a048abacc33fe4e0926f6370233caa">ReallocArray</a> (int nblk, int blksize, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;Ev)</td></tr>
@@ -196,32 +197,32 @@ Functions</h2></td></tr>
 <tr class="memitem:a6788d01685d9924661db11af337221ac"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a6788d01685d9924661db11af337221ac">ReallocArray&lt; double &gt;</a> (int nblk, int blksize, <a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structModel.html">Model</a>&lt; double &gt; &amp;XModel)</td></tr>
 <tr class="separator:a6788d01685d9924661db11af337221ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e573ee5a85dfe633828db07d46440fb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1e573ee5a85dfe633828db07d46440fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a1e573ee5a85dfe633828db07d46440fb">AllocateGPU</a> (int nx, int ny, T *&amp;z_g)</td></tr>
+<tr class="memitem:a1e573ee5a85dfe633828db07d46440fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a1e573ee5a85dfe633828db07d46440fb">AllocateGPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;z_g)</td></tr>
 <tr class="separator:a1e573ee5a85dfe633828db07d46440fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e02cbe057b525f6391584b1c872d6f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac5e02cbe057b525f6391584b1c872d6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac5e02cbe057b525f6391584b1c872d6f">AllocateGPU</a> (int nx, int ny, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
+<tr class="memitem:ac5e02cbe057b525f6391584b1c872d6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac5e02cbe057b525f6391584b1c872d6f">AllocateGPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
 <tr class="separator:ac5e02cbe057b525f6391584b1c872d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ef098960c1cc56758ccd2fc66fb03c"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a89ef098960c1cc56758ccd2fc66fb03c">AllocateGPU&lt; double &gt;</a> (int nx, int ny, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
+<tr class="memitem:a89ef098960c1cc56758ccd2fc66fb03c"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a89ef098960c1cc56758ccd2fc66fb03c">AllocateGPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v)</td></tr>
 <tr class="separator:a89ef098960c1cc56758ccd2fc66fb03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07deb44856919c56491411897bec884"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ab07deb44856919c56491411897bec884">AllocateGPU&lt; float &gt;</a> (int nx, int ny, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
+<tr class="memitem:ab07deb44856919c56491411897bec884"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ab07deb44856919c56491411897bec884">AllocateGPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v)</td></tr>
 <tr class="separator:ab07deb44856919c56491411897bec884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc75bd0cfa63217cb0ff09aca541890"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#aabc75bd0cfa63217cb0ff09aca541890">AllocateGPU&lt; int &gt;</a> (int nx, int ny, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
+<tr class="memitem:aabc75bd0cfa63217cb0ff09aca541890"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#aabc75bd0cfa63217cb0ff09aca541890">AllocateGPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v)</td></tr>
 <tr class="separator:aabc75bd0cfa63217cb0ff09aca541890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49c8e68073ccf46f281d2a5ad2d8f559"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a49c8e68073ccf46f281d2a5ad2d8f559"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a49c8e68073ccf46f281d2a5ad2d8f559">AllocateGPU</a> (int nx, int ny, T *&amp;zs, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
+<tr class="memitem:a49c8e68073ccf46f281d2a5ad2d8f559"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a49c8e68073ccf46f281d2a5ad2d8f559">AllocateGPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v, T *&amp;U, T *&amp;hU)</td></tr>
 <tr class="separator:a49c8e68073ccf46f281d2a5ad2d8f559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f58f9d4e0675f2a4c819ff21c4a8c35"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a7f58f9d4e0675f2a4c819ff21c4a8c35">AllocateGPU&lt; double &gt;</a> (int nx, int ny, double *&amp;zs, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
+<tr class="memitem:a7f58f9d4e0675f2a4c819ff21c4a8c35"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a7f58f9d4e0675f2a4c819ff21c4a8c35">AllocateGPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, double *&amp;h, double *&amp;u, double *&amp;v, double *&amp;U, double *&amp;hU)</td></tr>
 <tr class="separator:a7f58f9d4e0675f2a4c819ff21c4a8c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5bb0f73c1f06526935f5841384699f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#adc5bb0f73c1f06526935f5841384699f">AllocateGPU&lt; float &gt;</a> (int nx, int ny, float *&amp;zs, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
+<tr class="memitem:adc5bb0f73c1f06526935f5841384699f"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#adc5bb0f73c1f06526935f5841384699f">AllocateGPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, float *&amp;h, float *&amp;u, float *&amp;v, float *&amp;U, float *&amp;hU)</td></tr>
 <tr class="separator:adc5bb0f73c1f06526935f5841384699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81970a4261f5b802af12ad6221af39f3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a81970a4261f5b802af12ad6221af39f3">AllocateGPU&lt; int &gt;</a> (int nx, int ny, int *&amp;zs, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
+<tr class="memitem:a81970a4261f5b802af12ad6221af39f3"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a81970a4261f5b802af12ad6221af39f3">AllocateGPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, int *&amp;h, int *&amp;u, int *&amp;v, int *&amp;U, int *&amp;hU)</td></tr>
 <tr class="separator:a81970a4261f5b802af12ad6221af39f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b155931d83c61e6efd1251676e0eef2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3b155931d83c61e6efd1251676e0eef2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a3b155931d83c61e6efd1251676e0eef2">AllocateGPU</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; &amp;Grad)</td></tr>
+<tr class="memitem:a3b155931d83c61e6efd1251676e0eef2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a3b155931d83c61e6efd1251676e0eef2">AllocateGPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; &amp;Grad)</td></tr>
 <tr class="separator:a3b155931d83c61e6efd1251676e0eef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc3be24b3ea5958d4655e6218a872a77"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#afc3be24b3ea5958d4655e6218a872a77">AllocateGPU&lt; float &gt;</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; float &gt; &amp;Grad)</td></tr>
+<tr class="memitem:afc3be24b3ea5958d4655e6218a872a77"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#afc3be24b3ea5958d4655e6218a872a77">AllocateGPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; float &gt; &amp;Grad)</td></tr>
 <tr class="separator:afc3be24b3ea5958d4655e6218a872a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a585cc996b2f2abb336f0255455194861"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a585cc996b2f2abb336f0255455194861">AllocateGPU&lt; double &gt;</a> (int nx, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; double &gt; &amp;Grad)</td></tr>
+<tr class="memitem:a585cc996b2f2abb336f0255455194861"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a585cc996b2f2abb336f0255455194861">AllocateGPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; double &gt; &amp;Grad)</td></tr>
 <tr class="separator:a585cc996b2f2abb336f0255455194861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae06a8f257b052110ee151c57a2a02159"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ae06a8f257b052110ee151c57a2a02159"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ae06a8f257b052110ee151c57a2a02159">AllocateGPU</a> (int nblk, int blksize, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;Ev)</td></tr>
@@ -1842,6 +1843,168 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a70ae6bcde329ae664862262415cddd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ae6bcde329ae664862262415cddd1c">&#9670;&nbsp;</a></span>FillCPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__host__ void FillCPU </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca49cc69255b1cab045d797e0bf0d2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca49cc69255b1cab045d797e0bf0d2c4">&#9670;&nbsp;</a></span>FillCPU&lt; double &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97df775c85d85a11bc6dabd406d99697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97df775c85d85a11bc6dabd406d99697">&#9670;&nbsp;</a></span>FillCPU&lt; float &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a737618a8c15e9a568b209685c8d07cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737618a8c15e9a568b209685c8d07cd0">&#9670;&nbsp;</a></span>FillCPU&lt; int &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; int &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a07fddb78af39693b50b36905f15b18ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07fddb78af39693b50b36905f15b18ef">&#9670;&nbsp;</a></span>memloc() <span class="overload">[1/2]</span></h2>
 
@@ -2768,7 +2931,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="MemManagement_8cu.html">MemManagement.cu</a></li>
-    <li class="footer">Generated on Fri Mar 10 2023 08:58:16 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
