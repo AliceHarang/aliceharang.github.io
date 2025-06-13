@@ -107,6 +107,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#af5b2613b6a0140cdb9295b7dd5dabc4e">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
 <tr class="separator:af5b2613b6a0140cdb9295b7dd5dabc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ae6bcde329ae664862262415cddd1c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a70ae6bcde329ae664862262415cddd1c"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T fillval, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a70ae6bcde329ae664862262415cddd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca49cc69255b1cab045d797e0bf0d2c4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#aca49cc69255b1cab045d797e0bf0d2c4">FillCPU&lt; double &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double fillval, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:aca49cc69255b1cab045d797e0bf0d2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97df775c85d85a11bc6dabd406d99697"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a97df775c85d85a11bc6dabd406d99697">FillCPU&lt; float &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float fillval, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a97df775c85d85a11bc6dabd406d99697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737618a8c15e9a568b209685c8d07cd0"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#a737618a8c15e9a568b209685c8d07cd0">FillCPU&lt; int &gt;</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int fillval, int *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="separator:a737618a8c15e9a568b209685c8d07cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e88d8dc0428143936352be4b6b4938"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ac2e88d8dc0428143936352be4b6b4938"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemManagement_8cu.html#ac2e88d8dc0428143936352be4b6b4938">AllocateCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#ac04fb3aa0c16af94b771b0bc5c839d73">zs</a>, T *&amp;h, T *&amp;u, T *&amp;v)</td></tr>
 <tr class="separator:ac2e88d8dc0428143936352be4b6b4938"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1823,6 +1832,168 @@ template&lt;class T &gt; </div>
           <td></td>
           <td class="paramtype">int *&amp;&#160;</td>
           <td class="paramname"><em>hU</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70ae6bcde329ae664862262415cddd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ae6bcde329ae664862262415cddd1c">&#9670;&nbsp;</a></span>FillCPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__host__ void FillCPU </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca49cc69255b1cab045d797e0bf0d2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca49cc69255b1cab045d797e0bf0d2c4">&#9670;&nbsp;</a></span>FillCPU&lt; double &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97df775c85d85a11bc6dabd406d99697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97df775c85d85a11bc6dabd406d99697">&#9670;&nbsp;</a></span>FillCPU&lt; float &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a737618a8c15e9a568b209685c8d07cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737618a8c15e9a568b209685c8d07cd0">&#9670;&nbsp;</a></span>FillCPU&lt; int &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="MemManagement_8h.html#a70ae6bcde329ae664862262415cddd1c">FillCPU</a>&lt; int &gt; </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fillval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&amp;&#160;</td>
+          <td class="paramname"><em>zb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

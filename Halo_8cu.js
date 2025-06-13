@@ -1,5 +1,8 @@
 var Halo_8cu =
 [
+    [ "bndmaskGPU", "Halo_8cu.html#ad8656ca08616abdeb043f622de7243fd", null ],
+    [ "bndmaskGPU< double >", "Halo_8cu.html#a8effb78a3ef81c8e53f925af0e1beeec", null ],
+    [ "bndmaskGPU< float >", "Halo_8cu.html#a1a2c2fe28c070ea593b6f0fb06cda5eb", null ],
     [ "fillBot", "Halo_8cu.html#af9678ea06bf2f69ed3152b64f8deffca", null ],
     [ "fillBot", "Halo_8cu.html#a671352fcb2eaaa2d4207ff07c9e8f852", null ],
     [ "fillBot< double >", "Halo_8cu.html#a55031de0d78e78dfc24cef8c29bc7017", null ],

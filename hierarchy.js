@@ -11,6 +11,8 @@ var hierarchy =
     [ "BlockP< T >", "structBlockP.html", null ],
     [ "BndblockP", "structBndblockP.html", null ],
     [ "bndparam", "classbndparam.html", null ],
+    [ "bndsegment", "classbndsegment.html", null ],
+    [ "bndsegmentside", "classbndsegmentside.html", null ],
     [ "bndTexP", "structbndTexP.html", null ],
     [ "Catch::Matchers::StdString::CasedString", "structCatch_1_1Matchers_1_1StdString_1_1CasedString.html", null ],
     [ "Catch::CaseSensitive", "structCatch_1_1CaseSensitive.html", null ],
@@ -38,6 +40,7 @@ var hierarchy =
       [ "StaticForcingP< T >", "structStaticForcingP.html", null ],
       [ "deformmap< T >", "classdeformmap.html", null ],
       [ "forcingmap", "classforcingmap.html", [
+        [ "DynForcingP< float >", "structDynForcingP.html", null ],
         [ "DynForcingP< T >", "structDynForcingP.html", null ]
       ] ]
     ] ],
@@ -108,6 +111,7 @@ var hierarchy =
       [ "Catch::Section", "classCatch_1_1Section.html", null ]
     ] ],
     [ "Catch::not_this_one", "structCatch_1_1not__this__one.html", null ],
+    [ "outP", "structoutP.html", null ],
     [ "outzoneB", "structoutzoneB.html", null ],
     [ "outzoneP", "classoutzoneP.html", null ],
     [ "Param", "classParam.html", null ],

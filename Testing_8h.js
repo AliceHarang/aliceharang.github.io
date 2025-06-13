@@ -13,5 +13,6 @@ var Testing_8h =
     [ "testboundaries", "Testing_8h.html#a1f58fd96fa0d9473ed0c863d5b789485", null ],
     [ "Testing", "Testing_8h.html#a1803abe24ad2daba8d11e5e46c783762", null ],
     [ "TestingOutput", "Testing_8h.html#ac72746cb1a6853204ce8c741857f9804", null ],
+    [ "TestMultiBathyRough", "Testing_8h.html#aee83c778b6d86fde8c183b3a896cdc71", null ],
     [ "ZoneOutputTest", "Testing_8h.html#a0755c7670bec1082029464abce5504ad", null ]
 ];

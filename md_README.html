@@ -92,11 +92,12 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="textblock"><p>Numerical model for simulating shallow water hydrodynamics on the GPU using an Adaptive Mesh Refinement type grid. The model was designed with the goal of simulating inundation (<a class="el" href="classRiver.html">River</a>, Storm surge or tsunami). The model uses a Block Uniform Quadtree approach that runs on the GPU but the adaptive/multi-resolution/AMR is being implemented and not yet operational.</p>
 <p>The core SWE engine and adaptivity has been inspired and taken from St Venant solver from <a href="http://basilisk.fr/">Basilisk</a> and the CUDA GPU memory model has been inspired by the work from <a href="https://dl.acm.org/citation.cfm?id=3031292">Vacondio _et al._2017</a>)</p>
 <p>The adaptive version of the model is currently under heavy development. Makefile in the master branch is not operational and general process may be broken in other branches as well.</p>
-<p><a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg" alt="License: GPL v3" style="pointer-events: none;" class="inline"/></a> <a href="https://www.codacy.com/project/CyprienBosserelle/Basil_Cart_StV/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CyprienBosserelle/Basil_Cart_StV&amp;utm_campaign=Badge_Grade_Dashboard"><img src="https://api.codacy.com/project/badge/Grade/8d871cf493e94a6eb474eaa30f573583" alt="Codacy Badge" class="inline"/></a> <a href="https://cyprienbosserelle.github.io/BG_Flood/"><img src="https://img.shields.io/badge/doc-Doxygen-blue" alt="Documentation" class="inline"/></a> <a href="https://aliceharang.github.io/"><img src="https://img.shields.io/badge/doc-Doxygen-blue" alt="Documentation" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md181"></a>
-Build status</h1>
-<p>Last developments are in the "development" branch: <a href="https://travis-ci.com/CyprienBosserelle/BG_Flood"><img src="https://travis-ci.com/CyprienBosserelle/BG_Flood.svg?branch=development" alt="Build Status" style="pointer-events: none;" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md182"></a>
+<p><a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg" alt="License: GPL v3" style="pointer-events: none;" class="inline"/></a></p>
+<p><a href="https://aliceharang.github.io/"><img src="https://img.shields.io/badge/doc-Doxygen-blue" alt="Documentation (Work in progress)" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md52"></a>
+Reference</h1>
+<p>Bosserelle C., Lane E., Harang A., (2021) BG-Flood: A GPU adaptive, open-source, general inundation hazard model. Proceedings of the Australasian Coasts &amp; Ports 2021 Conference.</p>
+<h1><a class="anchor" id="autotoc_md53"></a>
 Testing</h1>
 <p>CI test (development branch):<img src="https://github.com/CyprienBosserelle/BG_Flood/actions/workflows//main.yml/badge.svg?branch=development" alt="Test" style="pointer-events: none;" class="inline"/> </p>
 </div></div><!-- contents -->
