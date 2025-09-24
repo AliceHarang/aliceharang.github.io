@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -88,19 +96,13 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 &#160;
 
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>Rain_on_grid()
-: <a class="el" href="Flow__kernel_8cu.html#a1a7814588f74de622d2e174cc69e48d2">Flow_kernel.cu</a>
-</li>
-<li>Rain_on_gridUNI()
-: <a class="el" href="Flow__kernel_8cu.html#af84a40d73fcfb7cf1b63637422fb93a5">Flow_kernel.cu</a>
-</li>
 <li>Rainlossestest()
 : <a class="el" href="Testing_8cu.html#a1db3e11d21ac6d41e328ec46be538a41">Testing.cu</a>
 , <a class="el" href="Testing_8h.html#a6645fef2658aa8f5bb8f72823d17019c">Testing.h</a>
 </li>
 <li>Raintest()
-: <a class="el" href="Testing_8cu.html#a5b588f22d9b47f00af2a94804ac2b7f1">Testing.cu</a>
-, <a class="el" href="Testing_8h.html#a5b588f22d9b47f00af2a94804ac2b7f1">Testing.h</a>
+: <a class="el" href="Testing_8cu.html#a31b092b81a7e3ff99df93441e5d0bb62">Testing.cu</a>
+, <a class="el" href="Testing_8h.html#a31b092b81a7e3ff99df93441e5d0bb62">Testing.h</a>
 </li>
 <li>Raintestinput()
 : <a class="el" href="Testing_8cu.html#a6a029027bd2060a3ecad9f8d09807962">Testing.cu</a>
@@ -116,9 +118,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>Raintestmap&lt; float &gt;()
 : <a class="el" href="Testing_8cu.html#a80c7d906f3c5f95c31f858ea85869f33">Testing.cu</a>
 </li>
-<li>Rainthisstep()
-: <a class="el" href="Init__gpu_8cu.html#ab29e0a59175e718b68242df440fc1071">Init_gpu.cu</a>
-</li>
 <li>read2Dnc()
 : <a class="el" href="Read__netcdf_8cu.html#ad4bc796c86f46ebb52272b9b2ade4309">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#ad4bc796c86f46ebb52272b9b2ade4309">Read_netcdf.h</a>
@@ -127,19 +126,20 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="Read__netcdf_8cu.html#a709e031ea8e9e656b958e7c984e7704a">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a709e031ea8e9e656b958e7c984e7704a">Read_netcdf.h</a>
 </li>
+<li>readApproxtimestr()
+: <a class="el" href="ReadInput_8cu.html#a6815c049735d6d8a741ef3c2fa257f23">ReadInput.cu</a>
+, <a class="el" href="ReadInput_8h.html#a6815c049735d6d8a741ef3c2fa257f23">ReadInput.h</a>
+</li>
 <li>readATMstep()
 : <a class="el" href="Read__netcdf_8cu.html#a295d92253283ab3a6c74c1160bdaab5b">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a295d92253283ab3a6c74c1160bdaab5b">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#a295d92253283ab3a6c74c1160bdaab5b">writenetcdf.cpp</a>
 </li>
 <li>readbathyASCHead()
-: <a class="el" href="read__input_8cpp.html#aa4fa6864f4f241e906cc1ecab4826011">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#aa4fa6864f4f241e906cc1ecab4826011">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#aa4fa6864f4f241e906cc1ecab4826011">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#aa4fa6864f4f241e906cc1ecab4826011">ReadForcing.h</a>
 </li>
 <li>readbathyASCzb()
-: <a class="el" href="read__input_8cpp.html#a355449cf04fa9d968366fb2b7e854c88">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#a733346c52f01d60518590c3f56a08a8a">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#a733346c52f01d60518590c3f56a08a8a">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a733346c52f01d60518590c3f56a08a8a">ReadForcing.h</a>
 </li>
 <li>readbathyASCzb&lt; float &gt;()
@@ -151,17 +151,12 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readbathydata()
 : <a class="el" href="ReadForcing_8cu.html#a1ab85ae186390e00b60eec3c1c2d300e">ReadForcing.cu</a>
 </li>
-<li>readBathyhead()
-: <a class="el" href="read__input_8cpp.html#a3f52bce1b0829533eb624dbf8f2bcffe">read_input.cpp</a>
-</li>
 <li>readbathyHeadMD()
-: <a class="el" href="read__input_8cpp.html#ae8215efcb9518437cb6bfd2bad1297d5">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#ae8215efcb9518437cb6bfd2bad1297d5">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#ae8215efcb9518437cb6bfd2bad1297d5">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#ae8215efcb9518437cb6bfd2bad1297d5">ReadForcing.h</a>
 </li>
 <li>readbathyMD()
-: <a class="el" href="read__input_8cpp.html#a590b80b995ce40ea0a576ed1f461a8fb">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#a0d12c65a96fe1d7f9f5a70956f96d54b">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#a0d12c65a96fe1d7f9f5a70956f96d54b">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a0d12c65a96fe1d7f9f5a70956f96d54b">ReadForcing.h</a>
 </li>
 <li>readbathyMD&lt; float &gt;()
@@ -171,8 +166,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="ReadForcing_8cu.html#a10198f360efb20487e8a13a7b8998ebf">ReadForcing.cu</a>
 </li>
 <li>readbndfile()
-: <a class="el" href="read__input_8cpp.html#a436c1e78e856a0ea84561d1e682a328e">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#a63aad7e21f8862ae2814592f373e801d">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#a63aad7e21f8862ae2814592f373e801d">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a63aad7e21f8862ae2814592f373e801d">ReadForcing.h</a>
 </li>
 <li>readbndline()
@@ -186,9 +180,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readbndpolysegment()
 : <a class="el" href="ReadForcing_8cu.html#a2f5682e418a0ef4df2f01f32b63f9f18">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a2f5682e418a0ef4df2f01f32b63f9f18">ReadForcing.h</a>
-</li>
-<li>readcfmaphead()
-: <a class="el" href="read__input_8cpp.html#aec50babaa61ea3a341d7c9f36fbb90d0">read_input.cpp</a>
 </li>
 <li>readCRSfrombathy()
 : <a class="el" href="ReadForcing_8cu.html#a5d818df54a96c84ba9041a7723529c37">ReadForcing.cu</a>
@@ -217,8 +208,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="ReadInput_8cu.html#a0d0cb9a119d3268f15918bcdb9e7a65d">ReadInput.cu</a>
 </li>
 <li>readFlowfile()
-: <a class="el" href="read__input_8cpp.html#ad437a175cd35b9bb5fe83df8a89dc65f">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#ad3a4d90c2d9929279eaa88c9d8332149">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#ad3a4d90c2d9929279eaa88c9d8332149">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#ad3a4d90c2d9929279eaa88c9d8332149">ReadForcing.h</a>
 </li>
 <li>readforcing()
@@ -254,13 +244,9 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readforcinghead&lt; StaticForcingP&lt; float &gt; &gt;()
 : <a class="el" href="ReadForcing_8cu.html#ab166eaba87345ef2749463c2dd728ec7">ReadForcing.cu</a>
 </li>
-<li>readforcingmaphead()
-: <a class="el" href="read__input_8cpp.html#a30852e036c2dec38400cad4d5ef95593">read_input.cpp</a>
-</li>
 <li>readgridncsize()
 : <a class="el" href="Read__netcdf_8cu.html#a6e24e65db5d8609c76d187b1ea70eb08">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a6e24e65db5d8609c76d187b1ea70eb08">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#aa5a8b6887ee38c125a9b2f02f0c79678">writenetcdf.cpp</a>
 </li>
 <li>readgridncsize&lt; deformmap&lt; float &gt; &gt;()
 : <a class="el" href="Read__netcdf_8cu.html#a86cc02e83d5f3b1d0633f33559f133a3">Read_netcdf.cu</a>
@@ -283,7 +269,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readhotstartfile()
 : <a class="el" href="InitEvolv_8cu.html#acff23dccc956433e8500e1d8d6d831b6">InitEvolv.cu</a>
 , <a class="el" href="InitEvolv_8h.html#acff23dccc956433e8500e1d8d6d831b6">InitEvolv.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#a53dcb7c52396707cb95768ffa3aedf43">writenetcdf.cpp</a>
 </li>
 <li>readhotstartfile&lt; double &gt;()
 : <a class="el" href="InitEvolv_8cu.html#a8a22a7be42c3643cff484a4c550d34c3">InitEvolv.cu</a>
@@ -294,25 +279,17 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readhotstartfileBG()
 : <a class="el" href="InitEvolv_8cu.html#a79af6bcf26f13848ee5fca74f082ab1c">InitEvolv.cu</a>
 </li>
-<li>readhotstartfileD()
-: <a class="el" href="writenetcdf_8cpp.html#ada8a9a119786b5706c0ab5f0f79530c0">writenetcdf.cpp</a>
-</li>
 <li>readINfileUNI()
-: <a class="el" href="read__input_8cpp.html#ac29aa33a795f38b48d40f23e17e39e9e">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#ab8a60f8a1837e4d290acac635863b8be">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#ab8a60f8a1837e4d290acac635863b8be">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#ab8a60f8a1837e4d290acac635863b8be">ReadForcing.h</a>
 </li>
 <li>readinputtimetxt()
 : <a class="el" href="utctime_8cu.html#a27f2b180b6604b41db7189d467736e50">utctime.cu</a>
 , <a class="el" href="utctime_8h.html#a27f2b180b6604b41db7189d467736e50">utctime.h</a>
 </li>
-<li>readmapdata()
-: <a class="el" href="read__input_8cpp.html#a70ef8d5dc66b9418b9b63fb40ba82f7f">read_input.cpp</a>
-</li>
 <li>readncslev1()
 : <a class="el" href="Read__netcdf_8cu.html#a7008a78c8c1373c6b5cc6d9afdeb0fd6">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a7008a78c8c1373c6b5cc6d9afdeb0fd6">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#a29bcce09854329ea87d023f6faaef4f5">writenetcdf.cpp</a>
 </li>
 <li>readncslev1&lt; double &gt;()
 : <a class="el" href="Read__netcdf_8cu.html#ad3b7507e7c1615055e7681f02c9c05a2">Read_netcdf.cu</a>
@@ -323,7 +300,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readnctime()
 : <a class="el" href="Read__netcdf_8cu.html#ab93cc9b6e522d0763c6e5a6d35b7047c">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#ab93cc9b6e522d0763c6e5a6d35b7047c">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#ab93cc9b6e522d0763c6e5a6d35b7047c">writenetcdf.cpp</a>
 </li>
 <li>readnctime2()
 : <a class="el" href="Read__netcdf_8cu.html#a089b3abbf61032bf6149c9163978a8db">Read_netcdf.cu</a>
@@ -332,11 +308,9 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readnczb()
 : <a class="el" href="Read__netcdf_8cu.html#aa51602301123c9a4ee87e30b68c5695b">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#aa51602301123c9a4ee87e30b68c5695b">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#adfc7b5d43c68f2a3d189459beb7e7cea">writenetcdf.cpp</a>
 </li>
 <li>readNestfile()
-: <a class="el" href="read__input_8cpp.html#a1e77943bf30c9da3cb30b813c6017a94">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#a0d3f4deb9291534b13100dd67c2f07a0">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#a0d3f4deb9291534b13100dd67c2f07a0">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a9a1953b3a8eb74290f53f6ff154a5450">ReadForcing.h</a>
 </li>
 <li>readparambool()
@@ -348,8 +322,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 , <a class="el" href="ReadInput_8h.html#af8275cea8c05e6da8e4b0e5d32881e3e">ReadInput.h</a>
 </li>
 <li>readparamstr()
-: <a class="el" href="read__input_8cpp.html#a6c704f8d8527eecd6c4f1e0f253186f9">read_input.cpp</a>
-, <a class="el" href="ReadInput_8cu.html#a6c704f8d8527eecd6c4f1e0f253186f9">ReadInput.cu</a>
+: <a class="el" href="ReadInput_8cu.html#a6c704f8d8527eecd6c4f1e0f253186f9">ReadInput.cu</a>
 , <a class="el" href="ReadInput_8h.html#ad60173dd29ed8a0447152b6ae652b158">ReadInput.h</a>
 </li>
 <li>readPolygon()
@@ -369,10 +342,25 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readstaticforcing&lt; StaticForcingP&lt; int &gt; &gt;()
 : <a class="el" href="ReadForcing_8cu.html#a777190d1dbac0069f8d7b74bad17a370">ReadForcing.cu</a>
 </li>
+<li>ReadToutput()
+: <a class="el" href="ReadInput_8cu.html#a0d9a0edec5d7a459568fb7f42bf3c074">ReadInput.cu</a>
+, <a class="el" href="ReadInput_8h.html#a0d9a0edec5d7a459568fb7f42bf3c074">ReadInput.h</a>
+</li>
+<li>ReadToutSTR()
+: <a class="el" href="ReadInput_8cu.html#a2021584a63514a3a55998b8b6df80687">ReadInput.cu</a>
+, <a class="el" href="ReadInput_8h.html#a2021584a63514a3a55998b8b6df80687">ReadInput.h</a>
+</li>
+<li>ReadTRangestr()
+: <a class="el" href="ReadInput_8cu.html#a3110d762f42545a998ff33c99a39461d">ReadInput.cu</a>
+, <a class="el" href="ReadInput_8h.html#a3110d762f42545a998ff33c99a39461d">ReadInput.h</a>
+</li>
+<li>ReadTvalstr()
+: <a class="el" href="ReadInput_8cu.html#a446b06623deadaba4e4569c0ca0df865">ReadInput.cu</a>
+, <a class="el" href="ReadInput_8h.html#a446b06623deadaba4e4569c0ca0df865">ReadInput.h</a>
+</li>
 <li>readvardata()
 : <a class="el" href="Read__netcdf_8cu.html#a7474d68ee506f844b51565ff4b41f26c">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a7474d68ee506f844b51565ff4b41f26c">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#af11809139c48487e8561ca136ed28741">writenetcdf.cpp</a>
 </li>
 <li>readvardata&lt; double &gt;()
 : <a class="el" href="Read__netcdf_8cu.html#a8b40b675c539a7ae626fc55d04c59c33">Read_netcdf.cu</a>
@@ -383,32 +371,24 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>readvardata&lt; int &gt;()
 : <a class="el" href="Read__netcdf_8cu.html#a9a5cb4870f8d398cb5439fb9cec62071">Read_netcdf.cu</a>
 </li>
-<li>readvardataD()
-: <a class="el" href="writenetcdf_8cpp.html#a72943d3e784d80e3bebb11e821ad086e">writenetcdf.cpp</a>
-</li>
 <li>readvarinfo()
 : <a class="el" href="Read__netcdf_8cu.html#ac4849c1b38a6a4585828ce491d44ad62">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#ac4849c1b38a6a4585828ce491d44ad62">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#ac4849c1b38a6a4585828ce491d44ad62">writenetcdf.cpp</a>
 </li>
 <li>readWLfile()
-: <a class="el" href="read__input_8cpp.html#afeea4dd9d8ebd063082ea4c1567e5bc0">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#a770a60d1078d46548b2b400f0269f17e">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#a770a60d1078d46548b2b400f0269f17e">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#a770a60d1078d46548b2b400f0269f17e">ReadForcing.h</a>
 </li>
 <li>readWNDfileUNI()
-: <a class="el" href="read__input_8cpp.html#aab1844d704897f7cd2334740a2d73695">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#ac8f6aef19bae6123d0f15e4ebd55e06e">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#ac8f6aef19bae6123d0f15e4ebd55e06e">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#ac8f6aef19bae6123d0f15e4ebd55e06e">ReadForcing.h</a>
 </li>
 <li>readWNDstep()
 : <a class="el" href="Read__netcdf_8cu.html#a36da5a9d68ce650ffc88eb3e9aefbc7e">Read_netcdf.cu</a>
 , <a class="el" href="Read__netcdf_8h.html#a36da5a9d68ce650ffc88eb3e9aefbc7e">Read_netcdf.h</a>
-, <a class="el" href="writenetcdf_8cpp.html#a36da5a9d68ce650ffc88eb3e9aefbc7e">writenetcdf.cpp</a>
 </li>
 <li>readXBbathy()
-: <a class="el" href="read__input_8cpp.html#a38b1b568a64ce69e9dfc7474d93c2d27">read_input.cpp</a>
-, <a class="el" href="ReadForcing_8cu.html#ae853fd83c25a1c55c6a495ef2dfc2cfb">ReadForcing.cu</a>
+: <a class="el" href="ReadForcing_8cu.html#ae853fd83c25a1c55c6a495ef2dfc2cfb">ReadForcing.cu</a>
 , <a class="el" href="ReadForcing_8h.html#ae853fd83c25a1c55c6a495ef2dfc2cfb">ReadForcing.h</a>
 </li>
 <li>readXBbathy&lt; float &gt;()
@@ -418,8 +398,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="ReadForcing_8cu.html#a2fbe831b064272b680d7927e15a49a59">ReadForcing.cu</a>
 </li>
 <li>ReallocArray()
-: <a class="el" href="Init_8cpp.html#a42387bf4dc214f200e618abf2542ed90">Init.cpp</a>
-, <a class="el" href="MemManagement_8cu.html#a42387bf4dc214f200e618abf2542ed90">MemManagement.cu</a>
+: <a class="el" href="MemManagement_8cu.html#a42387bf4dc214f200e618abf2542ed90">MemManagement.cu</a>
 , <a class="el" href="MemManagement_8h.html#a42387bf4dc214f200e618abf2542ed90">MemManagement.h</a>
 </li>
 <li>ReallocArray&lt; double &gt;()
@@ -464,15 +443,8 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>RectCornerBlk()
 : <a class="el" href="InitialConditions_8cu.html#a1107bca3fddd95fe16350c332d7764bf">InitialConditions.cu</a>
 </li>
-<li>reduce3()
-: <a class="el" href="Flow__kernel_8cu.html#a7dc20be923c85acb56bdabaa43d6955c">Flow_kernel.cu</a>
-</li>
-<li>reducemax3()
-: <a class="el" href="Flow__kernel_8cu.html#ae6ab40b30a74d6b27cb0174ee428cdc7">Flow_kernel.cu</a>
-</li>
 <li>reducemin3()
-: <a class="el" href="Flow__kernel_8cu.html#a34f48c0c647ff01bc2ac28f9cbf8787e">Flow_kernel.cu</a>
-, <a class="el" href="Advection_8cu.html#a34f48c0c647ff01bc2ac28f9cbf8787e">Advection.cu</a>
+: <a class="el" href="Advection_8cu.html#a34f48c0c647ff01bc2ac28f9cbf8787e">Advection.cu</a>
 , <a class="el" href="Advection_8h.html#a34f48c0c647ff01bc2ac28f9cbf8787e">Advection.h</a>
 </li>
 <li>reductiontest()
@@ -591,8 +563,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 : <a class="el" href="Halo_8cu.html#aba3b8bc4676eb67b3ba5af23fd082a03">Halo.cu</a>
 </li>
 <li>refinesanitycheck()
-: <a class="el" href="Adapt__gpu_8cu.html#abf2638faea6fd28ae43d5c11cf859087">Adapt_gpu.cu</a>
-, <a class="el" href="Adaptation_8cu.html#a9e945ca4ef1a370bac958cf8c3cce311">Adaptation.cu</a>
+: <a class="el" href="Adaptation_8cu.html#a9e945ca4ef1a370bac958cf8c3cce311">Adaptation.cu</a>
 , <a class="el" href="Adaptation_8h.html#a9e945ca4ef1a370bac958cf8c3cce311">Adaptation.h</a>
 </li>
 <li>reset_var()
@@ -605,41 +576,20 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>reset_var&lt; float &gt;()
 : <a class="el" href="FlowGPU_8cu.html#ad8e33b9bd998958e0fb26acbc1aa579e">FlowGPU.cu</a>
 </li>
-<li>resetavg_var()
-: <a class="el" href="Flow__kernel_8cu.html#abc60c283b98e7907270c1c89267d20e8">Flow_kernel.cu</a>
-</li>
-<li>resetdtmax()
-: <a class="el" href="Flow__kernel_8cu.html#a03c8de9b79faacdbede45eb018642610">Flow_kernel.cu</a>
-</li>
-<li>resetmax_var()
-: <a class="el" href="Flow__kernel_8cu.html#a5ac2e3315f4347cae41c98b7c57a76f4">Flow_kernel.cu</a>
-</li>
 <li>resetmaxCPU()
 : <a class="el" href="Meanmax_8cu.html#a99ba9c87b985c4abb37e64a735ca5b48">Meanmax.cu</a>
 </li>
 <li>resetmaxGPU()
 : <a class="el" href="Meanmax_8cu.html#a591c5c70901891a96f726ae2631da926">Meanmax.cu</a>
 </li>
-<li>ResetmaxvarGPU()
-: <a class="el" href="Init__gpu_8cu.html#aeb1581614080b5994e90e707517d3575">Init_gpu.cu</a>
-</li>
-<li>ResetmaxvarGPUD()
-: <a class="el" href="Init__gpu_8cu.html#a17fd0b6400f57400fb186bb7ad6fb775">Init_gpu.cu</a>
-</li>
 <li>resetmeanCPU()
 : <a class="el" href="Meanmax_8cu.html#ab1e28e59fdbb5e3e6fecbc275f1a9091">Meanmax.cu</a>
-</li>
-<li>ResetmeanCPU()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a2469052d4a561193eba0d243aad14235">Bas_Cart_CPU.cpp</a>
 </li>
 <li>resetmeanCPU&lt; double &gt;()
 : <a class="el" href="Meanmax_8cu.html#a91fa8ab5fdec3de3f70e4905cdcf6969">Meanmax.cu</a>
 </li>
 <li>resetmeanCPU&lt; float &gt;()
 : <a class="el" href="Meanmax_8cu.html#a1636692dd60633c056956a445c26d6f7">Meanmax.cu</a>
-</li>
-<li>ResetmeanCPUD()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a7e0354b778c35e168940f855bd58a254">Bas_Cart_CPU.cpp</a>
 </li>
 <li>resetmeanGPU()
 : <a class="el" href="Meanmax_8cu.html#ad19718bdbfb77bfa3d6a8382f2f58292">Meanmax.cu</a>
@@ -659,12 +609,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 </li>
 <li>resetmeanmax&lt; float &gt;()
 : <a class="el" href="Meanmax_8cu.html#a90f4c144dd9f683cb1117d9996a12291">Meanmax.cu</a>
-</li>
-<li>ResetmeanvarGPU()
-: <a class="el" href="Init__gpu_8cu.html#a7d3cfff47c690bf7f8775b8317d31283">Init_gpu.cu</a>
-</li>
-<li>ResetmeanvarGPUD()
-: <a class="el" href="Init__gpu_8cu.html#ad4f5761d2e8e6ee2b7697d134abe9f37">Init_gpu.cu</a>
 </li>
 <li>resetvalCPU()
 : <a class="el" href="Meanmax_8cu.html#a45ae60b44de2c9656f355abe68ff1a22">Meanmax.cu</a>
@@ -688,32 +632,8 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <li>RevertProlongationElevation()
 : <a class="el" href="ConserveElevation_8cu.html#abb6c941ca76807dc3cc459c7961b6a5d">ConserveElevation.cu</a>
 </li>
-<li>RightAda()
-: <a class="el" href="Adapt__Flow__kernel_8cu.html#aeaeac05811812c2a5e6b79af6068ff76">Adapt_Flow_kernel.cu</a>
-</li>
-<li>rightdirichlet()
-: <a class="el" href="Flow__kernel_8cu.html#a29ea35f6eebecf6b28ad3b012c99fbde">Flow_kernel.cu</a>
-</li>
-<li>rightdirichletCPU()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a4a98c77dddce96825bd5f03184fde15d">Bas_Cart_CPU.cpp</a>
-</li>
-<li>rightdirichletCPUD()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a1bcc61c7145267dfdf135b08aef0c425">Bas_Cart_CPU.cpp</a>
-</li>
-<li>rightdirichletD()
-: <a class="el" href="Flow__kernel_8cu.html#afd65051d21c916c99ea2861d8b76525e">Flow_kernel.cu</a>
-</li>
-<li>RightFlowBnd()
-: <a class="el" href="Init__gpu_8cu.html#a8dc113c8c6afeb21705c52aec553f7d9">Init_gpu.cu</a>
-</li>
 <li>RiverOnBoundary()
 : <a class="el" href="Testing_8cu.html#a8d27dff394b9c80aca43b4ca0ee56fcd">Testing.cu</a>
-</li>
-<li>RiverSource()
-: <a class="el" href="Init__gpu_8cu.html#a11da63237a05b0fc3279cd9f954393a0">Init_gpu.cu</a>
-</li>
-<li>RiverSourceD()
-: <a class="el" href="Init__gpu_8cu.html#aaf9b758c188639613b9d9bc572499cf5">Init_gpu.cu</a>
 </li>
 <li>Rivertest()
 : <a class="el" href="Testing_8cu.html#a80d8f8532ece9c965802d60aa031d46d">Testing.cu</a>
@@ -734,7 +654,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

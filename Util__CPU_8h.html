@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -129,18 +137,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a7bd61f57a391fd97c9ba8d7b91d80632"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a7bd61f57a391fd97c9ba8d7b91d80632"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a7bd61f57a391fd97c9ba8d7b91d80632">utils::nearest</a> (const T &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:a7bd61f57a391fd97c9ba8d7b91d80632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac691304e3b7dc491d76ed6ce8025dede"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#ac691304e3b7dc491d76ed6ce8025dede">nextPow2</a> (unsigned int <a class="el" href="BasCart__gpu_8cu.html#a711aad4cbe735871dd9e91ab575c878b">x</a>)</td></tr>
+<tr class="memitem:ac691304e3b7dc491d76ed6ce8025dede"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#ac691304e3b7dc491d76ed6ce8025dede">nextPow2</a> (unsigned int x)</td></tr>
 <tr class="separator:ac691304e3b7dc491d76ed6ce8025dede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ac58842c87974b54e6c84db08ecc79"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a24ac58842c87974b54e6c84db08ecc79">interptime</a> (double next, double prev, double timenext, double time)</td></tr>
 <tr class="separator:a24ac58842c87974b54e6c84db08ecc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee8df9b24b1f0dfa189aff7fa01c40d8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aee8df9b24b1f0dfa189aff7fa01c40d8"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#aee8df9b24b1f0dfa189aff7fa01c40d8">BilinearInterpolation</a> (T q11, T q12, T q21, T q22, T x1, T x2, T y1, T y2, T <a class="el" href="BasCart__gpu_8cu.html#a711aad4cbe735871dd9e91ab575c878b">x</a>, T <a class="el" href="BasCart__gpu_8cu.html#a1bdc6b1159d4f196943bb647cb631e87">y</a>)</td></tr>
+<tr class="memitem:aee8df9b24b1f0dfa189aff7fa01c40d8"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#aee8df9b24b1f0dfa189aff7fa01c40d8">BilinearInterpolation</a> (T q11, T q12, T q21, T q22, T x1, T x2, T y1, T y2, T x, T y)</td></tr>
 <tr class="separator:aee8df9b24b1f0dfa189aff7fa01c40d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd69e3546d13d3fcbb53dbea6714b007"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afd69e3546d13d3fcbb53dbea6714b007"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#afd69e3546d13d3fcbb53dbea6714b007">BarycentricInterpolation</a> (T q1, T x1, T y1, T q2, T x2, T y2, T q3, T x3, T y3, T <a class="el" href="BasCart__gpu_8cu.html#a711aad4cbe735871dd9e91ab575c878b">x</a>, T <a class="el" href="BasCart__gpu_8cu.html#a1bdc6b1159d4f196943bb647cb631e87">y</a>)</td></tr>
+<tr class="memitem:afd69e3546d13d3fcbb53dbea6714b007"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#afd69e3546d13d3fcbb53dbea6714b007">BarycentricInterpolation</a> (T q1, T x1, T y1, T q2, T x2, T y2, T q3, T x3, T y3, T x, T y)</td></tr>
 <tr class="separator:afd69e3546d13d3fcbb53dbea6714b007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362bab91663dd793a0dc1fed7bf7ac27"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a362bab91663dd793a0dc1fed7bf7ac27"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a362bab91663dd793a0dc1fed7bf7ac27">calcres</a> (T dx, int <a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>)</td></tr>
+<tr class="memitem:a362bab91663dd793a0dc1fed7bf7ac27"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a362bab91663dd793a0dc1fed7bf7ac27">calcres</a> (T dx, int level)</td></tr>
 <tr class="separator:a362bab91663dd793a0dc1fed7bf7ac27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50b883225fc186e39bc291fe75e8ce2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab50b883225fc186e39bc291fe75e8ce2"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#ab50b883225fc186e39bc291fe75e8ce2">minmod2</a> (T theta, T s0, T s1, T s2)</td></tr>
@@ -148,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a59ad6246014964c62a5bab20fe88eb98"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a59ad6246014964c62a5bab20fe88eb98"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a59ad6246014964c62a5bab20fe88eb98">OBBdetect</a> (T Axmin, T Axmax, T Aymin, T Aymax, T Bxmin, T Bxmax, T Bymin, T Bymax)</td></tr>
 <tr class="separator:a59ad6246014964c62a5bab20fe88eb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc75ebfe4c6c57350e8e2ae37f2ea71"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6fc75ebfe4c6c57350e8e2ae37f2ea71"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a6fc75ebfe4c6c57350e8e2ae37f2ea71">signof</a> (T a)</td></tr>
+<tr class="separator:a6fc75ebfe4c6c57350e8e2ae37f2ea71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a597092ff46641fcd737e90426f61bdfb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a597092ff46641fcd737e90426f61bdfb"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Util__CPU_8h.html#a597092ff46641fcd737e90426f61bdfb">ftoi</a> (T value)</td></tr>
 <tr class="separator:a597092ff46641fcd737e90426f61bdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,7 +353,6 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Template function to calculate the grid cell size based on level and initial/seed dx </p>
 
 </div>
 </div>
@@ -533,13 +543,33 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a6fc75ebfe4c6c57350e8e2ae37f2ea71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc75ebfe4c6c57350e8e2ae37f2ea71">&#9670;&nbsp;</a></span>signof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__host__ __device__ T signof </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Util__CPU_8h.html">Util_CPU.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:48 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

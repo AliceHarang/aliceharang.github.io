@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Loop\< T \>",height=0.2,width=0.4,color="black",URL="$structLoop.html",tooltip=" "];
+  Node0 [label="maskinfo",height=0.2,width=0.4,color="black",URL="$structmaskinfo.html",tooltip=" "];
 }

@@ -40,6 +40,7 @@ var Updateforcing_8cu =
     [ "deformstep< double >", "Updateforcing_8cu.html#a91774c40fbff21eb06f6cdad0523f7f3", null ],
     [ "deformstep< float >", "Updateforcing_8cu.html#ab31beccb5921ab182ac24d65128e5c04", null ],
     [ "Forcingthisstep", "Updateforcing_8cu.html#a3e39c9d702154fb36bfd0e673598dc0c", null ],
+    [ "InjectManyRiversGPU", "Updateforcing_8cu.html#afc306f0d9a9b89d92d9957d0ab25601a", null ],
     [ "InjectRiverCPU", "Updateforcing_8cu.html#a9ea906ec1361134319212670574ba18c", null ],
     [ "InjectRiverCPU< double >", "Updateforcing_8cu.html#ad86e6061c902d45cec22f62942d2ea33", null ],
     [ "InjectRiverCPU< float >", "Updateforcing_8cu.html#a0756780865a0176e5a5f95c89d415c48", null ],

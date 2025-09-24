@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -100,8 +108,8 @@ $(document).ready(function(){initNavTree('Spherical_8h_source.html',''); initRes
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Util__CPU_8h.html">Util_CPU.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Kurganov_8h.html">Kurganov.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; __host__ __device__ T <a class="code" href="Spherical_8h.html#ad0868522ecbe833e500779344c891b2a">calcCM</a>(T Radius, T <a class="code" href="Tutorial__Cart_8c.html#a9ea1a8f5ef3e6d20b362385e1288c72c">delta</a>, T yo, <span class="keywordtype">int</span> iy);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; __host__ __device__  T <a class="code" href="Spherical_8h.html#a666d2d611d7884e7376e09b68e7f62ee">calcFM</a>(T Radius, T <a class="code" href="Tutorial__Cart_8c.html#a9ea1a8f5ef3e6d20b362385e1288c72c">delta</a>, T yo, T iy);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; __host__ __device__ T <a class="code" href="Spherical_8h.html#ad0868522ecbe833e500779344c891b2a">calcCM</a>(T Radius, T delta, T yo, <span class="keywordtype">int</span> iy);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; __host__ __device__  T <a class="code" href="Spherical_8h.html#a666d2d611d7884e7376e09b68e7f62ee">calcFM</a>(T Radius, T delta, T yo, T iy);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; __host__ __device__  T <a class="code" href="Spherical_8h.html#acaec182e726b1bca8a3fcea4870f8920">spharea</a>(T Radius, T lon, T lat, T dx);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -115,7 +123,6 @@ $(document).ready(function(){initNavTree('Spherical_8h_source.html',''); initRes
 <div class="ttc" id="aSpherical_8h_html_a666d2d611d7884e7376e09b68e7f62ee"><div class="ttname"><a href="Spherical_8h.html#a666d2d611d7884e7376e09b68e7f62ee">calcFM</a></div><div class="ttdeci">__host__ __device__ T calcFM(T Radius, T delta, T yo, T iy)</div><div class="ttdef"><b>Definition:</b> Spherical.cu:29</div></div>
 <div class="ttc" id="aSpherical_8h_html_acaec182e726b1bca8a3fcea4870f8920"><div class="ttname"><a href="Spherical_8h.html#acaec182e726b1bca8a3fcea4870f8920">spharea</a></div><div class="ttdeci">__host__ __device__ T spharea(T Radius, T lon, T lat, T dx)</div><div class="ttdef"><b>Definition:</b> Spherical.cu:73</div></div>
 <div class="ttc" id="aSpherical_8h_html_ad0868522ecbe833e500779344c891b2a"><div class="ttname"><a href="Spherical_8h.html#ad0868522ecbe833e500779344c891b2a">calcCM</a></div><div class="ttdeci">__host__ __device__ T calcCM(T Radius, T delta, T yo, int iy)</div><div class="ttdef"><b>Definition:</b> Spherical.cu:10</div></div>
-<div class="ttc" id="aTutorial__Cart_8c_html_a9ea1a8f5ef3e6d20b362385e1288c72c"><div class="ttname"><a href="Tutorial__Cart_8c.html#a9ea1a8f5ef3e6d20b362385e1288c72c">delta</a></div><div class="ttdeci">double delta</div><div class="ttdef"><b>Definition:</b> Tutorial_Cart.c:8</div></div>
 <div class="ttc" id="aUtil__CPU_8h_html"><div class="ttname"><a href="Util__CPU_8h.html">Util_CPU.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -123,7 +130,7 @@ $(document).ready(function(){initNavTree('Spherical_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Spherical_8h.html">Spherical.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:46 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

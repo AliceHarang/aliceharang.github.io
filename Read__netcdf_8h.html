@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -115,13 +123,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7fad9e9c1f54ecbfed731514c11a13e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#aa7fad9e9c1f54ecbfed731514c11a13e">nc_get_var_T</a> (int ncid, int varid, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:aa7fad9e9c1f54ecbfed731514c11a13e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#aa7fad9e9c1f54ecbfed731514c11a13e">nc_get_var_T</a> (int ncid, int varid, float *&amp;zb)</td></tr>
 <tr class="separator:aa7fad9e9c1f54ecbfed731514c11a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601d3058dd90221e412a4c6dab5e0947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a601d3058dd90221e412a4c6dab5e0947">nc_get_var_T</a> (int ncid, int varid, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a601d3058dd90221e412a4c6dab5e0947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a601d3058dd90221e412a4c6dab5e0947">nc_get_var_T</a> (int ncid, int varid, double *&amp;zb)</td></tr>
 <tr class="separator:a601d3058dd90221e412a4c6dab5e0947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3165cdf973892299732f36ae6b5aa5bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a3165cdf973892299732f36ae6b5aa5bd">nc_get_vara_T</a> (int ncid, int varid, const size_t *startp, const size_t *countp, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a3165cdf973892299732f36ae6b5aa5bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a3165cdf973892299732f36ae6b5aa5bd">nc_get_vara_T</a> (int ncid, int varid, const size_t *startp, const size_t *countp, float *&amp;zb)</td></tr>
 <tr class="separator:a3165cdf973892299732f36ae6b5aa5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b63115d8ad7293e06307282b73b74ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a7b63115d8ad7293e06307282b73b74ab">nc_get_vara_T</a> (int ncid, int varid, const size_t *startp, const size_t *countp, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a7b63115d8ad7293e06307282b73b74ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a7b63115d8ad7293e06307282b73b74ab">nc_get_vara_T</a> (int ncid, int varid, const size_t *startp, const size_t *countp, double *&amp;zb)</td></tr>
 <tr class="separator:a7b63115d8ad7293e06307282b73b74ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace124d74a0f98083d0e9b3e8274d6fd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#ace124d74a0f98083d0e9b3e8274d6fd6">nc_get_var1_T</a> (int ncid, int varid, const size_t *startp, float *zsa)</td></tr>
 <tr class="separator:ace124d74a0f98083d0e9b3e8274d6fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +137,7 @@ Functions</h2></td></tr>
 <tr class="separator:af5f8c8bf691367eb8b8ac3d236d1c2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405416e388c378f3778101d1d2deb6b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a405416e388c378f3778101d1d2deb6b5">checkncvarname</a> (int ncid, std::string stringA, std::string stringB, std::string stringC, std::string stringD, std::string stringE)</td></tr>
 <tr class="separator:a405416e388c378f3778101d1d2deb6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e24e65db5d8609c76d187b1ea70eb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a6e24e65db5d8609c76d187b1ea70eb08">readgridncsize</a> (const std::string ncfilestr, const std::string varstr, std::string reftime, int &amp;<a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int &amp;ny, int &amp;nt, double &amp;dx, double &amp;dy, double &amp;dt, double &amp;xo, double &amp;yo, double &amp;to, double &amp;xmax, double &amp;ymax, double &amp;tmax, bool &amp;flipx, bool &amp;flipy)</td></tr>
+<tr class="memitem:a6e24e65db5d8609c76d187b1ea70eb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a6e24e65db5d8609c76d187b1ea70eb08">readgridncsize</a> (const std::string ncfilestr, const std::string varstr, std::string reftime, int &amp;nx, int &amp;ny, int &amp;nt, double &amp;dx, double &amp;dy, double &amp;dt, double &amp;xo, double &amp;yo, double &amp;to, double &amp;xmax, double &amp;ymax, double &amp;tmax, bool &amp;flipx, bool &amp;flipy)</td></tr>
 <tr class="separator:a6e24e65db5d8609c76d187b1ea70eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7eedec0cb2a07e005f541fed061c6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#af7eedec0cb2a07e005f541fed061c6ae">readgridncsize</a> (<a class="el" href="classforcingmap.html">forcingmap</a> &amp;Fmap, <a class="el" href="classParam.html">Param</a> XParam)</td></tr>
 <tr class="separator:af7eedec0cb2a07e005f541fed061c6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,11 +160,11 @@ Functions</h2></td></tr>
 <tr class="separator:a36da5a9d68ce650ffc88eb3e9aefbc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295d92253283ab3a6c74c1160bdaab5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a295d92253283ab3a6c74c1160bdaab5b">readATMstep</a> (<a class="el" href="classforcingmap.html">forcingmap</a> ATMPmap, int steptoread, float *&amp;Po)</td></tr>
 <tr class="separator:a295d92253283ab3a6c74c1160bdaab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a709e031ea8e9e656b958e7c984e7704a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a709e031ea8e9e656b958e7c984e7704a">read3Dnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int ntheta, char <a class="el" href="Tutorial__Cart_8c.html#a0ff1d92f78b81f9acf2731a33bae1dd6">ncfile</a>[], float *&amp;ee)</td></tr>
+<tr class="memitem:a709e031ea8e9e656b958e7c984e7704a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#a709e031ea8e9e656b958e7c984e7704a">read3Dnc</a> (int nx, int ny, int ntheta, char ncfile[], float *&amp;ee)</td></tr>
 <tr class="separator:a709e031ea8e9e656b958e7c984e7704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4bc796c86f46ebb52272b9b2ade4309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#ad4bc796c86f46ebb52272b9b2ade4309">read2Dnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, char <a class="el" href="Tutorial__Cart_8c.html#a0ff1d92f78b81f9acf2731a33bae1dd6">ncfile</a>[], float *&amp;<a class="el" href="BasCart__gpu_8cu.html#a12f4dbc6d07a52666865c7de36db11cd">hh</a>)</td></tr>
+<tr class="memitem:ad4bc796c86f46ebb52272b9b2ade4309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#ad4bc796c86f46ebb52272b9b2ade4309">read2Dnc</a> (int nx, int ny, char ncfile[], float *&amp;hh)</td></tr>
 <tr class="separator:ad4bc796c86f46ebb52272b9b2ade4309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51602301123c9a4ee87e30b68c5695b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#aa51602301123c9a4ee87e30b68c5695b">readnczb</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, std::string <a class="el" href="Tutorial__Cart_8c.html#a0ff1d92f78b81f9acf2731a33bae1dd6">ncfile</a>, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:aa51602301123c9a4ee87e30b68c5695b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Read__netcdf_8h.html#aa51602301123c9a4ee87e30b68c5695b">readnczb</a> (int nx, int ny, std::string ncfile, float *&amp;zb)</td></tr>
 <tr class="separator:aa51602301123c9a4ee87e30b68c5695b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1110,7 +1118,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Read__netcdf_8h.html">Read_netcdf.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

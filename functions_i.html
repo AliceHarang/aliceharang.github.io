@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -97,23 +105,23 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="structModel.html#a7994918ec6a0534c2022eef22e569a9c">Model&lt; T &gt;</a>
 , <a class="el" href="classParam.html#a5e4968c3d1eb9dcbfbe4841313dd526e">Param</a>
 </li>
-<li>increment()
-: <a class="el" href="classCatch_1_1BenchmarkLooper.html#a210552aff5b19408637444d4bb35d59c">Catch::BenchmarkLooper</a>
+<li>index_next_OutputT
+: <a class="el" href="structoutzoneB.html#a20094fee5e2d685bdcc3ed727c449a85">outzoneB</a>
+</li>
+<li>indNextoutputtime
+: <a class="el" href="structLoop.html#a2166bcfff33532161e920418ba731e53">Loop&lt; T &gt;</a>
 </li>
 <li>infiltration
 : <a class="el" href="classParam.html#afa652351c19bcec42888cb0767c8db27">Param</a>
 </li>
-<li>Info
-: <a class="el" href="structCatch_1_1ResultWas.html#a624e1ee3661fcf6094ceef1f654601efa30222063929ca1b6318faa78e8242f1c">Catch::ResultWas</a>
-</li>
-<li>initialiseVTKOutput()
-: <a class="el" href="classcatalystAdaptor.html#ad630db80345d4fd560776d8c5ecb45ae">catalystAdaptor</a>
-</li>
-<li>initialiseWithPython()
-: <a class="el" href="classcatalystAdaptor.html#a856391e89182f2c7f0c984c9e201b4f4">catalystAdaptor</a>
+<li>init
+: <a class="el" href="classT__output.html#a8541874c520291ff54e47e5252b90707">T_output</a>
 </li>
 <li>initlevel
 : <a class="el" href="classParam.html#aac4696364843ddccbb8b47961023cd4c">Param</a>
+</li>
+<li>inittime
+: <a class="el" href="classParam.html#a1b5ddadef2ac55650e66c35152ef1f85">Param</a>
 </li>
 <li>inputfile
 : <a class="el" href="classbndparam.html#ad42d61f1a73b7e365bf36d50779935ab">bndparam</a>
@@ -121,45 +129,25 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classforcingmap.html#a9f3e3e78c2e33aa1b4d3fd27d98a22d0">forcingmap</a>
 , <a class="el" href="classinputmap.html#a4d0bde397d4e8baddc3fd8057f2fba2a">inputmap</a>
 </li>
+<li>inputstr
+: <a class="el" href="classT__output.html#a4716208f765ead6150597633e292686a">T_output</a>
+</li>
 <li>instep
 : <a class="el" href="classforcingmap.html#accc4f9ed82b52bd50a5e51bad42de6b7">forcingmap</a>
 </li>
 <li>invactive
 : <a class="el" href="structAdaptP.html#a7dfb4c24990cc507623d36d1868c2288">AdaptP</a>
 </li>
-<li>invoke()
-: <a class="el" href="structCatch_1_1ITestInvoker.html#a6fcd5c5b67d6d5ade6491ff33411ca7f">Catch::ITestInvoker</a>
-, <a class="el" href="classCatch_1_1TestCase.html#a26f346c8446dded0562fe3818ae71651">Catch::TestCase</a>
-, <a class="el" href="classCatch_1_1TestInvokerAsMethod.html#a8115a06efe273f4112ec0b5452c1b5f2">Catch::TestInvokerAsMethod&lt; C &gt;</a>
-</li>
-<li>isBinaryExpression()
-: <a class="el" href="structCatch_1_1ITransientExpression.html#a3b436e13a0a6d3522bbf70d4e31deb22">Catch::ITransientExpression</a>
-</li>
 <li>iscavity
 : <a class="el" href="classdeformmap.html#a061c7694f69532485a6c402f828f9e2b">deformmap&lt; T &gt;</a>
-</li>
-<li>IsHidden
-: <a class="el" href="structCatch_1_1TestCaseInfo.html#a39b232f74b4a7a6f2183b96759027eacaeda53906c14c3973e0980900c132b8f7">Catch::TestCaseInfo</a>
-</li>
-<li>isHidden()
-: <a class="el" href="structCatch_1_1TestCaseInfo.html#a934b1a0952700743e99d62ec1731a2e2">Catch::TestCaseInfo</a>
-</li>
-<li>isOwned()
-: <a class="el" href="classCatch_1_1StringRef.html#a911d426c9a979736da4bf44bec2b174c">Catch::StringRef</a>
 </li>
 <li>isright
 : <a class="el" href="classbndparam.html#aa006bd0fd265adfc9e533e4128a63f8e">bndparam</a>
 , <a class="el" href="classbndsegmentside.html#a0cd0b77b2f0b217cbe73a31776c0791a">bndsegmentside</a>
 </li>
-<li>isSubstring()
-: <a class="el" href="classCatch_1_1StringRef.html#adee880a214907e6a5ad64141b15f409a">Catch::StringRef</a>
-</li>
 <li>istop
 : <a class="el" href="classbndparam.html#a98569a73592222720b45a69e5c08d4c1">bndparam</a>
 , <a class="el" href="classbndsegmentside.html#acd6847b5276ad634bd8ef8dc69cde42b">bndsegmentside</a>
-</li>
-<li>ITransientExpression()
-: <a class="el" href="structCatch_1_1ITransientExpression.html#aafe69572b7ed884e63ec81f58d4afd8c">Catch::ITransientExpression</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -167,7 +155,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -127,18 +135,20 @@ $(document).ready(function(){initNavTree('classParam.html',''); initResizable();
   <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3a2075d8dade68288089733ca5969930">endtime</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classParam.html#a56642e1252852231103bd5cd633a0e07">engine</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3905d1b9b0d610f48973ec7a9490a80f">eps</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a7b55ea8669b639a4c017bb6742155096">frictionmodel</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#aa65664b83c1d6d4977593a242d44d8e9">g</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a3fa874c4ca1ca2c3704fec25d0ecfbe7">GPU_initmem_byte</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3cf625db84b7901df2879a08b20ba89e">GPU_totalmem_byte</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a3514b705695b7d22f9c84ecd7debbb0e">GPUDEVICE</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#af85123c8e6ad62f834df061df5cafa25">grdalpha</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a38757e1aa08f10b78b466a3b21e6a470">halowidth</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#af885609128acc8bb3ddb29c58c0a53ba">hotstartfile</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a6800bcfe3bbe46d0fcfe61c868d8efb3">hotstep</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a5e4968c3d1eb9dcbfbe4841313dd526e">il</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#afa652351c19bcec42888cb0767c8db27">infiltration</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#aac4696364843ddccbb8b47961023cd4c">initlevel</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#ad726f6cdd31ef755e528ddb0e6625cf2">ForceMassConserve</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a7b55ea8669b639a4c017bb6742155096">frictionmodel</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#aa65664b83c1d6d4977593a242d44d8e9">g</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3fa874c4ca1ca2c3704fec25d0ecfbe7">GPU_initmem_byte</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a3cf625db84b7901df2879a08b20ba89e">GPU_totalmem_byte</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3514b705695b7d22f9c84ecd7debbb0e">GPUDEVICE</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#af85123c8e6ad62f834df061df5cafa25">grdalpha</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a38757e1aa08f10b78b466a3b21e6a470">halowidth</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#af885609128acc8bb3ddb29c58c0a53ba">hotstartfile</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a6800bcfe3bbe46d0fcfe61c868d8efb3">hotstep</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a5e4968c3d1eb9dcbfbe4841313dd526e">il</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#afa652351c19bcec42888cb0767c8db27">infiltration</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#aac4696364843ddccbb8b47961023cd4c">initlevel</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a1b5ddadef2ac55650e66c35152ef1f85">inittime</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classParam.html#a450988e007ced6f1110f9b5374cf6b69">lat</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classParam.html#a716b643890ebd9d7fda0280d2b46f0cf">leftbnd</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classParam.html#a59981aed45aa424e9f4856ae9107f21b">mask</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
@@ -187,23 +197,24 @@ $(document).ready(function(){initNavTree('classParam.html',''); initResizable();
   <tr class="even"><td class="entry"><a class="el" href="classParam.html#ac67fbcc225fc93d258f018a5820e10bb">theta</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classParam.html#afadd1eca80d4fb49c1541bb7b27d0263">topbnd</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classParam.html#a71491afdf2a212a74e76fddf574a08a7">totaltime</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a2cf9401adaa530c2c933a9923d4c987e">TSnodesout</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a6103d3cfe34ca555ce4138e785e82866">VelThreshold</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a40b0d69eaa98a025f6830a3eeb53f58e">wet_threshold</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#ac1b0f48735d022dbbaf72b33a90ca5d7">wetdryfix</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a63560d0910c087fd7fc4e9a8e8345922">windforcing</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a23140d149004e514aaacb413747c21c3">xmax</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#ac50b1582f59df115435c4df8fafe5d22">xo</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a23bd2f3c81355fa3506fa5368dae2212">ymax</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a6ae40eba7fb31dc21c3cd4213f2403b6">yo</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a63a70c37cfb0eec2968ece3d623318a4">zsinit</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classParam.html#a3c29fe5c8af313e37bbb5d9faad470f9">zsoffset</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a9d5ff5efd69fdda52b5606a9de43fa9c">Toutput</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a2cf9401adaa530c2c933a9923d4c987e">TSnodesout</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a6103d3cfe34ca555ce4138e785e82866">VelThreshold</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a40b0d69eaa98a025f6830a3eeb53f58e">wet_threshold</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#ac1b0f48735d022dbbaf72b33a90ca5d7">wetdryfix</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a63560d0910c087fd7fc4e9a8e8345922">windforcing</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a23140d149004e514aaacb413747c21c3">xmax</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#ac50b1582f59df115435c4df8fafe5d22">xo</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a23bd2f3c81355fa3506fa5368dae2212">ymax</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a6ae40eba7fb31dc21c3cd4213f2403b6">yo</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classParam.html#a63a70c37cfb0eec2968ece3d623318a4">zsinit</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classParam.html#a3c29fe5c8af313e37bbb5d9faad470f9">zsoffset</a></td><td class="entry"><a class="el" href="classParam.html">Param</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

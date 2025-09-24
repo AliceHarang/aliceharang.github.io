@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -120,6 +128,16 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 </li>
 <li>fillCorners&lt; float &gt;()
 : <a class="el" href="Halo_8cu.html#a0da557498682b82b0ffcc76249624dca">Halo.cu</a>
+</li>
+<li>fillCornersGPU()
+: <a class="el" href="Halo_8cu.html#a9ba5024f1ba2013889f0dd2eee8e9f94">Halo.cu</a>
+, <a class="el" href="Halo_8h.html#a9ba5024f1ba2013889f0dd2eee8e9f94">Halo.h</a>
+</li>
+<li>fillCornersGPU&lt; double &gt;()
+: <a class="el" href="Halo_8cu.html#a75017ac658d5b68f331f20d00d591023">Halo.cu</a>
+</li>
+<li>fillCornersGPU&lt; float &gt;()
+: <a class="el" href="Halo_8cu.html#a43113d49e13054ec5dc2b528e4d8f5b0">Halo.cu</a>
 </li>
 <li>FillCPU()
 : <a class="el" href="MemManagement_8cu.html#a70ae6bcde329ae664862262415cddd1c">MemManagement.cu</a>
@@ -368,30 +386,9 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 <li>fillTopnew&lt; float &gt;()
 : <a class="el" href="Halo_8cu.html#a65828cacc2417f824d4e96d696749531">Halo.cu</a>
 </li>
-<li>finalminmaxKernel()
-: <a class="el" href="Flow__kernel_8cu.html#a06363c39cf97d97f7bf568907887f0ec">Flow_kernel.cu</a>
-</li>
 <li>Findbndblks()
 : <a class="el" href="InitialConditions_8cu.html#a7fad3c22b90f7fe77ee7f9bec4dd8126">InitialConditions.cu</a>
 , <a class="el" href="InitialConditions_8h.html#a8ea2be9bd2babd573611c8655e4301d6">InitialConditions.h</a>
-</li>
-<li>findbot()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a95722d80e223391aca2b48fb03d218f5">Bas_Cart_CPU.cpp</a>
-</li>
-<li>findbotG()
-: <a class="el" href="Flow__kernel_8cu.html#a5271503515699f4d37a3876d0e23e436">Flow_kernel.cu</a>
-</li>
-<li>findbotGSM()
-: <a class="el" href="Flow__kernel_8cu.html#ad3f84ad15f336024f6f194a89f825d52">Flow_kernel.cu</a>
-</li>
-<li>findleft()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a975db146180711d0f30fe792fb430e10">Bas_Cart_CPU.cpp</a>
-</li>
-<li>findleftG()
-: <a class="el" href="Flow__kernel_8cu.html#a49a05de121f8bf35b8b53d405d0ca2d8">Flow_kernel.cu</a>
-</li>
-<li>findleftGSM()
-: <a class="el" href="Flow__kernel_8cu.html#afe6ba7f8477be4c0be1abf9cd5012612">Flow_kernel.cu</a>
 </li>
 <li>FindMaskblk()
 : <a class="el" href="Mesh_8cu.html#a9ad50da5140076bdaf821685200015f1">Mesh.cu</a>
@@ -417,37 +414,18 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 : <a class="el" href="InitialConditions_8cu.html#a0d546b7364a3a0f4af5a7d72580c150f">InitialConditions.cu</a>
 </li>
 <li>findparameter()
-: <a class="el" href="read__input_8cpp.html#a9b6b9f9b26d90d1c1b4dfe173be57e1c">read_input.cpp</a>
-, <a class="el" href="ReadInput_8cu.html#a83b6362c0cf581af5b84e8040200857d">ReadInput.cu</a>
+: <a class="el" href="ReadInput_8cu.html#a83b6362c0cf581af5b84e8040200857d">ReadInput.cu</a>
 , <a class="el" href="ReadInput_8h.html#a83b6362c0cf581af5b84e8040200857d">ReadInput.h</a>
 </li>
-<li>findright()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a6fc6493b72738d81faeda61ef556f161">Bas_Cart_CPU.cpp</a>
-</li>
-<li>findrightG()
-: <a class="el" href="Flow__kernel_8cu.html#ae64d14e64856b5e859cb566c0181ba88">Flow_kernel.cu</a>
-</li>
-<li>findrightGSM()
-: <a class="el" href="Flow__kernel_8cu.html#a91b35d7cf4b3b8136311879d11b4947e">Flow_kernel.cu</a>
-</li>
-<li>findtop()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#aafcc3b88b515fed13fe3820e3973a80c">Bas_Cart_CPU.cpp</a>
-</li>
-<li>findtopG()
-: <a class="el" href="Flow__kernel_8cu.html#ac3947dbb64766485e3e02feaee518c68">Flow_kernel.cu</a>
-</li>
-<li>findtopGSM()
-: <a class="el" href="Flow__kernel_8cu.html#a3d82c89fefda3c165c5bc8e0689ce62d">Flow_kernel.cu</a>
-</li>
 <li>FindTSoutNodes()
-: <a class="el" href="InitialConditions_8cu.html#a00df2cd6889ed35970ab143abd056800">InitialConditions.cu</a>
-, <a class="el" href="InitialConditions_8h.html#a00df2cd6889ed35970ab143abd056800">InitialConditions.h</a>
+: <a class="el" href="InitialConditions_8cu.html#a13f967444cee5c69fa9cb6440510e6e7">InitialConditions.cu</a>
+, <a class="el" href="InitialConditions_8h.html#a13f967444cee5c69fa9cb6440510e6e7">InitialConditions.h</a>
 </li>
 <li>FindTSoutNodes&lt; double &gt;()
-: <a class="el" href="InitialConditions_8cu.html#ab302192b2740dbcda882a62ba441b3c0">InitialConditions.cu</a>
+: <a class="el" href="InitialConditions_8cu.html#a6e4ecef51cc1a30d96176f46d9f92f40">InitialConditions.cu</a>
 </li>
 <li>FindTSoutNodes&lt; float &gt;()
-: <a class="el" href="InitialConditions_8cu.html#a09c6b7f86e103ba0978f74420c7f9748">InitialConditions.cu</a>
+: <a class="el" href="InitialConditions_8cu.html#a841f73e5637f2556d68e01d99f279516">InitialConditions.cu</a>
 </li>
 <li>Flowbnd()
 : <a class="el" href="Boundary_8cu.html#a1070c3a02b0f106ebfba5aebebe8425d">Boundary.cu</a>
@@ -469,6 +447,16 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 <li>FlowbndFlux&lt; float &gt;()
 : <a class="el" href="Boundary_8cu.html#ac0ab5c3c4227600e58b3c53dbeacde01">Boundary.cu</a>
 </li>
+<li>FlowbndFluxML()
+: <a class="el" href="Boundary_8cu.html#aaec6c50a87ec1475242fd2636570993f">Boundary.cu</a>
+, <a class="el" href="Boundary_8h.html#aaec6c50a87ec1475242fd2636570993f">Boundary.h</a>
+</li>
+<li>FlowbndFluxML&lt; double &gt;()
+: <a class="el" href="Boundary_8cu.html#aa29892c52f28a5a119a694fe7e26c265">Boundary.cu</a>
+</li>
+<li>FlowbndFluxML&lt; float &gt;()
+: <a class="el" href="Boundary_8cu.html#acf03c6171ed451cb8d0bf23c4cd3a4ef">Boundary.cu</a>
+</li>
 <li>FlowbndFluxold()
 : <a class="el" href="Boundary_8cu.html#ac3ce7007bbafbb85ac1fbf844678fa16">Boundary.cu</a>
 </li>
@@ -479,8 +467,7 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 : <a class="el" href="Boundary_8cu.html#a954e350716ce4cb0be85c9b4a0b0f583">Boundary.cu</a>
 </li>
 <li>FlowCPU()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a89e7bce70000921e1a7f62ddfba289b9">Bas_Cart_CPU.cpp</a>
-, <a class="el" href="FlowCPU_8cu.html#a0af2f081275a8d507d14ca5db7bc7fac">FlowCPU.cu</a>
+: <a class="el" href="FlowCPU_8cu.html#a0af2f081275a8d507d14ca5db7bc7fac">FlowCPU.cu</a>
 , <a class="el" href="FlowCPU_8h.html#a0af2f081275a8d507d14ca5db7bc7fac">FlowCPU.h</a>
 </li>
 <li>FlowCPU&lt; double &gt;()
@@ -489,18 +476,8 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 <li>FlowCPU&lt; float &gt;()
 : <a class="el" href="FlowCPU_8cu.html#a8f6523e39d3f980f06f7201575e2e24a">FlowCPU.cu</a>
 </li>
-<li>FlowCPUATM()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a7cdb839126334668ea78f2f6b6459b90">Bas_Cart_CPU.cpp</a>
-</li>
-<li>FlowCPUDouble()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a23cabbed81b985f6fb1a0c4789096eb0">Bas_Cart_CPU.cpp</a>
-</li>
-<li>FlowCPUSpherical()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#a5625f0d2f8a37dfbc02c3e7b64277390">Bas_Cart_CPU.cpp</a>
-</li>
 <li>FlowGPU()
-: <a class="el" href="Init__gpu_8cu.html#ac87dbec493e235922ece748b55d24d45">Init_gpu.cu</a>
-, <a class="el" href="FlowGPU_8cu.html#a7651ec12d9de9eb8b3b5709582d19c76">FlowGPU.cu</a>
+: <a class="el" href="FlowGPU_8cu.html#a7651ec12d9de9eb8b3b5709582d19c76">FlowGPU.cu</a>
 , <a class="el" href="FlowGPU_8h.html#a7651ec12d9de9eb8b3b5709582d19c76">FlowGPU.h</a>
 </li>
 <li>FlowGPU&lt; double &gt;()
@@ -509,14 +486,15 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 <li>FlowGPU&lt; float &gt;()
 : <a class="el" href="FlowGPU_8cu.html#af1522f8964684615512ee173a57b0ca3">FlowGPU.cu</a>
 </li>
-<li>FlowGPUATM()
-: <a class="el" href="Init__gpu_8cu.html#a572383bcaae3a6e62a2b467c8c245d94">Init_gpu.cu</a>
+<li>FlowMLGPU()
+: <a class="el" href="FlowMLGPU_8cu.html#ad4c25bc7dfd0a11430b556aa0af3ebbe">FlowMLGPU.cu</a>
+, <a class="el" href="FlowMLGPU_8h.html#ad4c25bc7dfd0a11430b556aa0af3ebbe">FlowMLGPU.h</a>
 </li>
-<li>FlowGPUDouble()
-: <a class="el" href="Init__gpu_8cu.html#a7dd78b3aabba55b271158cf56b624de1">Init_gpu.cu</a>
+<li>FlowMLGPU&lt; double &gt;()
+: <a class="el" href="FlowMLGPU_8cu.html#a1c3f2bfcd33816e348c5a6be65a69816">FlowMLGPU.cu</a>
 </li>
-<li>FlowGPUSpherical()
-: <a class="el" href="Init__gpu_8cu.html#a0b6ed721e9ed7d6d5f0ff394a65289bb">Init_gpu.cu</a>
+<li>FlowMLGPU&lt; float &gt;()
+: <a class="el" href="FlowMLGPU_8cu.html#abb549f9159bae396a04b2ed21d935a3e">FlowMLGPU.cu</a>
 </li>
 <li>Forcingthisstep()
 : <a class="el" href="Updateforcing_8cu.html#a3e39c9d702154fb36bfd0e673598dc0c">Updateforcing.cu</a>
@@ -538,7 +516,7 @@ $(document).ready(function(){initNavTree('globals_func_f.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

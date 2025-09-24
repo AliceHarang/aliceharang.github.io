@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -94,6 +102,11 @@ $(document).ready(function(){initNavTree('classParam.html',''); initResizable();
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Param_8h_source.html">Param.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Param:</div>
+<div class="dyncontent">
+<div class="center"><img src="classParam__coll__graph.png" border="0" usemap="#aParam_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,16 +148,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:adf63cfa3d4df365208074857ff9aecd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b0f48735d022dbbaf72b33a90ca5d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ac1b0f48735d022dbbaf72b33a90ca5d7">wetdryfix</a> = true</td></tr>
 <tr class="separator:ac1b0f48735d022dbbaf72b33a90ca5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716b643890ebd9d7fda0280d2b46f0cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a716b643890ebd9d7fda0280d2b46f0cf">leftbnd</a> = false</td></tr>
-<tr class="separator:a716b643890ebd9d7fda0280d2b46f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d39fb85e682bb8624647de01410206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#af3d39fb85e682bb8624647de01410206">rightbnd</a> = false</td></tr>
-<tr class="separator:af3d39fb85e682bb8624647de01410206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afadd1eca80d4fb49c1541bb7b27d0263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#afadd1eca80d4fb49c1541bb7b27d0263">topbnd</a> = false</td></tr>
-<tr class="separator:afadd1eca80d4fb49c1541bb7b27d0263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b337ecf38a10803f3cd8e5e06cdd5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#af6b337ecf38a10803f3cd8e5e06cdd5c">botbnd</a> = false</td></tr>
-<tr class="separator:af6b337ecf38a10803f3cd8e5e06cdd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a0f36d752bf9dedafceb1c06444966"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a33a0f36d752bf9dedafceb1c06444966">aoibnd</a> = 0</td></tr>
-<tr class="separator:a33a0f36d752bf9dedafceb1c06444966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad726f6cdd31ef755e528ddb0e6625cf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ad726f6cdd31ef755e528ddb0e6625cf2">ForceMassConserve</a> = false</td></tr>
+<tr class="separator:ad726f6cdd31ef755e528ddb0e6625cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccee86eade735a53ed48f73c2086098"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#adccee86eade735a53ed48f73c2086098">Pa2m</a> = 0.00009916</td></tr>
 <tr class="separator:adccee86eade735a53ed48f73c2086098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8577e367c7199062016b9dc9749192ad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a8577e367c7199062016b9dc9749192ad">Paref</a> = 101300.0</td></tr>
@@ -207,14 +212,28 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a82248332d20759fbb16209cba4fef780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bfe307e5614456c51685a69161ebdf6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a0bfe307e5614456c51685a69161ebdf6">outputtimestep</a> = 0.0</td></tr>
 <tr class="separator:a0bfe307e5614456c51685a69161ebdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a2075d8dade68288089733ca5969930"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a3a2075d8dade68288089733ca5969930">endtime</a> = std::numeric_limits&lt;double&gt;::<a class="el" href="Bas__Cart__CPU_8cpp.html#a7a87439367298507f21f9561b0b21117">max</a>()</td></tr>
+<tr class="memitem:a3a2075d8dade68288089733ca5969930"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a3a2075d8dade68288089733ca5969930">endtime</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
 <tr class="separator:a3a2075d8dade68288089733ca5969930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71491afdf2a212a74e76fddf574a08a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a71491afdf2a212a74e76fddf574a08a7">totaltime</a> = 0.0</td></tr>
 <tr class="separator:a71491afdf2a212a74e76fddf574a08a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5ddadef2ac55650e66c35152ef1f85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a1b5ddadef2ac55650e66c35152ef1f85">inittime</a> = 0.0</td></tr>
+<tr class="separator:a1b5ddadef2ac55650e66c35152ef1f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade28be53ad4e21dbebf789b57fb03fce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ade28be53ad4e21dbebf789b57fb03fce">dtinit</a> = -1</td></tr>
 <tr class="separator:ade28be53ad4e21dbebf789b57fb03fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f28cb8d294f1ca1f120a3abe201e352"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a2f28cb8d294f1ca1f120a3abe201e352">dtmin</a> = 0.0005</td></tr>
 <tr class="separator:a2f28cb8d294f1ca1f120a3abe201e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5ff5efd69fdda52b5606a9de43fa9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classT__output.html">T_output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a9d5ff5efd69fdda52b5606a9de43fa9c">Toutput</a></td></tr>
+<tr class="separator:a9d5ff5efd69fdda52b5606a9de43fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716b643890ebd9d7fda0280d2b46f0cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a716b643890ebd9d7fda0280d2b46f0cf">leftbnd</a> = false</td></tr>
+<tr class="separator:a716b643890ebd9d7fda0280d2b46f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d39fb85e682bb8624647de01410206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#af3d39fb85e682bb8624647de01410206">rightbnd</a> = false</td></tr>
+<tr class="separator:af3d39fb85e682bb8624647de01410206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadd1eca80d4fb49c1541bb7b27d0263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#afadd1eca80d4fb49c1541bb7b27d0263">topbnd</a> = false</td></tr>
+<tr class="separator:afadd1eca80d4fb49c1541bb7b27d0263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b337ecf38a10803f3cd8e5e06cdd5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#af6b337ecf38a10803f3cd8e5e06cdd5c">botbnd</a> = false</td></tr>
+<tr class="separator:af6b337ecf38a10803f3cd8e5e06cdd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a0f36d752bf9dedafceb1c06444966"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a33a0f36d752bf9dedafceb1c06444966">aoibnd</a> = 0</td></tr>
+<tr class="separator:a33a0f36d752bf9dedafceb1c06444966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18c9950d026334710c66888898a9cf9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ae18c9950d026334710c66888898a9cf9">bndrelaxtime</a> = 3600.0</td></tr>
 <tr class="separator:ae18c9950d026334710c66888898a9cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae1aa9ba67896297450f9e7aca0ad1a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a2ae1aa9ba67896297450f9e7aca0ad1a">bndfiltertime</a> = 60.0</td></tr>
@@ -307,7 +326,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a152bd97e4b0ad04634500f42e09dc1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d4da11b6ae2adecbefe10da3891323"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#a84d4da11b6ae2adecbefe10da3891323">crs_ref</a> = &quot;no_crs&quot;</td></tr>
 <tr class="separator:a84d4da11b6ae2adecbefe10da3891323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19a5460fef554a9dd7da2983540ab43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ab19a5460fef554a9dd7da2983540ab43">savebyblk</a> =true</td></tr>
+<tr class="memitem:ab19a5460fef554a9dd7da2983540ab43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParam.html#ab19a5460fef554a9dd7da2983540ab43">savebyblk</a> = true</td></tr>
 <tr class="separator:ab19a5460fef554a9dd7da2983540ab43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -768,7 +787,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Param::endtime = std::numeric_limits&lt;double&gt;::<a class="el" href="Bas__Cart__CPU_8cpp.html#a7a87439367298507f21f9561b0b21117">max</a>()</td>
+          <td class="memname">double Param::endtime = std::numeric_limits&lt;double&gt;::max()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -797,6 +816,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double Param::eps = 0.0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad726f6cdd31ef755e528ddb0e6625cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad726f6cdd31ef755e528ddb0e6625cf2">&#9670;&nbsp;</a></span>ForceMassConserve</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Param::ForceMassConserve = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -965,6 +998,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Param::initlevel = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b5ddadef2ac55650e66c35152ef1f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5ddadef2ac55650e66c35152ef1f85">&#9670;&nbsp;</a></span>inittime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Param::inittime = 0.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1510,7 +1557,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Param::savebyblk =true</td>
+          <td class="memname">bool Param::savebyblk = true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1637,6 +1684,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double Param::totaltime = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d5ff5efd69fdda52b5606a9de43fa9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5ff5efd69fdda52b5606a9de43fa9c">&#9670;&nbsp;</a></span>Toutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classT__output.html">T_output</a> Param::Toutput</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1806,7 +1867,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classParam.html">Param</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -116,32 +124,32 @@ Functions</h2></td></tr>
 <tr class="memitem:acd23cfd734db5604e86925f669812e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#acd23cfd734db5604e86925f669812e28">handle_ncerror</a> (int status)</td></tr>
 <tr class="separator:acd23cfd734db5604e86925f669812e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#abca0f32949c20adb437f5ea902a054d2">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
+<tr class="memitem:abca0f32949c20adb437f5ea902a054d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#abca0f32949c20adb437f5ea902a054d2">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, int *activeblk, int *level, T *blockxo, T *blockyo, <a class="el" href="structoutzoneB.html">outzoneB</a> &amp;Xzone)</td></tr>
 <tr class="separator:abca0f32949c20adb437f5ea902a054d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60de80f688bea9725528d5a62b9bae73"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a60de80f688bea9725528d5a62b9bae73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a60de80f688bea9725528d5a62b9bae73">creatncfileBUQ</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; &amp;XBlock)</td></tr>
 <tr class="separator:a60de80f688bea9725528d5a62b9bae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:a8dd381d7653068671c8411aa43e0d17e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a8dd381d7653068671c8411aa43e0d17e">defncvarBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int *activeblk, int *level, T *blockxo, T *blockyo, std::string varst, int vdim, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:a8dd381d7653068671c8411aa43e0d17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *<a class="el" href="BasCart__gpu_8cu.html#a44e9bcdcab8fb0f47f82f892e417c34f">activeblk</a>, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a958da9e8d243acf44a299a5c048b0111">blockxo</a>, T *<a class="el" href="BasCart__gpu_8cu.html#a94aedcfbecfee884ea1383f2946d57bc">blockyo</a>, std::string varst, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
+<tr class="memitem:afcf742190cac3a9c04d966ad71c515ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#afcf742190cac3a9c04d966ad71c515ca">writencvarstepBUQ</a> (<a class="el" href="classParam.html">Param</a> XParam, int vdim, int *activeblk, int *level, T *blockxo, T *blockyo, std::string varst, T *var, <a class="el" href="structoutzoneB.html">outzoneB</a> Xzone)</td></tr>
 <tr class="separator:afcf742190cac3a9c04d966ad71c515ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4c8f75da0210b6762b38e005c2942"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a30a4c8f75da0210b6762b38e005c2942"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a30a4c8f75da0210b6762b38e005c2942">InitSave2Netcdf</a> (<a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;XModel)</td></tr>
 <tr class="separator:a30a4c8f75da0210b6762b38e005c2942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7baa2f1395758b42afb5ce020605abd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a7baa2f1395758b42afb5ce020605abd0">writenctimestep</a> (std::string outfile, double totaltime)</td></tr>
 <tr class="separator:a7baa2f1395758b42afb5ce020605abd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8295cb2c92f35bdd2d1eeb9b2807cb57"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8295cb2c92f35bdd2d1eeb9b2807cb57"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#a8295cb2c92f35bdd2d1eeb9b2807cb57">Save2Netcdf</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; XLoop, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel)</td></tr>
-<tr class="separator:a8295cb2c92f35bdd2d1eeb9b2807cb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aeed9da1a9c25e765c9c2588e44efcadd">create2dnc</a> (char *filename, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double *xx, double *yy, double *var, char *varname)</td></tr>
+<tr class="memitem:af2d239f5cce35afc5cac0ad32bf8fe7d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af2d239f5cce35afc5cac0ad32bf8fe7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#af2d239f5cce35afc5cac0ad32bf8fe7d">Save2Netcdf</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; XLoop, <a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;XModel)</td></tr>
+<tr class="separator:af2d239f5cce35afc5cac0ad32bf8fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aeed9da1a9c25e765c9c2588e44efcadd">create2dnc</a> (char *filename, int nx, int ny, double *xx, double *yy, double *var, char *varname)</td></tr>
 <tr class="separator:aeed9da1a9c25e765c9c2588e44efcadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aa7b7f1fe1864e3ad6d4bac1982e3a561">create3dnc</a> (char *name, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int nt, double *xx, double *yy, double *theta, double *var, char *varname)</td></tr>
+<tr class="memitem:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aa7b7f1fe1864e3ad6d4bac1982e3a561">create3dnc</a> (char *name, int nx, int ny, int nt, double *xx, double *yy, double *theta, double *var, char *varname)</td></tr>
 <tr class="separator:aa7b7f1fe1864e3ad6d4bac1982e3a561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73c1b56cf74fcfb460986caca0df756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aa73c1b56cf74fcfb460986caca0df756">write3dvarnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int nt, double totaltime, double *var)</td></tr>
+<tr class="memitem:aa73c1b56cf74fcfb460986caca0df756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#aa73c1b56cf74fcfb460986caca0df756">write3dvarnc</a> (int nx, int ny, int nt, double totaltime, double *var)</td></tr>
 <tr class="separator:aa73c1b56cf74fcfb460986caca0df756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#ae6f75b11a4428da84c143c0d1cad9f07">write2dvarnc</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, double totaltime, double *var)</td></tr>
+<tr class="memitem:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Write__netcdf_8h.html#ae6f75b11a4428da84c143c0d1cad9f07">write2dvarnc</a> (int nx, int ny, double totaltime, double *var)</td></tr>
 <tr class="separator:ae6f75b11a4428da84c143c0d1cad9f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -477,8 +485,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a8295cb2c92f35bdd2d1eeb9b2807cb57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8295cb2c92f35bdd2d1eeb9b2807cb57">&#9670;&nbsp;</a></span>Save2Netcdf()</h2>
+<a id="af2d239f5cce35afc5cac0ad32bf8fe7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d239f5cce35afc5cac0ad32bf8fe7d">&#9670;&nbsp;</a></span>Save2Netcdf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,7 +508,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>XModel</em>&#160;</td>
         </tr>
         <tr>
@@ -705,7 +713,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Write__netcdf_8h.html">Write_netcdf.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:48 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

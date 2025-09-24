@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -117,26 +125,26 @@ Functions</h2></td></tr>
 <tr class="memitem:a8940bc0632378da915f25ee31de2ed0b"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a8940bc0632378da915f25ee31de2ed0b">fillHaloC&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *z)</td></tr>
 <tr class="separator:a8940bc0632378da915f25ee31de2ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f36c2211a044c4891c7fafc9d1b02f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af0f36c2211a044c4891c7fafc9d1b02f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af0f36c2211a044c4891c7fafc9d1b02f">RecalculateZs</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:af0f36c2211a044c4891c7fafc9d1b02f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af0f36c2211a044c4891c7fafc9d1b02f">RecalculateZs</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *zb)</td></tr>
 <tr class="memdesc:af0f36c2211a044c4891c7fafc9d1b02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate water surface after recalculating the values on the halo on the CPU.  <a href="Halo_8cu.html#af0f36c2211a044c4891c7fafc9d1b02f">More...</a><br /></td></tr>
 <tr class="separator:af0f36c2211a044c4891c7fafc9d1b02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a179168b1b6ca6d431895fa50ddbc5e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4a179168b1b6ca6d431895fa50ddbc5e">RecalculateZs&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a4a179168b1b6ca6d431895fa50ddbc5e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4a179168b1b6ca6d431895fa50ddbc5e">RecalculateZs&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *zb)</td></tr>
 <tr class="separator:a4a179168b1b6ca6d431895fa50ddbc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4346cbc367125486b54412319cca8521"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4346cbc367125486b54412319cca8521">RecalculateZs&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a4346cbc367125486b54412319cca8521"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4346cbc367125486b54412319cca8521">RecalculateZs&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *zb)</td></tr>
 <tr class="separator:a4346cbc367125486b54412319cca8521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fd24940e7422244beb1290eee7e01d2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9fd24940e7422244beb1290eee7e01d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a9fd24940e7422244beb1290eee7e01d2">Recalculatehh</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a9fd24940e7422244beb1290eee7e01d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a9fd24940e7422244beb1290eee7e01d2">Recalculatehh</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *zb)</td></tr>
 <tr class="separator:a9fd24940e7422244beb1290eee7e01d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f7fbcf268c15b06de92d94a86676d4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a86f7fbcf268c15b06de92d94a86676d4">Recalculatehh&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a86f7fbcf268c15b06de92d94a86676d4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a86f7fbcf268c15b06de92d94a86676d4">Recalculatehh&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *zb)</td></tr>
 <tr class="separator:a86f7fbcf268c15b06de92d94a86676d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57466ad6cd9816401644ed33654265f7"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a57466ad6cd9816401644ed33654265f7">Recalculatehh&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a57466ad6cd9816401644ed33654265f7"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a57466ad6cd9816401644ed33654265f7">Recalculatehh&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *zb)</td></tr>
 <tr class="separator:a57466ad6cd9816401644ed33654265f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ffb16dded1af0f0b9243601ee29db92"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5ffb16dded1af0f0b9243601ee29db92"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a5ffb16dded1af0f0b9243601ee29db92">RecalculateZsGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a5ffb16dded1af0f0b9243601ee29db92"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a5ffb16dded1af0f0b9243601ee29db92">RecalculateZsGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *zb)</td></tr>
 <tr class="separator:a5ffb16dded1af0f0b9243601ee29db92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1375cf89754b41163abe692f5a52f1aa"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a1375cf89754b41163abe692f5a52f1aa">RecalculateZsGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a1375cf89754b41163abe692f5a52f1aa"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a1375cf89754b41163abe692f5a52f1aa">RecalculateZsGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *zb)</td></tr>
 <tr class="separator:a1375cf89754b41163abe692f5a52f1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2530753f4e0a860edcdde8a4600d575e"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2530753f4e0a860edcdde8a4600d575e">RecalculateZsGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a2530753f4e0a860edcdde8a4600d575e"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2530753f4e0a860edcdde8a4600d575e">RecalculateZsGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *zb)</td></tr>
 <tr class="separator:a2530753f4e0a860edcdde8a4600d575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96005943eb8cc55515edf93a438bdc15"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a96005943eb8cc55515edf93a438bdc15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a96005943eb8cc55515edf93a438bdc15">fillHaloF</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *z)</td></tr>
@@ -154,6 +162,13 @@ Functions</h2></td></tr>
 <tr class="separator:a805c1dabf839953debffe2799c61cae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20176600a52e8881aa78213c15e1ac4b"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a20176600a52e8881aa78213c15e1ac4b">fillHaloGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, cudaStream_t stream, float *z)</td></tr>
 <tr class="separator:a20176600a52e8881aa78213c15e1ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9685d8f9a22683d2a5a8ab96abb1f735"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9685d8f9a22683d2a5a8ab96abb1f735"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a9685d8f9a22683d2a5a8ab96abb1f735">fillHaloGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *z)</td></tr>
+<tr class="separator:a9685d8f9a22683d2a5a8ab96abb1f735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e004e3fbebc9bb46bb634a202ae6d0"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a34e004e3fbebc9bb46bb634a202ae6d0">fillHaloGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *z)</td></tr>
+<tr class="separator:a34e004e3fbebc9bb46bb634a202ae6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2832633400d205ffe4346bbe730d260"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ac2832633400d205ffe4346bbe730d260">fillHaloGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, float *z)</td></tr>
+<tr class="separator:ac2832633400d205ffe4346bbe730d260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a79939f743cb813160e5cd771480b9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a29a79939f743cb813160e5cd771480b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a29a79939f743cb813160e5cd771480b9">fillHaloGPUnew</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, cudaStream_t stream, T *z)</td></tr>
 <tr class="separator:a29a79939f743cb813160e5cd771480b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,11 +234,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a7a80e2f0e348af6c37f5550554eb1fec"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a7a80e2f0e348af6c37f5550554eb1fec">fillHaloBotTopGPUnew&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, cudaStream_t stream, float *z)</td></tr>
 <tr class="separator:a7a80e2f0e348af6c37f5550554eb1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a31e12451e1336defc379f47d6aab9e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a4a31e12451e1336defc379f47d6aab9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4a31e12451e1336defc379f47d6aab9e">fillHalo</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a4a31e12451e1336defc379f47d6aab9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a4a31e12451e1336defc379f47d6aab9e">fillHalo</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *zb)</td></tr>
 <tr class="separator:a4a31e12451e1336defc379f47d6aab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4cf32960744be7d6afbd861b4af55e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#afa4cf32960744be7d6afbd861b4af55e">fillHalo&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:afa4cf32960744be7d6afbd861b4af55e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#afa4cf32960744be7d6afbd861b4af55e">fillHalo&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *zb)</td></tr>
 <tr class="separator:afa4cf32960744be7d6afbd861b4af55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3631ffea6e7d5766b04de6082182813e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a3631ffea6e7d5766b04de6082182813e">fillHalo&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a3631ffea6e7d5766b04de6082182813e"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a3631ffea6e7d5766b04de6082182813e">fillHalo&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *zb)</td></tr>
 <tr class="separator:a3631ffea6e7d5766b04de6082182813e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571ac7ff2cf8b31f5d026b7e909e5271"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a571ac7ff2cf8b31f5d026b7e909e5271"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a571ac7ff2cf8b31f5d026b7e909e5271">fillHalo</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev)</td></tr>
@@ -240,11 +255,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a87f6da23bb80f5c2a138bad34e576e5b"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a87f6da23bb80f5c2a138bad34e576e5b">fillHaloGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev)</td></tr>
 <tr class="separator:a87f6da23bb80f5c2a138bad34e576e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bcac8c7fda9dd6edcfb34f40543ceef"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8bcac8c7fda9dd6edcfb34f40543ceef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a8bcac8c7fda9dd6edcfb34f40543ceef">fillHaloGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a8bcac8c7fda9dd6edcfb34f40543ceef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a8bcac8c7fda9dd6edcfb34f40543ceef">fillHaloGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; Xev, T *zb)</td></tr>
 <tr class="separator:a8bcac8c7fda9dd6edcfb34f40543ceef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d035a7e3954d9b2801a74cf2ba87f2"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ae9d035a7e3954d9b2801a74cf2ba87f2">fillHaloGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ae9d035a7e3954d9b2801a74cf2ba87f2"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ae9d035a7e3954d9b2801a74cf2ba87f2">fillHaloGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; Xev, float *zb)</td></tr>
 <tr class="separator:ae9d035a7e3954d9b2801a74cf2ba87f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac253f2bf76324a678d0f34a9a9b1c631"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ac253f2bf76324a678d0f34a9a9b1c631">fillHaloGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ac253f2bf76324a678d0f34a9a9b1c631"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ac253f2bf76324a678d0f34a9a9b1c631">fillHaloGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; Xev, double *zb)</td></tr>
 <tr class="separator:ac253f2bf76324a678d0f34a9a9b1c631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335ca91325da154b12cc3f3ee6dabba3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a335ca91325da154b12cc3f3ee6dabba3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a335ca91325da154b12cc3f3ee6dabba3">fillHalo</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; Grad)</td></tr>
@@ -373,18 +388,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ad7bdbf10e6e7309983c7143644f18268"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ad7bdbf10e6e7309983c7143644f18268">fillLeft</a> (<a class="el" href="classParam.html">Param</a> XParam, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
 <tr class="separator:ad7bdbf10e6e7309983c7143644f18268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1855d1f517b150637f7ebba2b7c98d3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af1855d1f517b150637f7ebba2b7c98d3"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af1855d1f517b150637f7ebba2b7c98d3">fillLeft</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, T *a)</td></tr>
+<tr class="memitem:af1855d1f517b150637f7ebba2b7c98d3"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af1855d1f517b150637f7ebba2b7c98d3">fillLeft</a> (int halowidth, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, T *a)</td></tr>
 <tr class="separator:af1855d1f517b150637f7ebba2b7c98d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b14beb454331728755e5f8a6f251e13"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a3b14beb454331728755e5f8a6f251e13">fillLeft&lt; float &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, float *a)</td></tr>
+<tr class="memitem:a3b14beb454331728755e5f8a6f251e13"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a3b14beb454331728755e5f8a6f251e13">fillLeft&lt; float &gt;</a> (int halowidth, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, float *a)</td></tr>
 <tr class="separator:a3b14beb454331728755e5f8a6f251e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd2d63dd1706ae7d29be62692da6f38"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aedd2d63dd1706ae7d29be62692da6f38">fillLeft&lt; double &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, double *a)</td></tr>
+<tr class="memitem:aedd2d63dd1706ae7d29be62692da6f38"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aedd2d63dd1706ae7d29be62692da6f38">fillLeft&lt; double &gt;</a> (int halowidth, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, double *a)</td></tr>
 <tr class="separator:aedd2d63dd1706ae7d29be62692da6f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca99a935bccb5897113cf8f57dcc877"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aeca99a935bccb5897113cf8f57dcc877"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aeca99a935bccb5897113cf8f57dcc877">fillLeftnew</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, T *a)</td></tr>
+<tr class="memitem:aeca99a935bccb5897113cf8f57dcc877"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aeca99a935bccb5897113cf8f57dcc877">fillLeftnew</a> (int halowidth, int nblk, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, T *a)</td></tr>
 <tr class="separator:aeca99a935bccb5897113cf8f57dcc877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98fac6187460306e6a2d90611cf5f7b6"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a98fac6187460306e6a2d90611cf5f7b6">fillLeftnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, float *a)</td></tr>
+<tr class="memitem:a98fac6187460306e6a2d90611cf5f7b6"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a98fac6187460306e6a2d90611cf5f7b6">fillLeftnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, float *a)</td></tr>
 <tr class="separator:a98fac6187460306e6a2d90611cf5f7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6479ede9a0c3e1cfacc2e53355ebccb"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ae6479ede9a0c3e1cfacc2e53355ebccb">fillLeftnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, double *a)</td></tr>
+<tr class="memitem:ae6479ede9a0c3e1cfacc2e53355ebccb"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ae6479ede9a0c3e1cfacc2e53355ebccb">fillLeftnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *level, int *leftbot, int *lefttop, int *rightbot, int *botright, int *topright, double *a)</td></tr>
 <tr class="separator:ae6479ede9a0c3e1cfacc2e53355ebccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d9d65fbd4acba2dc766568a77bfaffd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5d9d65fbd4acba2dc766568a77bfaffd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a5d9d65fbd4acba2dc766568a77bfaffd">fillLeftFlux</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
@@ -393,18 +408,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a2345005d54233720f2cae1e1b443a36f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2345005d54233720f2cae1e1b443a36f">fillRight</a> (<a class="el" href="classParam.html">Param</a> XParam, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
 <tr class="separator:a2345005d54233720f2cae1e1b443a36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71504ac800a61627ac5cef75d003bfd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af71504ac800a61627ac5cef75d003bfd"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af71504ac800a61627ac5cef75d003bfd">fillRight</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
+<tr class="memitem:af71504ac800a61627ac5cef75d003bfd"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af71504ac800a61627ac5cef75d003bfd">fillRight</a> (int halowidth, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
 <tr class="separator:af71504ac800a61627ac5cef75d003bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e57bc7f4ba67769042bff28273c9e7"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a72e57bc7f4ba67769042bff28273c9e7">fillRight&lt; float &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
+<tr class="memitem:a72e57bc7f4ba67769042bff28273c9e7"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a72e57bc7f4ba67769042bff28273c9e7">fillRight&lt; float &gt;</a> (int halowidth, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
 <tr class="separator:a72e57bc7f4ba67769042bff28273c9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ded4426a80fbcf290981dc537f320d4"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a1ded4426a80fbcf290981dc537f320d4">fillRight&lt; double &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
+<tr class="memitem:a1ded4426a80fbcf290981dc537f320d4"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a1ded4426a80fbcf290981dc537f320d4">fillRight&lt; double &gt;</a> (int halowidth, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
 <tr class="separator:a1ded4426a80fbcf290981dc537f320d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b0d44b1bb0c826f764f7b84b8bed23"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ab2b0d44b1bb0c826f764f7b84b8bed23"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab2b0d44b1bb0c826f764f7b84b8bed23">fillRightnew</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
+<tr class="memitem:ab2b0d44b1bb0c826f764f7b84b8bed23"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab2b0d44b1bb0c826f764f7b84b8bed23">fillRightnew</a> (int halowidth, int nblk, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
 <tr class="separator:ab2b0d44b1bb0c826f764f7b84b8bed23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81fe82b12b6eecfaab656454daa1c2d1"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a81fe82b12b6eecfaab656454daa1c2d1">fillRightnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
+<tr class="memitem:a81fe82b12b6eecfaab656454daa1c2d1"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a81fe82b12b6eecfaab656454daa1c2d1">fillRightnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
 <tr class="separator:a81fe82b12b6eecfaab656454daa1c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a4a9f0e151d12e559ac3581e855908"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab5a4a9f0e151d12e559ac3581e855908">fillRightnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
+<tr class="memitem:ab5a4a9f0e151d12e559ac3581e855908"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab5a4a9f0e151d12e559ac3581e855908">fillRightnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
 <tr class="separator:ab5a4a9f0e151d12e559ac3581e855908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f03036ffa47f139c5eba848de62ce1a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2f03036ffa47f139c5eba848de62ce1a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2f03036ffa47f139c5eba848de62ce1a">fillRightFlux</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
@@ -414,28 +429,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a04f5e436751e34f565037dc24a22a155"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a04f5e436751e34f565037dc24a22a155">fillRightFlux&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *&amp;z)</td></tr>
 <tr class="separator:a04f5e436751e34f565037dc24a22a155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa07f3e06bd6f302d97aa9954188afb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afaa07f3e06bd6f302d97aa9954188afb"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#afaa07f3e06bd6f302d97aa9954188afb">fillRightFlux</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
+<tr class="memitem:afaa07f3e06bd6f302d97aa9954188afb"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#afaa07f3e06bd6f302d97aa9954188afb">fillRightFlux</a> (int halowidth, bool doProlongation, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, T *a)</td></tr>
 <tr class="separator:afaa07f3e06bd6f302d97aa9954188afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56941d739afb1ee3215e82cd06678e96"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a56941d739afb1ee3215e82cd06678e96">fillRightFlux&lt; float &gt;</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
+<tr class="memitem:a56941d739afb1ee3215e82cd06678e96"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a56941d739afb1ee3215e82cd06678e96">fillRightFlux&lt; float &gt;</a> (int halowidth, bool doProlongation, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, float *a)</td></tr>
 <tr class="separator:a56941d739afb1ee3215e82cd06678e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87e192a85f48bf6a5706ac9fde71b3e9"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a87e192a85f48bf6a5706ac9fde71b3e9">fillRightFlux&lt; double &gt;</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
+<tr class="memitem:a87e192a85f48bf6a5706ac9fde71b3e9"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a87e192a85f48bf6a5706ac9fde71b3e9">fillRightFlux&lt; double &gt;</a> (int halowidth, bool doProlongation, int *active, int *level, int *rightbot, int *righttop, int *leftbot, int *botleft, int *topleft, double *a)</td></tr>
 <tr class="separator:a87e192a85f48bf6a5706ac9fde71b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671352fcb2eaaa2d4207ff07c9e8f852"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a671352fcb2eaaa2d4207ff07c9e8f852"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a671352fcb2eaaa2d4207ff07c9e8f852">fillBot</a> (<a class="el" href="classParam.html">Param</a> XParam, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
 <tr class="separator:a671352fcb2eaaa2d4207ff07c9e8f852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9678ea06bf2f69ed3152b64f8deffca"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af9678ea06bf2f69ed3152b64f8deffca"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af9678ea06bf2f69ed3152b64f8deffca">fillBot</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, T *a)</td></tr>
+<tr class="memitem:af9678ea06bf2f69ed3152b64f8deffca"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#af9678ea06bf2f69ed3152b64f8deffca">fillBot</a> (int halowidth, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, T *a)</td></tr>
 <tr class="separator:af9678ea06bf2f69ed3152b64f8deffca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7020b0ebbbedc2f4dcb4f34e1007273f"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a7020b0ebbbedc2f4dcb4f34e1007273f">fillBot&lt; float &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, float *a)</td></tr>
+<tr class="memitem:a7020b0ebbbedc2f4dcb4f34e1007273f"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a7020b0ebbbedc2f4dcb4f34e1007273f">fillBot&lt; float &gt;</a> (int halowidth, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, float *a)</td></tr>
 <tr class="separator:a7020b0ebbbedc2f4dcb4f34e1007273f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55031de0d78e78dfc24cef8c29bc7017"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a55031de0d78e78dfc24cef8c29bc7017">fillBot&lt; double &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, double *a)</td></tr>
+<tr class="memitem:a55031de0d78e78dfc24cef8c29bc7017"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a55031de0d78e78dfc24cef8c29bc7017">fillBot&lt; double &gt;</a> (int halowidth, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, double *a)</td></tr>
 <tr class="separator:a55031de0d78e78dfc24cef8c29bc7017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc4bb8d813f6515dea868a5d2d36f68"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2fc4bb8d813f6515dea868a5d2d36f68"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2fc4bb8d813f6515dea868a5d2d36f68">fillBotnew</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, T *a)</td></tr>
+<tr class="memitem:a2fc4bb8d813f6515dea868a5d2d36f68"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a2fc4bb8d813f6515dea868a5d2d36f68">fillBotnew</a> (int halowidth, int nblk, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, T *a)</td></tr>
 <tr class="separator:a2fc4bb8d813f6515dea868a5d2d36f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3d52e6ce9ff6c556e2d0743ea6844f"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#acb3d52e6ce9ff6c556e2d0743ea6844f">fillBotnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, float *a)</td></tr>
+<tr class="memitem:acb3d52e6ce9ff6c556e2d0743ea6844f"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#acb3d52e6ce9ff6c556e2d0743ea6844f">fillBotnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, float *a)</td></tr>
 <tr class="separator:acb3d52e6ce9ff6c556e2d0743ea6844f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701b145ee386048b5066d978de26a8a4"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a701b145ee386048b5066d978de26a8a4">fillBotnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, double *a)</td></tr>
+<tr class="memitem:a701b145ee386048b5066d978de26a8a4"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a701b145ee386048b5066d978de26a8a4">fillBotnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *level, int *botleft, int *botright, int *topleft, int *lefttop, int *righttop, double *a)</td></tr>
 <tr class="separator:a701b145ee386048b5066d978de26a8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada9520990635cb340db8cf913cc6e356"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ada9520990635cb340db8cf913cc6e356"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ada9520990635cb340db8cf913cc6e356">fillBotFlux</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
@@ -444,18 +459,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aefe78bd2478a704e63205de5fee4f5ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aefe78bd2478a704e63205de5fee4f5ac">fillTop</a> (<a class="el" href="classParam.html">Param</a> XParam, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
 <tr class="separator:aefe78bd2478a704e63205de5fee4f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77acf80e6591f424cb6b99331eb3764a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a77acf80e6591f424cb6b99331eb3764a"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a77acf80e6591f424cb6b99331eb3764a">fillTop</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
+<tr class="memitem:a77acf80e6591f424cb6b99331eb3764a"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a77acf80e6591f424cb6b99331eb3764a">fillTop</a> (int halowidth, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
 <tr class="separator:a77acf80e6591f424cb6b99331eb3764a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3744247f8d4622ba1f0e52a738148f7"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab3744247f8d4622ba1f0e52a738148f7">fillTop&lt; float &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
+<tr class="memitem:ab3744247f8d4622ba1f0e52a738148f7"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#ab3744247f8d4622ba1f0e52a738148f7">fillTop&lt; float &gt;</a> (int halowidth, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
 <tr class="separator:ab3744247f8d4622ba1f0e52a738148f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b6a37e2b440932b8c4beea68e0a13a"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a89b6a37e2b440932b8c4beea68e0a13a">fillTop&lt; double &gt;</a> (int halowidth, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
+<tr class="memitem:a89b6a37e2b440932b8c4beea68e0a13a"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a89b6a37e2b440932b8c4beea68e0a13a">fillTop&lt; double &gt;</a> (int halowidth, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
 <tr class="separator:a89b6a37e2b440932b8c4beea68e0a13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e1c95744d12c9baf5767e34767d4d4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a67e1c95744d12c9baf5767e34767d4d4"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a67e1c95744d12c9baf5767e34767d4d4">fillTopnew</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
+<tr class="memitem:a67e1c95744d12c9baf5767e34767d4d4"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a67e1c95744d12c9baf5767e34767d4d4">fillTopnew</a> (int halowidth, int nblk, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
 <tr class="separator:a67e1c95744d12c9baf5767e34767d4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65828cacc2417f824d4e96d696749531"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a65828cacc2417f824d4e96d696749531">fillTopnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
+<tr class="memitem:a65828cacc2417f824d4e96d696749531"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a65828cacc2417f824d4e96d696749531">fillTopnew&lt; float &gt;</a> (int halowidth, int nblk, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
 <tr class="separator:a65828cacc2417f824d4e96d696749531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fa720fa5a16910d38c34480f2f1b72b"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a5fa720fa5a16910d38c34480f2f1b72b">fillTopnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
+<tr class="memitem:a5fa720fa5a16910d38c34480f2f1b72b"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a5fa720fa5a16910d38c34480f2f1b72b">fillTopnew&lt; double &gt;</a> (int halowidth, int nblk, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
 <tr class="separator:a5fa720fa5a16910d38c34480f2f1b72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af9c1a41440ff037441b0cea28bcbaf"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a9af9c1a41440ff037441b0cea28bcbaf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a9af9c1a41440ff037441b0cea28bcbaf">fillTopFlux</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
@@ -465,11 +480,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d2e054c42e7de0e660d4eb7d42171ad"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a7d2e054c42e7de0e660d4eb7d42171ad">fillTopFlux&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, bool doProlongation, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *&amp;z)</td></tr>
 <tr class="separator:a7d2e054c42e7de0e660d4eb7d42171ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeae9c3ca26a884c76d4d429c60dead6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aaeae9c3ca26a884c76d4d429c60dead6"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aaeae9c3ca26a884c76d4d429c60dead6">fillTopFlux</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
+<tr class="memitem:aaeae9c3ca26a884c76d4d429c60dead6"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#aaeae9c3ca26a884c76d4d429c60dead6">fillTopFlux</a> (int halowidth, bool doProlongation, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, T *a)</td></tr>
 <tr class="separator:aaeae9c3ca26a884c76d4d429c60dead6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a266e09515f6b6f7f560ccc120e806957"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a266e09515f6b6f7f560ccc120e806957">fillTopFlux&lt; float &gt;</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
+<tr class="memitem:a266e09515f6b6f7f560ccc120e806957"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a266e09515f6b6f7f560ccc120e806957">fillTopFlux&lt; float &gt;</a> (int halowidth, bool doProlongation, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, float *a)</td></tr>
 <tr class="separator:a266e09515f6b6f7f560ccc120e806957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f91cf2e90ac2d1db440820c5ba5518c"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a6f91cf2e90ac2d1db440820c5ba5518c">fillTopFlux&lt; double &gt;</a> (int halowidth, bool doProlongation, int *active, int *<a class="el" href="BasCart__gpu_8cu.html#ac9001fc93d0a01b8c60a77f1e5b6a7f1">level</a>, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
+<tr class="memitem:a6f91cf2e90ac2d1db440820c5ba5518c"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a6f91cf2e90ac2d1db440820c5ba5518c">fillTopFlux&lt; double &gt;</a> (int halowidth, bool doProlongation, int *active, int *level, int *topleft, int *topright, int *botleft, int *leftbot, int *rightbot, double *a)</td></tr>
 <tr class="separator:a6f91cf2e90ac2d1db440820c5ba5518c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1797b1932cfb1952397c7618a84da179"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1797b1932cfb1952397c7618a84da179"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a1797b1932cfb1952397c7618a84da179">fillCorners</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *&amp;z)</td></tr>
@@ -492,6 +507,13 @@ Functions</h2></td></tr>
 <tr class="separator:af52340141ab4f4e3f665ec44134720b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b201dc5498462f5fc345114b3633541"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a3b201dc5498462f5fc345114b3633541">fillCorners&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, int ib, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *&amp;z)</td></tr>
 <tr class="separator:a3b201dc5498462f5fc345114b3633541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba5024f1ba2013889f0dd2eee8e9f94"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9ba5024f1ba2013889f0dd2eee8e9f94"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a9ba5024f1ba2013889f0dd2eee8e9f94">fillCornersGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *z)</td></tr>
+<tr class="separator:a9ba5024f1ba2013889f0dd2eee8e9f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43113d49e13054ec5dc2b528e4d8f5b0"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a43113d49e13054ec5dc2b528e4d8f5b0">fillCornersGPU&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, float *z)</td></tr>
+<tr class="separator:a43113d49e13054ec5dc2b528e4d8f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75017ac658d5b68f331f20d00d591023"><td class="memItemLeft" align="right" valign="top">template __global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Halo_8cu.html#a75017ac658d5b68f331f20d00d591023">fillCornersGPU&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, double *z)</td></tr>
+<tr class="separator:a75017ac658d5b68f331f20d00d591023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad8656ca08616abdeb043f622de7243fd"></a>
@@ -1478,6 +1500,110 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a9ba5024f1ba2013889f0dd2eee8e9f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba5024f1ba2013889f0dd2eee8e9f94">&#9670;&nbsp;</a></span>fillCornersGPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void fillCornersGPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75017ac658d5b68f331f20d00d591023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75017ac658d5b68f331f20d00d591023">&#9670;&nbsp;</a></span>fillCornersGPU&lt; double &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template __global__ void <a class="el" href="Halo_8h.html#a9ba5024f1ba2013889f0dd2eee8e9f94">fillCornersGPU</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43113d49e13054ec5dc2b528e4d8f5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43113d49e13054ec5dc2b528e4d8f5b0">&#9670;&nbsp;</a></span>fillCornersGPU&lt; float &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template __global__ void <a class="el" href="Halo_8h.html#a9ba5024f1ba2013889f0dd2eee8e9f94">fillCornersGPU</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a571ac7ff2cf8b31f5d026b7e909e5271"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a571ac7ff2cf8b31f5d026b7e909e5271">&#9670;&nbsp;</a></span>fillHalo() <span class="overload">[1/4]</span></h2>
 
@@ -2295,7 +2421,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Wrapping function for calculating halos for each block of a single variable on CPU. </p>
-<h2><a class="anchor" id="autotoc_md55"></a>
+<h2><a class="anchor" id="autotoc_md133"></a>
 Description</h2>
 <p>This function is a wraping fuction of the halo functions on CPU. It is called from the main Halo CPU function. This is layer 2 of 3 wrap so the candy doesn't stick too much. </p>
 
@@ -2410,7 +2536,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Wrapping function for calculating halos on CPU on every side of a block of a single variable. </p>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md132"></a>
 Description</h2>
 <p>This fuction is a wraping fuction of the halo functions for CPU. It is called from another wraping function to keep things clean. In a sense this is the third (and last) layer of wrapping </p>
 
@@ -2537,10 +2663,10 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Wrapping function for calculating flux in the halos for a block and a single variable on CPU. </p>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md138"></a>
 Depreciated</h2>
 <p>This function is was never sucessful and will never be used. It is fundamentally flawed because is doesn't preserve the balance of fluxes on the restiction interface It should be deleted soon </p>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md139"></a>
 Description</h2>
 
 </div>
@@ -2626,7 +2752,7 @@ Description</h2>
 </div>
 </div>
 <a id="a2ee84ac3de37b97bf6c4a3919f8a355b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ee84ac3de37b97bf6c4a3919f8a355b">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee84ac3de37b97bf6c4a3919f8a355b">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2666,14 +2792,14 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Wrapping function for calculating halos for each block of a single variable on GPU. </p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md140"></a>
 Description</h2>
 <p>This function is a wraping fuction of the halo functions on GPU. It is called from the main Halo GPU function. The present imnplementation is naive and slow one that calls the rather complex fillLeft type functions </p>
 
 </div>
 </div>
 <a id="a2a355feb696605ad555fe018395bcac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a355feb696605ad555fe018395bcac2">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a355feb696605ad555fe018395bcac2">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2709,7 +2835,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a8bcac8c7fda9dd6edcfb34f40543ceef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bcac8c7fda9dd6edcfb34f40543ceef">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bcac8c7fda9dd6edcfb34f40543ceef">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2751,7 +2877,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a3f01819995937c8bbce5ac05c18f71b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f01819995937c8bbce5ac05c18f71b4">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f01819995937c8bbce5ac05c18f71b4">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2787,7 +2913,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a8d8f335f2691b865597b01f0e6c2e210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d8f335f2691b865597b01f0e6c2e210">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8f335f2691b865597b01f0e6c2e210">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2822,8 +2948,44 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a9685d8f9a22683d2a5a8ab96abb1f735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9685d8f9a22683d2a5a8ab96abb1f735">&#9670;&nbsp;</a></span>fillHaloGPU() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fillHaloGPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a805c1dabf839953debffe2799c61cae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805c1dabf839953debffe2799c61cae0">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a805c1dabf839953debffe2799c61cae0">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2862,8 +3024,42 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a34e004e3fbebc9bb46bb634a202ae6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e004e3fbebc9bb46bb634a202ae6d0">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="Halo_8h.html#a3f01819995937c8bbce5ac05c18f71b4">fillHaloGPU</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87f6da23bb80f5c2a138bad34e576e5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f6da23bb80f5c2a138bad34e576e5b">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f6da23bb80f5c2a138bad34e576e5b">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2897,7 +3093,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="ac253f2bf76324a678d0f34a9a9b1c631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac253f2bf76324a678d0f34a9a9b1c631">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac253f2bf76324a678d0f34a9a9b1c631">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2937,7 +3133,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="ae4dfd3f7c7752f689ea4aa1cd17b378c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4dfd3f7c7752f689ea4aa1cd17b378c">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dfd3f7c7752f689ea4aa1cd17b378c">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2971,7 +3167,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a0c4feec6db1f401b3409302c41843524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c4feec6db1f401b3409302c41843524">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4feec6db1f401b3409302c41843524">&#9670;&nbsp;</a></span>fillHaloGPU&lt; double &gt;() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3005,7 +3201,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a20176600a52e8881aa78213c15e1ac4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20176600a52e8881aa78213c15e1ac4b">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20176600a52e8881aa78213c15e1ac4b">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3045,7 +3241,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a9b8d1661f255b3e8e41a8ec6a2a98260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b8d1661f255b3e8e41a8ec6a2a98260">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8d1661f255b3e8e41a8ec6a2a98260">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3079,7 +3275,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="ae9d035a7e3954d9b2801a74cf2ba87f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d035a7e3954d9b2801a74cf2ba87f2">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d035a7e3954d9b2801a74cf2ba87f2">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3118,8 +3314,42 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ac2832633400d205ffe4346bbe730d260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2832633400d205ffe4346bbe730d260">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="Halo_8h.html#a3f01819995937c8bbce5ac05c18f71b4">fillHaloGPU</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
+          <td class="paramname"><em>XParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>XBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acac7f5cbebdc9598fe00696f6708068f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac7f5cbebdc9598fe00696f6708068f">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acac7f5cbebdc9598fe00696f6708068f">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3153,7 +3383,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a18a815a1959a39e7ab80e94b759a15f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a815a1959a39e7ab80e94b759a15f7">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a815a1959a39e7ab80e94b759a15f7">&#9670;&nbsp;</a></span>fillHaloGPU&lt; float &gt;() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3691,7 +3921,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Wrapping function for calculating flux for halos for each block of a single variable on GPU. </p>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md141"></a>
 Description</h2>
 <p>This function is a wraping function of the halo flux functions on GPU. It is called from the main Halo GPU function. The present imnplementation is naive and slow one that calls the rather complex fillLeft type functions </p>
 
@@ -6519,17 +6749,17 @@ template&lt;class T &gt; </div>
 
 <p>Recalculate water surface after recalculating the values on the halo on the CPU. </p>
 <p>Recalculate water surface after recalculating the values on the halo on the GPU.</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md134"></a>
 Description</h2>
 <p>Recalculate water surface after recalculating the values on the halo on the CPU. zb (bottom elevation) on each halo is calculated at the start of the loop or as part of the initial condition. When conserve-elevation is not required, only h is recalculated on the halo at ever 1/2 steps. <br  />
  zs then needs to be recalculated to obtain a mass-conservative solution (if zs is conserved then mass conservation is not garanteed)</p>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md135"></a>
 Warning</h2>
 <p>This function calculate zs everywhere in the block... this is a bit unecessary. Instead it should recalculate only where there is a prolongation or a restiction</p>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<h2><a class="anchor" id="autotoc_md136"></a>
 Description</h2>
 <p>Recalculate water surface after recalculating the values on the halo on the CPU. zb (bottom elevation) on each halo is calculated at the start of the loop or as part of the initial condition. When conserve-elevation is not required, only h is recalculated on the halo at ever 1/2 steps. zs then needs to be recalculated to obtain a mass-conservative solution (if zs is conserved then mass conservation is not garanteed)</p>
-<h2><a class="anchor" id="autotoc_md59"></a>
+<h2><a class="anchor" id="autotoc_md137"></a>
 Warning</h2>
 <p>This function calculate zs everywhere in the block... this is a bit unecessary. Instead it should recalculate only where there is a prolongation or a restiction </p>
 
@@ -8215,7 +8445,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Halo_8cu.html">Halo.cu</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

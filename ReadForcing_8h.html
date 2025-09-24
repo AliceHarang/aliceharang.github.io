@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -122,7 +130,7 @@ Functions</h2></td></tr>
 <tr class="separator:a63aad7e21f8862ae2814592f373e801d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770a60d1078d46548b2b400f0269f17e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSLTS.html">SLTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a770a60d1078d46548b2b400f0269f17e">readWLfile</a> (std::string WLfilename, std::string &amp;refdate)</td></tr>
 <tr class="separator:a770a60d1078d46548b2b400f0269f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1953b3a8eb74290f53f6ff154a5450"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSLTS.html">SLTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a9a1953b3a8eb74290f53f6ff154a5450">readNestfile</a> (std::string <a class="el" href="Tutorial__Cart_8c.html#a0ff1d92f78b81f9acf2731a33bae1dd6">ncfile</a>, std::string varname, int hor, double eps, double bndxo, double bndxmax, double bndy)</td></tr>
+<tr class="memitem:a9a1953b3a8eb74290f53f6ff154a5450"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSLTS.html">SLTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a9a1953b3a8eb74290f53f6ff154a5450">readNestfile</a> (std::string ncfile, std::string varname, int hor, double eps, double bndxo, double bndxmax, double bndy)</td></tr>
 <tr class="separator:a9a1953b3a8eb74290f53f6ff154a5450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a4d90c2d9929279eaa88c9d8332149"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classFlowin.html">Flowin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ad3a4d90c2d9929279eaa88c9d8332149">readFlowfile</a> (std::string Flowfilename, std::string &amp;refdate)</td></tr>
 <tr class="separator:ad3a4d90c2d9929279eaa88c9d8332149"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,10 +138,10 @@ Functions</h2></td></tr>
 <tr class="separator:ab8a60f8a1837e4d290acac635863b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f6aef19bae6123d0f15e4ebd55e06e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classWindin.html">Windin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ac8f6aef19bae6123d0f15e4ebd55e06e">readWNDfileUNI</a> (std::string filename, std::string &amp;refdate, double grdalpha)</td></tr>
 <tr class="separator:ac8f6aef19bae6123d0f15e4ebd55e06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50a9f2e1aef7fe1cd0d4ae1a6aae926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#aa50a9f2e1aef7fe1cd0d4ae1a6aae926">denan</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float denanval, int *z)</td></tr>
+<tr class="memitem:aa50a9f2e1aef7fe1cd0d4ae1a6aae926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#aa50a9f2e1aef7fe1cd0d4ae1a6aae926">denan</a> (int nx, int ny, float denanval, int *z)</td></tr>
 <tr class="separator:aa50a9f2e1aef7fe1cd0d4ae1a6aae926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c2bd04b5b1a5107e1b652c94f35c3b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad8c2bd04b5b1a5107e1b652c94f35c3b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ad8c2bd04b5b1a5107e1b652c94f35c3b">denan</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, float denanval, T *z)</td></tr>
+<tr class="memitem:ad8c2bd04b5b1a5107e1b652c94f35c3b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ad8c2bd04b5b1a5107e1b652c94f35c3b">denan</a> (int nx, int ny, float denanval, T *z)</td></tr>
 <tr class="separator:ad8c2bd04b5b1a5107e1b652c94f35c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c8aa02f8230319bda8c04d8d926f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ac2c8aa02f8230319bda8c04d8d926f43">readDynforcing</a> (bool gpgpu, double totaltime, <a class="el" href="structDynForcingP.html">DynForcingP</a>&lt; float &gt; &amp;Dforcing)</td></tr>
 <tr class="separator:ac2c8aa02f8230319bda8c04d8d926f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,26 +161,26 @@ Functions</h2></td></tr>
 <tr class="separator:a2d93dc80f4f9d2da60249113611c5e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa1bbd9368f3a36be12b5e091995f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a3fa1bbd9368f3a36be12b5e091995f48">readforcingdata</a> (double totaltime, <a class="el" href="structDynForcingP.html">DynForcingP</a>&lt; float &gt; &amp;forcing)</td></tr>
 <tr class="separator:a3fa1bbd9368f3a36be12b5e091995f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8215efcb9518437cb6bfd2bad1297d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ae8215efcb9518437cb6bfd2bad1297d5">readbathyHeadMD</a> (std::string filename, int &amp;<a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int &amp;ny, double &amp;dx, double &amp;grdalpha)</td></tr>
+<tr class="memitem:ae8215efcb9518437cb6bfd2bad1297d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ae8215efcb9518437cb6bfd2bad1297d5">readbathyHeadMD</a> (std::string filename, int &amp;nx, int &amp;ny, double &amp;dx, double &amp;grdalpha)</td></tr>
 <tr class="separator:ae8215efcb9518437cb6bfd2bad1297d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d12c65a96fe1d7f9f5a70956f96d54b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0d12c65a96fe1d7f9f5a70956f96d54b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0d12c65a96fe1d7f9f5a70956f96d54b">readbathyMD</a> (std::string filename, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a0d12c65a96fe1d7f9f5a70956f96d54b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0d12c65a96fe1d7f9f5a70956f96d54b">readbathyMD</a> (std::string filename, T *&amp;zb)</td></tr>
 <tr class="separator:a0d12c65a96fe1d7f9f5a70956f96d54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae853fd83c25a1c55c6a495ef2dfc2cfb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae853fd83c25a1c55c6a495ef2dfc2cfb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ae853fd83c25a1c55c6a495ef2dfc2cfb">readXBbathy</a> (std::string filename, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ae853fd83c25a1c55c6a495ef2dfc2cfb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ae853fd83c25a1c55c6a495ef2dfc2cfb">readXBbathy</a> (std::string filename, int nx, int ny, T *&amp;zb)</td></tr>
 <tr class="separator:ae853fd83c25a1c55c6a495ef2dfc2cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abd45f07ddf2a1a3d67f9c51fd859a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a2abd45f07ddf2a1a3d67f9c51fd859a3">InitDynforcing</a> (bool gpgpu, <a class="el" href="classParam.html">Param</a> &amp;XParam, <a class="el" href="structDynForcingP.html">DynForcingP</a>&lt; float &gt; &amp;Dforcing)</td></tr>
 <tr class="separator:a2abd45f07ddf2a1a3d67f9c51fd859a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fa6864f4f241e906cc1ecab4826011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#aa4fa6864f4f241e906cc1ecab4826011">readbathyASCHead</a> (std::string filename, int &amp;<a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int &amp;ny, double &amp;dx, double &amp;xo, double &amp;yo, double &amp;grdalpha)</td></tr>
+<tr class="memitem:aa4fa6864f4f241e906cc1ecab4826011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#aa4fa6864f4f241e906cc1ecab4826011">readbathyASCHead</a> (std::string filename, int &amp;nx, int &amp;ny, double &amp;dx, double &amp;xo, double &amp;yo, double &amp;grdalpha)</td></tr>
 <tr class="separator:aa4fa6864f4f241e906cc1ecab4826011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a733346c52f01d60518590c3f56a08a8a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a733346c52f01d60518590c3f56a08a8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a733346c52f01d60518590c3f56a08a8a">readbathyASCzb</a> (std::string filename, int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a733346c52f01d60518590c3f56a08a8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a733346c52f01d60518590c3f56a08a8a">readbathyASCzb</a> (std::string filename, int nx, int ny, T *&amp;zb)</td></tr>
 <tr class="separator:a733346c52f01d60518590c3f56a08a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7b8d36675c4fb7f9e8ab773c10b3ec"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0d7b8d36675c4fb7f9e8ab773c10b3ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0d7b8d36675c4fb7f9e8ab773c10b3ec">InterpstepCPU</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, int hdstep, float totaltime, float hddt, T *&amp;Ux, T *Uo, T *Un)</td></tr>
+<tr class="memitem:a0d7b8d36675c4fb7f9e8ab773c10b3ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0d7b8d36675c4fb7f9e8ab773c10b3ec">InterpstepCPU</a> (int nx, int ny, int hdstep, float totaltime, float hddt, T *&amp;Ux, T *Uo, T *Un)</td></tr>
 <tr class="separator:a0d7b8d36675c4fb7f9e8ab773c10b3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0339053c220ea024214ab1c9b72cf8ce"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0339053c220ea024214ab1c9b72cf8ce"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0339053c220ea024214ab1c9b72cf8ce">clampedges</a> (int <a class="el" href="Tutorial__Cart_8c.html#a02d47a4f36ec0bcce348696534567e30">nx</a>, int ny, T clamp, T *z)</td></tr>
+<tr class="memitem:a0339053c220ea024214ab1c9b72cf8ce"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#a0339053c220ea024214ab1c9b72cf8ce">clampedges</a> (int nx, int ny, T clamp, T *z)</td></tr>
 <tr class="separator:a0339053c220ea024214ab1c9b72cf8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65db0756d512f96557b7eb032408e55"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReadForcing_8h.html#ac65db0756d512f96557b7eb032408e55">DelimLine</a> (std::string line, int n, char delim)</td></tr>
 <tr class="separator:ac65db0756d512f96557b7eb032408e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1176,7 +1184,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ReadForcing_8h.html">ReadForcing.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

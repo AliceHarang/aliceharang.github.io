@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -120,9 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d44ee2fd1fddf77e67cfc581452ea14"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5d44ee2fd1fddf77e67cfc581452ea14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a5d44ee2fd1fddf77e67cfc581452ea14">updateBnd</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; XLoop, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
 <tr class="separator:a5d44ee2fd1fddf77e67cfc581452ea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87674af50c173448f45ca56e804ded19"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a87674af50c173448f45ca56e804ded19"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a87674af50c173448f45ca56e804ded19">mapoutput</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; &amp;XLoop, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
-<tr class="separator:a87674af50c173448f45ca56e804ded19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca4e5a3d0599c8bc3f4b3baaf862f92"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7ca4e5a3d0599c8bc3f4b3baaf862f92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a7ca4e5a3d0599c8bc3f4b3baaf862f92">mapoutput</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; &amp;XLoop, <a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
+<tr class="separator:a7ca4e5a3d0599c8bc3f4b3baaf862f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8cc64b555b230ac47cfec2ad25a5ef"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:afc8cc64b555b230ac47cfec2ad25a5ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#afc8cc64b555b230ac47cfec2ad25a5ef">pointoutputstep</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; T &gt; &amp;XLoop, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel, <a class="el" href="structModel.html">Model</a>&lt; T &gt; XModel_g)</td></tr>
 <tr class="separator:afc8cc64b555b230ac47cfec2ad25a5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,10 +145,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d04cc034736c9be397ca120a700cc1b"><td class="memItemLeft" align="right" valign="top">template __host__ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a9d04cc034736c9be397ca120a700cc1b">initdt&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structLoop.html">Loop</a>&lt; double &gt; XLoop, <a class="el" href="structModel.html">Model</a>&lt; double &gt; XModel)</td></tr>
 <tr class="separator:a9d04cc034736c9be397ca120a700cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611007c28bcf818496049abd9d27cda8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a611007c28bcf818496049abd9d27cda8"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a611007c28bcf818496049abd9d27cda8">CalcInitdtCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEvolv, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>)</td></tr>
+<tr class="memitem:a611007c28bcf818496049abd9d27cda8"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a611007c28bcf818496049abd9d27cda8">CalcInitdtCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEvolv, T *dtmax)</td></tr>
 <tr class="separator:a611007c28bcf818496049abd9d27cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd8b5e67b5028e7fb82b3feea069911e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afd8b5e67b5028e7fb82b3feea069911e"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#afd8b5e67b5028e7fb82b3feea069911e">CalcInitdtGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEvolv, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>)</td></tr>
+<tr class="memitem:afd8b5e67b5028e7fb82b3feea069911e"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#afd8b5e67b5028e7fb82b3feea069911e">CalcInitdtGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEvolv, T *dtmax)</td></tr>
 <tr class="separator:afd8b5e67b5028e7fb82b3feea069911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee1aa7982bcbec879af949e36814276"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5ee1aa7982bcbec879af949e36814276"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Mainloop_8cu.html#a5ee1aa7982bcbec879af949e36814276">printstatus</a> (T totaltime, T dt)</td></tr>
@@ -655,8 +663,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a87674af50c173448f45ca56e804ded19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87674af50c173448f45ca56e804ded19">&#9670;&nbsp;</a></span>mapoutput()</h2>
+<a id="a7ca4e5a3d0599c8bc3f4b3baaf862f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca4e5a3d0599c8bc3f4b3baaf862f92">&#9670;&nbsp;</a></span>mapoutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -678,7 +686,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="structModel.html">Model</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>XModel</em>, </td>
         </tr>
         <tr>
@@ -901,7 +909,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Mainloop_8cu.html">Mainloop.cu</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

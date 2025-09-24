@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -113,23 +121,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a705147ee3e9d8b9606e8a4903ea70790"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a705147ee3e9d8b9606e8a4903ea70790"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a705147ee3e9d8b9606e8a4903ea70790">UpdateButtingerXGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a705147ee3e9d8b9606e8a4903ea70790"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a705147ee3e9d8b9606e8a4903ea70790">UpdateButtingerXGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *dtmax, T *zb)</td></tr>
 <tr class="memdesc:a705147ee3e9d8b9606e8a4903ea70790"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Adaptive" second-order hydrostatic reconstruction. GPU version for t X-axis  <a href="Reimann_8h.html#a705147ee3e9d8b9606e8a4903ea70790">More...</a><br /></td></tr>
 <tr class="separator:a705147ee3e9d8b9606e8a4903ea70790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e2941a269f627e7a1b2345a7fce7b27"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2e2941a269f627e7a1b2345a7fce7b27"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a2e2941a269f627e7a1b2345a7fce7b27">UpdateButtingerXCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a2e2941a269f627e7a1b2345a7fce7b27"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a2e2941a269f627e7a1b2345a7fce7b27">UpdateButtingerXCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *dtmax, T *zb)</td></tr>
 <tr class="memdesc:a2e2941a269f627e7a1b2345a7fce7b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Adaptive" second-order hydrostatic reconstruction. CPU version for the X-axis  <a href="Reimann_8h.html#a2e2941a269f627e7a1b2345a7fce7b27">More...</a><br /></td></tr>
 <tr class="separator:a2e2941a269f627e7a1b2345a7fce7b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d9e88f683b468fd5ddddf12a293621"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a74d9e88f683b468fd5ddddf12a293621"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a74d9e88f683b468fd5ddddf12a293621">UpdateButtingerYGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a74d9e88f683b468fd5ddddf12a293621"><td class="memTemplItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a74d9e88f683b468fd5ddddf12a293621">UpdateButtingerYGPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *dtmax, T *zb)</td></tr>
 <tr class="memdesc:a74d9e88f683b468fd5ddddf12a293621"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Adaptive" second-order hydrostatic reconstruction. GPU version for the Y-axis  <a href="Reimann_8h.html#a74d9e88f683b468fd5ddddf12a293621">More...</a><br /></td></tr>
 <tr class="separator:a74d9e88f683b468fd5ddddf12a293621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91240b6e5cc2a5a99990a4ec6dba80a9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a91240b6e5cc2a5a99990a4ec6dba80a9"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a91240b6e5cc2a5a99990a4ec6dba80a9">UpdateButtingerYCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *<a class="el" href="BasCart__gpu_8cu.html#a5c0d4de3c390969ef3c39ca51adc7faa">dtmax</a>, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a91240b6e5cc2a5a99990a4ec6dba80a9"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a91240b6e5cc2a5a99990a4ec6dba80a9">UpdateButtingerYCPU</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; XEv, <a class="el" href="structGradientsP.html">GradientsP</a>&lt; T &gt; XGrad, <a class="el" href="structFluxP.html">FluxP</a>&lt; T &gt; XFlux, T *dtmax, T *zb)</td></tr>
 <tr class="memdesc:a91240b6e5cc2a5a99990a4ec6dba80a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Adaptive" second-order hydrostatic reconstruction. CPU version for the Y-axis  <a href="Reimann_8h.html#a91240b6e5cc2a5a99990a4ec6dba80a9">More...</a><br /></td></tr>
 <tr class="separator:a91240b6e5cc2a5a99990a4ec6dba80a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470a128c79ccbb65a5ce45ccd9d3dcd2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a470a128c79ccbb65a5ce45ccd9d3dcd2"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a470a128c79ccbb65a5ce45ccd9d3dcd2">hllc</a> (T g, T <a class="el" href="Tutorial__Cart_8c.html#a9ea1a8f5ef3e6d20b362385e1288c72c">delta</a>, T epsi, T CFL, T cm, T fm, T hm, T hp, T um, T up, T &amp;fh, T &amp;fq)</td></tr>
+<tr class="memitem:a470a128c79ccbb65a5ce45ccd9d3dcd2"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Reimann_8h.html#a470a128c79ccbb65a5ce45ccd9d3dcd2">hllc</a> (T g, T delta, T epsi, T CFL, T cm, T fm, T hm, T hp, T um, T up, T &amp;fh, T &amp;fq)</td></tr>
 <tr class="memdesc:a470a128c79ccbb65a5ce45ccd9d3dcd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the Harten-Lax-van Leer-contact (HLLC) flux.  <a href="Reimann_8h.html#a470a128c79ccbb65a5ce45ccd9d3dcd2">More...</a><br /></td></tr>
 <tr class="separator:a470a128c79ccbb65a5ce45ccd9d3dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -223,10 +231,10 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Calculate the Harten-Lax-van Leer-contact (HLLC) flux. </p>
-<h2><a class="anchor" id="autotoc_md96"></a>
+<h2><a class="anchor" id="autotoc_md174"></a>
 Description</h2>
 <p>This an implementation of the HLLC solver.</p>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md175"></a>
 Where does this come from:</h2>
 <p>This scheme was adapted/modified from the Basilisk source code. <a href="http://basilisk.fr/src/riemann.h">http://basilisk.fr/src/riemann.h</a></p>
 <p>Reference: (Basilisk reference the scheme from Kurganov reference below) Kurganov, A., &amp; Levy, D. (2002). Central-upwind schemes for the Saint-Venant system. Mathematical Modelling and Numerical Analysis, 36(3), 397-425. </p>
@@ -292,11 +300,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>"Adaptive" second-order hydrostatic reconstruction. CPU version for the X-axis </p>
-<h2><a class="anchor" id="autotoc_md90"></a>
+<h2><a class="anchor" id="autotoc_md168"></a>
 Description</h2>
 <p>This function computes the flux term at the cell interface using the hydrostatic reconstruction from Buttinger et al (2019). This reconstruction is safe for steep slope with thin water depth and is well-balanced meaning that it conserve the "lake-at-rest" states.</p>
 <p>For optimising the code on CPU and GPU there are 4 versions of this function: X or Y and CPU or GPU</p>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md169"></a>
 Where does this come from:</h2>
 <p>This scheme was adapted/modified from the Basilisk / B-Flood source code. I (CypB) changed the zr and zl term back to the Audusse type reconstruction <a href="http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h">http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h</a></p>
 <p>Reference: Kirstetter, G., Delestre, O., Lagree, P.-Y., Popinet, S., and Josserand, C.: B-flood 1.0: an open-source Saint-Venant model for flash flood simulation using adaptive refinement, Geosci. <a class="el" href="structModel.html">Model</a> Dev. Discuss. [preprint], <a href="https://doi.org/10.5194/gmd-2021-15">https://doi.org/10.5194/gmd-2021-15</a>, in review, 2021.* Buttinger-Kreuzhuber, A., Horvath, Z., Noelle, S., Bloschl, G., and Waser, J.: A fast second-order shallow water scheme on two-dimensional structured grids over abrupt topography, Advances in water resources, 127, 89-108, 2019. </p>
@@ -362,11 +370,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>"Adaptive" second-order hydrostatic reconstruction. GPU version for t X-axis </p>
-<h2><a class="anchor" id="autotoc_md88"></a>
+<h2><a class="anchor" id="autotoc_md166"></a>
 Description</h2>
 <p>This function computes the flux term at the cell interface using the hydrostatic reconstruction from Buttinger et al (2019). This reconstruction is safe for steep slope with thin water depth and is well-balanced meaning that it conserve the "lake-at-rest" states.</p>
 <p>For optimising the code on CPU and GPU there are 4 versions of this function: X or Y and CPU or GPU</p>
-<h2><a class="anchor" id="autotoc_md89"></a>
+<h2><a class="anchor" id="autotoc_md167"></a>
 Where does this come from:</h2>
 <p>This scheme was adapted/modified from the Basilisk / B-Flood source code. I (CypB) changed the zr and zl term back to the Audusse type reconstruction <a href="http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h">http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h</a></p>
 <p>Reference: Kirstetter, G., Delestre, O., Lagree, P.-Y., Popinet, S., and Josserand, C.: B-flood 1.0: an open-source Saint-Venant model for flash flood simulation using adaptive refinement, Geosci. <a class="el" href="structModel.html">Model</a> Dev. Discuss. [preprint], <a href="https://doi.org/10.5194/gmd-2021-15">https://doi.org/10.5194/gmd-2021-15</a>, in review, 2021.* Buttinger-Kreuzhuber, A., Horvath, Z., Noelle, S., Bloschl, G., and Waser, J.: A fast second-order shallow water scheme on two-dimensional structured grids over abrupt topography, Advances in water resources, 127, 89-108, 2019. </p>
@@ -432,11 +440,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>"Adaptive" second-order hydrostatic reconstruction. CPU version for the Y-axis </p>
-<h2><a class="anchor" id="autotoc_md94"></a>
+<h2><a class="anchor" id="autotoc_md172"></a>
 Description</h2>
 <p>This function computes the flux term at the cell interface using the hydrostatic reconstruction from Buttinger et al (2019). This reconstruction is safe for steep slope with thin water depth and is well-balanced meaning that it conserve the "lake-at-rest" states.</p>
 <p>For optimising the code on CPU and GPU there are 4 versions of this function: X or Y and CPU or GPU</p>
-<h2><a class="anchor" id="autotoc_md95"></a>
+<h2><a class="anchor" id="autotoc_md173"></a>
 Where does this come from:</h2>
 <p>This scheme was adapted/modified from the Basilisk / B-Flood source code. I (CypB) changed the zr and zl term back to the Audusse type reconstruction <a href="http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h">http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h</a></p>
 <p>Reference: Kirstetter, G., Delestre, O., Lagree, P.-Y., Popinet, S., and Josserand, C.: B-flood 1.0: an open-source Saint-Venant model for flash flood simulation using adaptive refinement, Geosci. <a class="el" href="structModel.html">Model</a> Dev. Discuss. [preprint], <a href="https://doi.org/10.5194/gmd-2021-15">https://doi.org/10.5194/gmd-2021-15</a>, in review, 2021.* Buttinger-Kreuzhuber, A., Horvath, Z., Noelle, S., Bloschl, G., and Waser, J.: A fast second-order shallow water scheme on two-dimensional structured grids over abrupt topography, Advances in water resources, 127, 89-108, 2019. </p>
@@ -502,11 +510,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>"Adaptive" second-order hydrostatic reconstruction. GPU version for the Y-axis </p>
-<h2><a class="anchor" id="autotoc_md92"></a>
+<h2><a class="anchor" id="autotoc_md170"></a>
 Description</h2>
 <p>This function computes the flux term at the cell interface using the hydrostatic reconstruction from Buttinger et al (2019). This reconstruction is safe for steep slope with thin water depth and is well-balanced meaning that it conserve the "lake-at-rest" states.</p>
 <p>For optimising the code on CPU and GPU there are 4 versions of this function: X or Y and CPU or GPU</p>
-<h2><a class="anchor" id="autotoc_md93"></a>
+<h2><a class="anchor" id="autotoc_md171"></a>
 Where does this come from:</h2>
 <p>This scheme was adapted/modified from the Basilisk / B-Flood source code. I (CypB) changed the zr and zl term back to the Audusse type reconstruction <a href="http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h">http://basilisk.fr/sandbox/b-flood/saint-venant-topo.h</a></p>
 <p>Reference: Kirstetter, G., Delestre, O., Lagree, P.-Y., Popinet, S., and Josserand, C.: B-flood 1.0: an open-source Saint-Venant model for flash flood simulation using adaptive refinement, Geosci. <a class="el" href="structModel.html">Model</a> Dev. Discuss. [preprint], <a href="https://doi.org/10.5194/gmd-2021-15">https://doi.org/10.5194/gmd-2021-15</a>, in review, 2021.* Buttinger-Kreuzhuber, A., Horvath, Z., Noelle, S., Bloschl, G., and Waser, J.: A fast second-order shallow water scheme on two-dimensional structured grids over abrupt topography, Advances in water resources, 127, 89-108, 2019. </p>
@@ -519,7 +527,7 @@ Where does this come from:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Reimann_8h.html">Reimann.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

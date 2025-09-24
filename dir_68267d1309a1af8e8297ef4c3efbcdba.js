@@ -8,16 +8,21 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Advection.h", "Advection_8h.html", "Advection_8h" ],
     [ "Arrays.h", "Arrays_8h.html", [
       [ "GradientsP", "structGradientsP.html", "structGradientsP" ],
+      [ "GradientsMLP", "structGradientsMLP.html", "structGradientsMLP" ],
       [ "EvolvingP", "structEvolvingP.html", "structEvolvingP" ],
+      [ "EvolvingMLP", "structEvolvingMLP.html", "structEvolvingMLP" ],
       [ "EvolvingP_M", "structEvolvingP__M.html", "structEvolvingP__M" ],
       [ "FluxP", "structFluxP.html", "structFluxP" ],
+      [ "FluxMLP", "structFluxMLP.html", "structFluxMLP" ],
       [ "AdvanceP", "structAdvanceP.html", "structAdvanceP" ],
       [ "outP", "structoutP.html", "structoutP" ],
       [ "maskinfo", "structmaskinfo.html", "structmaskinfo" ],
+      [ "RiverInfo", "structRiverInfo.html", "structRiverInfo" ],
       [ "outzoneB", "structoutzoneB.html", "structoutzoneB" ],
       [ "BlockP", "structBlockP.html", "structBlockP" ],
       [ "AdaptP", "structAdaptP.html", "structAdaptP" ],
       [ "BndblockP", "structBndblockP.html", "structBndblockP" ],
+      [ "RiverBlk", "structRiverBlk.html", "structRiverBlk" ],
       [ "TimeP", "structTimeP.html", "structTimeP" ],
       [ "Model", "structModel.html", "structModel" ],
       [ "Loop", "structLoop.html", "structLoop" ]
@@ -32,6 +37,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "FlowCPU.h", "FlowCPU_8h.html", "FlowCPU_8h" ],
     [ "FlowGPU.cu", "FlowGPU_8cu.html", "FlowGPU_8cu" ],
     [ "FlowGPU.h", "FlowGPU_8h.html", "FlowGPU_8h" ],
+    [ "FlowMLGPU.cu", "FlowMLGPU_8cu.html", "FlowMLGPU_8cu" ],
+    [ "FlowMLGPU.h", "FlowMLGPU_8h.html", "FlowMLGPU_8h" ],
     [ "Forcing.h", "Forcing_8h.html", [
       [ "TexSetP", "structTexSetP.html", "structTexSetP" ],
       [ "bndTexP", "structbndTexP.html", "structbndTexP" ],
@@ -60,6 +67,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "InitialConditions.h", "InitialConditions_8h.html", "InitialConditions_8h" ],
     [ "Input.h", "Input_8h.html", [
       [ "TSoutnode", "classTSoutnode.html", "classTSoutnode" ],
+      [ "T_output", "classT__output.html", "classT__output" ],
       [ "outzoneP", "classoutzoneP.html", "classoutzoneP" ],
       [ "Flowin", "classFlowin.html", "classFlowin" ],
       [ "Mapparam", "classMapparam.html", null ],
@@ -81,6 +89,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "MemManagement.h", "MemManagement_8h.html", "MemManagement_8h" ],
     [ "Mesh.cu", "Mesh_8cu.html", "Mesh_8cu" ],
     [ "Mesh.h", "Mesh_8h.html", "Mesh_8h" ],
+    [ "Multilayer.cu", "Multilayer_8cu.html", "Multilayer_8cu" ],
+    [ "Multilayer.h", "Multilayer_8h.html", "Multilayer_8h" ],
     [ "Param.h", "Param_8h.html", [
       [ "Param", "classParam.html", "classParam" ]
     ] ],

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -89,15 +97,11 @@ $(document).ready(function(){initNavTree('globals_func_w.html',''); initResizabl
 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>warmstart()
-: <a class="el" href="Init_8cpp.html#ade1ad079007046fea93a8b50c85f8949">Init.cpp</a>
-, <a class="el" href="InitEvolv_8cu.html#a0831d7ffc3b6f6689bbc0572e0ffabc3">InitEvolv.cu</a>
+: <a class="el" href="InitEvolv_8cu.html#a0831d7ffc3b6f6689bbc0572e0ffabc3">InitEvolv.cu</a>
 , <a class="el" href="InitEvolv_8h.html#a0831d7ffc3b6f6689bbc0572e0ffabc3">InitEvolv.h</a>
 </li>
 <li>warmstartold()
 : <a class="el" href="InitEvolv_8cu.html#a0fbb7998c589a4ed6cc4f878eb401bf7">InitEvolv.cu</a>
-</li>
-<li>wetdrycriteria()
-: <a class="el" href="Adapt__gpu_8cu.html#a33a5814aec29ad46eb3311440685fb63">Adapt_gpu.cu</a>
 </li>
 <li>WetDryProlongation()
 : <a class="el" href="ConserveElevation_8cu.html#aba3f7b8cb37fdda55fe8938ea33d4512">ConserveElevation.cu</a>
@@ -135,13 +139,13 @@ $(document).ready(function(){initNavTree('globals_func_w.html',''); initResizabl
 : <a class="el" href="ConserveElevation_8cu.html#a4bd6eb5f83ea7c7448f03941178d58d8">ConserveElevation.cu</a>
 , <a class="el" href="ConserveElevation_8h.html#a4bd6eb5f83ea7c7448f03941178d58d8">ConserveElevation.h</a>
 </li>
-<li>WetDryRestriction()
-: <a class="el" href="ConserveElevation_8cu.html#afebcff1a2c87ddb0c67afdea7185cc23">ConserveElevation.cu</a>
-, <a class="el" href="ConserveElevation_8h.html#afebcff1a2c87ddb0c67afdea7185cc23">ConserveElevation.h</a>
-</li>
 <li>wetdryrestriction()
 : <a class="el" href="ConserveElevation_8cu.html#a61ffafd5fa2ebb6ec32c3797ffc6d38c">ConserveElevation.cu</a>
 , <a class="el" href="ConserveElevation_8h.html#a61ffafd5fa2ebb6ec32c3797ffc6d38c">ConserveElevation.h</a>
+</li>
+<li>WetDryRestriction()
+: <a class="el" href="ConserveElevation_8cu.html#afebcff1a2c87ddb0c67afdea7185cc23">ConserveElevation.cu</a>
+, <a class="el" href="ConserveElevation_8h.html#afebcff1a2c87ddb0c67afdea7185cc23">ConserveElevation.h</a>
 </li>
 <li>WetDryRestriction&lt; double &gt;()
 : <a class="el" href="ConserveElevation_8cu.html#a26918c4f0dcee7e40e993c563518531e">ConserveElevation.cu</a>
@@ -220,9 +224,6 @@ $(document).ready(function(){initNavTree('globals_func_w.html',''); initResizabl
 : <a class="el" href="Gradients_8cu.html#a4ea8993cfb8a689cb422ff0be9705082">Gradients.cu</a>
 , <a class="el" href="Gradients_8h.html#a4ea8993cfb8a689cb422ff0be9705082">Gradients.h</a>
 </li>
-<li>Windthisstep()
-: <a class="el" href="Init__gpu_8cu.html#a6078167c3708ea752b3c2ad0413a5503">Init_gpu.cu</a>
-</li>
 <li>wn_PnPoly()
 : <a class="el" href="Poly_8cu.html#a26344a138da1b14b78397ad09d6b0024">Poly.cu</a>
 , <a class="el" href="Poly_8h.html#a716f3869119a8a87911ad1f5cfada940">Poly.h</a>
@@ -237,31 +238,21 @@ $(document).ready(function(){initNavTree('globals_func_w.html',''); initResizabl
 : <a class="el" href="Write__netcdf_8cu.html#ae6f75b11a4428da84c143c0d1cad9f07">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#ae6f75b11a4428da84c143c0d1cad9f07">Write_netcdf.h</a>
 </li>
-<li>write2varnc()
-: <a class="el" href="Bas__Cart__CPU_8cpp.html#af823f303603bfb6847da5e3faa0255f3">Bas_Cart_CPU.cpp</a>
-, <a class="el" href="Tutorial__Cart_8c.html#a9552de35710b620ccb68581d4975e138">Tutorial_Cart.c</a>
-</li>
 <li>write3dvarnc()
 : <a class="el" href="Write__netcdf_8cu.html#aa73c1b56cf74fcfb460986caca0df756">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#aa73c1b56cf74fcfb460986caca0df756">Write_netcdf.h</a>
 </li>
 <li>write_text_to_log_file()
-: <a class="el" href="read__input_8cpp.html#a8dc4c812702060e9a2a9d3983daf9cbb">read_input.cpp</a>
-, <a class="el" href="Write__txtlog_8cpp.html#a8dc4c812702060e9a2a9d3983daf9cbb">Write_txtlog.cpp</a>
+: <a class="el" href="Write__txtlog_8cpp.html#a8dc4c812702060e9a2a9d3983daf9cbb">Write_txtlog.cpp</a>
 , <a class="el" href="Write__txtlog_8h.html#a8dc4c812702060e9a2a9d3983daf9cbb">Write_txtlog.h</a>
 </li>
 <li>writenctimestep()
 : <a class="el" href="Write__netcdf_8cu.html#a7baa2f1395758b42afb5ce020605abd0">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#a7baa2f1395758b42afb5ce020605abd0">Write_netcdf.h</a>
-, <a class="el" href="write__output_8cu.html#a7baa2f1395758b42afb5ce020605abd0">write_output.cu</a>
-</li>
-<li>writencvarstep()
-: <a class="el" href="write__output_8cu.html#a977a0dd51138e671e3e7dfc63713c020">write_output.cu</a>
 </li>
 <li>writencvarstepBUQ()
 : <a class="el" href="Write__netcdf_8cu.html#afcf742190cac3a9c04d966ad71c515ca">Write_netcdf.cu</a>
 , <a class="el" href="Write__netcdf_8h.html#afcf742190cac3a9c04d966ad71c515ca">Write_netcdf.h</a>
-, <a class="el" href="write__output_8cu.html#a1ea3c3adf854e11d5d0e2bd4516dbc8a">write_output.cu</a>
 </li>
 <li>writencvarstepBUQ&lt; double &gt;()
 : <a class="el" href="Write__netcdf_8cu.html#aded28dfbc4eefb50b70a55158c5edb60">Write_netcdf.cu</a>
@@ -284,7 +275,7 @@ $(document).ready(function(){initNavTree('globals_func_w.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:49 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

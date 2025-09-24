@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +33,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BG_Flood
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.8</span>
    </div>
    <div id="projectbrief">Documentation (Work-in-progress)</div>
   </td>
@@ -101,33 +109,33 @@ Include dependency graph for InitEvolv.cu:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6cadd35d79d134af18f47a2fa86e500c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a6cadd35d79d134af18f47a2fa86e500c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a6cadd35d79d134af18f47a2fa86e500c">initevolv</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a6cadd35d79d134af18f47a2fa86e500c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a6cadd35d79d134af18f47a2fa86e500c">initevolv</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;zb)</td></tr>
 <tr class="separator:a6cadd35d79d134af18f47a2fa86e500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0577dc041bbe18f8a8e881f243fdbe9a"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0577dc041bbe18f8a8e881f243fdbe9a">initevolv&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; &amp;XEv, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a0577dc041bbe18f8a8e881f243fdbe9a"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0577dc041bbe18f8a8e881f243fdbe9a">initevolv&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; &amp;XEv, float *&amp;zb)</td></tr>
 <tr class="separator:a0577dc041bbe18f8a8e881f243fdbe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8ea29e2a93dfc809efda217e34a1907"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ab8ea29e2a93dfc809efda217e34a1907">initevolv&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; &amp;XEv, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ab8ea29e2a93dfc809efda217e34a1907"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ab8ea29e2a93dfc809efda217e34a1907">initevolv&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; &amp;XEv, double *&amp;zb)</td></tr>
 <tr class="separator:ab8ea29e2a93dfc809efda217e34a1907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addab31c7158e0a9a5cef70d38616be3a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:addab31c7158e0a9a5cef70d38616be3a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#addab31c7158e0a9a5cef70d38616be3a">coldstart</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
+<tr class="memitem:addab31c7158e0a9a5cef70d38616be3a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#addab31c7158e0a9a5cef70d38616be3a">coldstart</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *zb, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
 <tr class="separator:addab31c7158e0a9a5cef70d38616be3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0831d7ffc3b6f6689bbc0572e0ffabc3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0831d7ffc3b6f6689bbc0572e0ffabc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0831d7ffc3b6f6689bbc0572e0ffabc3">warmstart</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
+<tr class="memitem:a0831d7ffc3b6f6689bbc0572e0ffabc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0831d7ffc3b6f6689bbc0572e0ffabc3">warmstart</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *zb, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
 <tr class="separator:a0831d7ffc3b6f6689bbc0572e0ffabc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbb7998c589a4ed6cc4f878eb401bf7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0fbb7998c589a4ed6cc4f878eb401bf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0fbb7998c589a4ed6cc4f878eb401bf7">warmstartold</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
+<tr class="memitem:a0fbb7998c589a4ed6cc4f878eb401bf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a0fbb7998c589a4ed6cc4f878eb401bf7">warmstartold</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structForcing.html">Forcing</a>&lt; float &gt; XForcing, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, T *zb, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv)</td></tr>
 <tr class="separator:a0fbb7998c589a4ed6cc4f878eb401bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac25b19d857c6899099322406558826bf"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac25b19d857c6899099322406558826bf"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ac25b19d857c6899099322406558826bf">AddZSoffset</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ac25b19d857c6899099322406558826bf"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ac25b19d857c6899099322406558826bf">AddZSoffset</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *zb)</td></tr>
 <tr class="separator:ac25b19d857c6899099322406558826bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79af6bcf26f13848ee5fca74f082ab1c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a79af6bcf26f13848ee5fca74f082ab1c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a79af6bcf26f13848ee5fca74f082ab1c">readhotstartfileBG</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a79af6bcf26f13848ee5fca74f082ab1c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a79af6bcf26f13848ee5fca74f082ab1c">readhotstartfileBG</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;zb)</td></tr>
 <tr class="separator:a79af6bcf26f13848ee5fca74f082ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff23dccc956433e8500e1d8d6d831b6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:acff23dccc956433e8500e1d8d6d831b6"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#acff23dccc956433e8500e1d8d6d831b6">readhotstartfile</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:acff23dccc956433e8500e1d8d6d831b6"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#acff23dccc956433e8500e1d8d6d831b6">readhotstartfile</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; T &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; T &gt; &amp;XEv, T *&amp;zb)</td></tr>
 <tr class="separator:acff23dccc956433e8500e1d8d6d831b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad06e62af39a391d3f8b06f9758a55f6b"><td class="memItemLeft" align="right" valign="top">template int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ad06e62af39a391d3f8b06f9758a55f6b">readhotstartfile&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; &amp;XEv, float *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:ad06e62af39a391d3f8b06f9758a55f6b"><td class="memItemLeft" align="right" valign="top">template int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#ad06e62af39a391d3f8b06f9758a55f6b">readhotstartfile&lt; float &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; float &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; float &gt; &amp;XEv, float *&amp;zb)</td></tr>
 <tr class="separator:ad06e62af39a391d3f8b06f9758a55f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a22a7be42c3643cff484a4c550d34c3"><td class="memItemLeft" align="right" valign="top">template int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a8a22a7be42c3643cff484a4c550d34c3">readhotstartfile&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; &amp;XEv, double *&amp;<a class="el" href="BasCart__gpu_8cu.html#aac6c33465d75856e258eb3f22d2b75fe">zb</a>)</td></tr>
+<tr class="memitem:a8a22a7be42c3643cff484a4c550d34c3"><td class="memItemLeft" align="right" valign="top">template int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InitEvolv_8cu.html#a8a22a7be42c3643cff484a4c550d34c3">readhotstartfile&lt; double &gt;</a> (<a class="el" href="classParam.html">Param</a> XParam, <a class="el" href="structBlockP.html">BlockP</a>&lt; double &gt; XBlock, <a class="el" href="structEvolvingP.html">EvolvingP</a>&lt; double &gt; &amp;XEv, double *&amp;zb)</td></tr>
 <tr class="separator:a8a22a7be42c3643cff484a4c550d34c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -405,7 +413,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template int <a class="el" href="writenetcdf_8cpp.html#a53dcb7c52396707cb95768ffa3aedf43">readhotstartfile</a>&lt; double &gt; </td>
+          <td class="memname">template int <a class="el" href="InitEvolv_8h.html#acff23dccc956433e8500e1d8d6d831b6">readhotstartfile</a>&lt; double &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -445,7 +453,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template int <a class="el" href="writenetcdf_8cpp.html#a53dcb7c52396707cb95768ffa3aedf43">readhotstartfile</a>&lt; float &gt; </td>
+          <td class="memname">template int <a class="el" href="InitEvolv_8h.html#acff23dccc956433e8500e1d8d6d831b6">readhotstartfile</a>&lt; float &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classParam.html">Param</a>&#160;</td>
           <td class="paramname"><em>XParam</em>, </td>
@@ -622,7 +630,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="InitEvolv_8cu.html">InitEvolv.cu</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 18:20:47 for BG_Flood by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
